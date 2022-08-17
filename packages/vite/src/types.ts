@@ -25,4 +25,20 @@ export interface UserConfig {
    * @default './cloudflare.d.ts'
    */
   dts?: string | boolean;
+
+  wrangler?: {
+    /**
+     * Wrangler dev server port
+     *
+     * @default 8788
+     */
+    port?: number;
+
+    /**
+     * Enable wrangler log
+     *
+     * @default false
+     */
+    log?: boolean;
+  };
 }

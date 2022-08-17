@@ -39,14 +39,19 @@
     "test:ci": "vitest --run",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "picocolors": "^1.0.0"
+  },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "unbuild": "^0.8.8",
     "vite": "^3.0.8",
-    "vitest": "^0.22.0"
+    "vitest": "^0.22.0",
+    "wrangler": "^2.0.26"
   },
   "peerDependencies": {
-    "vite": "^3.0.8"
+    "vite": "^3.0.8",
+    "wrangler": "^2.0.26"
   },
   "engines": {
     "node": ">=v16.17.0"
