@@ -1,0 +1,15 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.14.1",
+    "vite": "^3.0.8",
+    "vite-plugin-cloudflare-functions": "workspace:*"
+  }
+}

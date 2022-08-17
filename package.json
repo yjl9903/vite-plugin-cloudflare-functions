@@ -5,7 +5,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "format": "prettier --write src/**/*.ts",
+    "format": "prettier --write **/*.ts --ignore-path .gitignore",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "test": "turbo run test:ci",
     "typecheck": "turbo run typecheck",
