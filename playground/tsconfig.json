@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
     "esModuleInterop": true,
@@ -16,7 +17,7 @@
     "strict": true,
     "target": "ESNext",
     "types": [
-      "vite/client",
+      "vite/client"
     ],
     "useDefineForClassFields": true
   },
@@ -24,6 +25,6 @@
     "**/dist/**"
   ],
   "include": [
-    "*.ts",
+    "main.ts"
   ]
 }
