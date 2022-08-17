@@ -1,8 +1,13 @@
 {
   "name": "vite-plugin-cloudflare-functions",
   "version": "0.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Make Cloudflare Pages Functions works with Vite friendly",
+  "keywords": [
+    "cloudflare",
+    "vite",
+    "cloudflare-workers",
+    "cloudflare-pages"
+  ],
   "homepage": "https://github.com/yjl9903/vite-plugin-cloudflare-functions#readme",
   "bugs": {
     "url": "https://github.com/yjl9903/vite-plugin-cloudflare-functions/issues"
@@ -38,6 +43,9 @@
     "unbuild": "^0.8.8",
     "vite": "^3.0.8",
     "vitest": "^0.22.0"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.8"
   },
   "engines": {
     "node": ">=v16.17.0"

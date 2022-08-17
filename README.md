@@ -1,6 +1,8 @@
 # vite-plugin-cloudflare-functions
 
-After cloning this starter template, do not forget replacing `yjl9903`, `XLor`, and `vite-plugin-cloudflare-functions` globally.
+[![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml)
+
+Make Cloudflare Pages Functions works with Vite friendly.
 
 ## License
 
