@@ -1,5 +1,5 @@
 {
-  "name": "@vite-plugin-cloudflare-pages/monorepo",
+  "name": "@vite-plugin-cloudflare-functions/monorepo",
   "version": "0.0.0",
   "private": true,
   "scripts": {

@@ -1,15 +1,15 @@
 {
-  "name": "vite-plugin-cloudflare-pages",
+  "name": "vite-plugin-cloudflare-functions",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/yjl9903/vite-plugin-cloudflare-pages#readme",
+  "homepage": "https://github.com/yjl9903/vite-plugin-cloudflare-functions#readme",
   "bugs": {
-    "url": "https://github.com/yjl9903/vite-plugin-cloudflare-pages/issues"
+    "url": "https://github.com/yjl9903/vite-plugin-cloudflare-functions/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yjl9903/vite-plugin-cloudflare-pages.git"
+    "url": "git+https://github.com/yjl9903/vite-plugin-cloudflare-functions.git"
   },
   "license": "MIT",
   "author": "XLor",

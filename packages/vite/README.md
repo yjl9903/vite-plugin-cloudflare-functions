@@ -1,4 +1,4 @@
-# vite-plugin-cloudflare-pages/core
+# vite-plugin-cloudflare-functions/core
 
 ## License
 

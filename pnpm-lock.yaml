@@ -22,7 +22,7 @@ importers:
       vite: 3.0.8
       vitest: 0.22.0
 
-  packages/core:
+  packages/vite:
     specifiers:
       '@types/node': ^18.0.0
       unbuild: ^0.8.8
