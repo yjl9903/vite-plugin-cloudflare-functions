@@ -39,9 +39,8 @@ export default function CloudflarePagesFunctions(userConfig: UserConfig = {}): P
 
         try {
           fs.rmSync(functionsDst, { recursive: true });
+          fs.cpSync(functionsRoot, functionsDst, { recursive: true });
         } catch {}
-
-        fs.cpSync(functionsRoot, functionsDst, { recursive: true });
 
         console.log('[vite-plugin-cloudflare-functions] Copy finished.');
       }
