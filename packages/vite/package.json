@@ -1,0 +1,45 @@
+{
+  "name": "vite-plugin-cloudflare-pages",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/yjl9903/vite-plugin-cloudflare-pages#readme",
+  "bugs": {
+    "url": "https://github.com/yjl9903/vite-plugin-cloudflare-pages/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjl9903/vite-plugin-cloudflare-pages.git"
+  },
+  "license": "MIT",
+  "author": "XLor",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "test": "vitest",
+    "test:ci": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "unbuild": "^0.8.8",
+    "vite": "^3.0.8",
+    "vitest": "^0.22.0"
+  },
+  "engines": {
+    "node": ">=v16.17.0"
+  }
+}
