@@ -97,20 +97,20 @@ export default function CloudflarePagesFunctions(userConfig: UserConfig = {}): P
             : path.resolve(root, userConfig.outDir, 'functions')
         );
 
-        console.log('[vite-plugin-cloudflare-functions] Copy functions directory...');
         console.log(
-          `[vite-plugin-cloudflare-functions] From '${path.relative(
+          `Copying cloudflare functions directory from '${path.relative(
             '.',
             functionsRoot
-          )}' to '${path.relative('.', functionsDst)}'`
+          )}' to '${path.relative('.', functionsDst)}' ...`
         );
 
         try {
           fs.rmSync(functionsDst, { recursive: true });
-          fs.cpSync(functionsRoot, functionsDst, { recursive: true });
         } catch {}
 
-        console.log('[vite-plugin-cloudflare-functions] Copy finished.');
+        try {
+          fs.cpSync(functionsRoot, functionsDst, { recursive: true });
+        } catch {}
       }
     }
   };
