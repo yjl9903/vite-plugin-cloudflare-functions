@@ -1,1 +1,3 @@
-import '../dist/index.mjs';
+try {
+  await import('../dist/index.mjs');
+} catch {}
