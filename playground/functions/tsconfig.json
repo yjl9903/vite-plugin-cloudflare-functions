@@ -1,4 +1,4 @@
 {
-  "extends": ".cloudflare/tsconfig.json",
+  "extends": "./.cloudflare/tsconfig.json",
   "include": ["api"]
 }
