@@ -44,11 +44,13 @@ importers:
       '@cloudflare/workers-types': ^3.14.1
       vite: ^3.0.8
       vite-plugin-cloudflare-functions: workspace:*
+      vite-plugin-info: 0.3.1
       wrangler: ^2.0.26
     devDependencies:
       '@cloudflare/workers-types': 3.14.1
       vite: 3.0.8
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
+      vite-plugin-info: 0.3.1_vite@3.0.8
       wrangler: 2.0.26
 
 packages:
@@ -780,6 +782,10 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /ci-info/3.3.2:
+    resolution: {integrity: sha512-xmDt/QIAdeZ9+nfdPsaBCpMvHNLFiLdjj59qjqn+6iPe6YmHGQ35sBnQ8uslRBXFmXkiZQOJRjvQeoGppoTjjg==}
     dev: true
 
   /color-convert/1.9.3:
@@ -1586,6 +1592,16 @@ packages:
     resolution: {integrity: sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==}
     dev: true
 
+  /git-config-path/2.0.0:
+    resolution: {integrity: sha512-qc8h1KIQbJpp+241id3GuAtkdyJ+IK+LIVtkiFTRKRrmddDzs3SI9CvP1QYmWBFvm1I/PWRwj//of8bgAc0ltA==}
+    engines: {node: '>=4'}
+    dev: true
+
+  /git-repo-info/2.1.1:
+    resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
+    engines: {node: '>= 4.0'}
+    dev: true
+
   /glob-parent/5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -1674,6 +1690,10 @@ packages:
 
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+    dev: true
+
+  /ini/1.3.8:
+    resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
   /is-binary-path/2.1.0:
@@ -1945,6 +1965,20 @@ packages:
       wrappy: 1.0.2
     dev: true
 
+  /parse-git-config/3.0.0:
+    resolution: {integrity: sha512-wXoQGL1D+2COYWCD35/xbiKma1Z15xvZL8cI25wvxzled58V51SJM04Urt/uznS900iQor7QO04SgdfT/XlbuA==}
+    engines: {node: '>=8'}
+    dependencies:
+      git-config-path: 2.0.0
+      ini: 1.3.8
+    dev: true
+
+  /parse-github-url/1.0.2:
+    resolution: {integrity: sha512-kgBf6avCbO3Cn6+RnzRGLkUsv4ZVqv/VfAYkRsyBcgkshNvVBkRn1FEZcW0Jb+npXQWm2vHPnnOqFteZxRRGNw==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+    dev: true
+
   /path-is-absolute/1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
@@ -2033,6 +2067,13 @@ packages:
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
+    dev: true
+
+  /remote-origin-url/2.0.0:
+    resolution: {integrity: sha512-4TKz5bTDEHFzsqgjQZY/NxNqceWhtWD69Fgwetm+172GT2NoljyQssB649ECUBHGhBINuGwKw8mfcjQFugdIlg==}
+    engines: {node: '>=8'}
+    dependencies:
+      parse-git-config: 3.0.0
     dev: true
 
   /resolve/1.22.1:
@@ -2467,6 +2508,18 @@ packages:
 
   /urlpattern-polyfill/4.0.3:
     resolution: {integrity: sha512-DOE84vZT2fEcl9gqCUTcnAw5ZY5Id55ikUcziSUntuEFL3pRvavg5kwDmTEUJkeCHInTlV/HexFomgYnzO5kdQ==}
+    dev: true
+
+  /vite-plugin-info/0.3.1_vite@3.0.8:
+    resolution: {integrity: sha512-+nhVdmBGSMBTRKNT4mTo4yBkepIH6YtIJnw4UIfW9kyDy9DDZ/xEsyCoaboait9/lZBoi1mOAOnHgZLN6+Yz3g==}
+    peerDependencies:
+      vite: ^2.9.13 || ^3.0.0
+    dependencies:
+      ci-info: 3.3.2
+      git-repo-info: 2.1.1
+      parse-github-url: 1.0.2
+      remote-origin-url: 2.0.0
+      vite: 3.0.8
     dev: true
 
   /vite/3.0.8:
