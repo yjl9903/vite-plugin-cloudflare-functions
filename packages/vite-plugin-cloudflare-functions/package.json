@@ -44,6 +44,9 @@
       "require": "./dist/client.cjs",
       "import": "./dist/client.mjs",
       "types": "./dist/client.d.ts"
+    },
+    "./types": {
+      "types": "./types.d.ts"
     }
   },
   "main": "./dist/index.cjs",
@@ -51,7 +54,8 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "script"
+    "script",
+    "*.d.ts"
   ],
   "scripts": {
     "build": "unbuild",

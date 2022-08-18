@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "paths": {
       "vite-plugin-cloudflare-functions": ["./packages/vite-plugin-cloudflare-functions/src/index.ts"],
+      "vite-plugin-cloudflare-functions/types": ["./packages/vite-plugin-cloudflare-functions/types.d.ts"],
       "vite-plugin-cloudflare-functions/worker": ["./packages/vite-plugin-cloudflare-functions/src/worker.ts"],
       "vite-plugin-cloudflare-functions/client": ["./packages/vite-plugin-cloudflare-functions/src/client.ts"]
     }
