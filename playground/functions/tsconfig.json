@@ -6,6 +6,5 @@
       "vite-plugin-cloudflare-functions/worker": ["../../packages/vite-plugin-cloudflare-functions/src/worker.ts"],
       "vite-plugin-cloudflare-functions/client": ["../../packages/vite-plugin-cloudflare-functions/src/client.ts"]
     }
-  },
-  "include": ["api"]
+  }
 }

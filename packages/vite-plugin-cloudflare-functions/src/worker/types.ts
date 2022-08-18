@@ -1,6 +1,6 @@
 /// <reference types="@cloudflare/workers-types" />
 
-export type CloudflareResponse<T = any> = globalThis.Response;
+export class CloudflareResponse<T = any> extends Response {}
 
 export type CloudflarePagesFunction<
   T = unknown,
