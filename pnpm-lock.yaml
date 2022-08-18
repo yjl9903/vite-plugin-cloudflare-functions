@@ -22,7 +22,7 @@ importers:
       vite: 3.0.8
       vitest: 0.22.0
 
-  packages/vite:
+  packages/vite-plugin-cloudflare-functions:
     specifiers:
       '@types/node': ^18.0.0
       picocolors: ^1.0.0
@@ -39,7 +39,7 @@ importers:
       vitest: 0.22.0
       wrangler: 2.0.26
 
-  playground:
+  playground/app:
     specifiers:
       '@cloudflare/workers-types': ^3.14.1
       vite: ^3.0.8
@@ -48,7 +48,7 @@ importers:
     devDependencies:
       '@cloudflare/workers-types': 3.14.1
       vite: 3.0.8
-      vite-plugin-cloudflare-functions: link:../packages/vite
+      vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
       wrangler: 2.0.26
 
 packages:

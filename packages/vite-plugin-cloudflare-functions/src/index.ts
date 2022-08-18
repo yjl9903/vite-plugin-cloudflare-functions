@@ -37,6 +37,9 @@ export default function CloudflarePagesFunctions(userConfig: UserConfig = {}): P
           ? path.resolve(userConfig.root)
           : path.resolve(resolvedConfig.root, 'functions')
       );
+      if (!functionsRoot.endsWith('functions') && functionsRoot.endsWith('functions/')) {
+        console.log('Must in functions/');
+      }
     },
     configureServer(_server) {
       const wranglerPort = userConfig.wrangler?.port ?? DefaultWranglerPort;
@@ -64,7 +67,8 @@ export default function CloudflarePagesFunctions(userConfig: UserConfig = {}): P
           env: {
             BROWSER: 'none',
             ...process.env
-          }
+          },
+          cwd: path.dirname(functionsRoot)
         }
       );
       proxy.stdout.on('data', (chunk) => {
