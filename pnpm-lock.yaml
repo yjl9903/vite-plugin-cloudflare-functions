@@ -55,10 +55,8 @@ importers:
 
   playground/functions:
     specifiers:
-      '@cloudflare/workers-types': ^3.14.1
       vite-plugin-cloudflare-functions: workspace:*
     devDependencies:
-      '@cloudflare/workers-types': 3.14.1
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
 
 packages:
@@ -276,6 +274,7 @@ packages:
 
   /@cloudflare/workers-types/3.14.1:
     resolution: {integrity: sha512-B1/plF62pt+H2IJHvApK8fdOJAVsvojvacuac8x8s+JIyqbropMyqNqHTKLm3YD8ZFLGwYeFTudU+PQ7vGvBdA==}
+    dev: false
 
   /@esbuild-plugins/node-globals-polyfill/0.1.1_esbuild@0.14.51:
     resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}

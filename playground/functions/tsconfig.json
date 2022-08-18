@@ -17,10 +17,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext",
-    "types": [
-      "vite-plugin-cloudflare-functions/globals"
-    ]
+    "target": "ESNext"
   },
   "include": [
     "api"
