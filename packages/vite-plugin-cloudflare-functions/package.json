@@ -35,10 +35,10 @@
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
     },
-    "./server": {
-      "require": "./dist/server.cjs",
-      "import": "./dist/server.mjs",
-      "types": "./dist/server.d.ts"
+    "./worker": {
+      "require": "./dist/worker.cjs",
+      "import": "./dist/worker.mjs",
+      "types": "./dist/worker.d.ts"
     },
     "./client": {
       "require": "./dist/client.cjs",
