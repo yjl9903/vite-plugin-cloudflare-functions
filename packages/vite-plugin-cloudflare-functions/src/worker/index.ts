@@ -33,8 +33,12 @@ export function makePagesFunction<
 }
 
 export function makeResponse<T = any>(body: T, init: ResponseInit = {}): CloudflareResponse<T> {
-  return new CloudflareResponse(JSON.stringify(body), {
-    ...init,
-    headers: { 'Content-Type': 'application/json', ...init.headers }
-  });
+  if (body instanceof Response) {
+    return body;
+  } else {
+    return new CloudflareResponse(JSON.stringify(body), {
+      ...init,
+      headers: { 'Content-Type': 'application/json', ...init.headers }
+    });
+  }
 }
