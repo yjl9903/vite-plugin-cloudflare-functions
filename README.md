@@ -128,7 +128,15 @@ export default defineConfig({
         // Wrangler dev server port
         port: 8788,
         // Enable wrangler log
-        log: true
+        log: true,
+        // Bind variable/secret
+        binding: {},
+        // Bind KV namespace
+        kv: [],
+        // Bind Durable Object
+        do: {},
+        // Bind R2 bucket
+        r2: []
       }
     })
   ]

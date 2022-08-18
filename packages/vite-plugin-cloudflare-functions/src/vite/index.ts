@@ -81,6 +81,32 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       startWrangler();
 
       function startWrangler() {
+        const bindings: string[] = [];
+        if (userConfig.wrangler?.binding) {
+          for (const [key, value] of Object.entries(userConfig.wrangler.binding)) {
+            bindings.push('--binding');
+            bindings.push(`${key}=\\"${value}\\"`);
+          }
+        }
+        if (userConfig.wrangler?.kv) {
+          for (const kv of userConfig.wrangler.kv) {
+            bindings.push('--kv');
+            bindings.push(kv);
+          }
+        }
+        if (userConfig.wrangler?.do) {
+          for (const [key, value] of Object.entries(userConfig.wrangler.do)) {
+            bindings.push('--do');
+            bindings.push(`"${key}=${value}"`);
+          }
+        }
+        if (userConfig.wrangler?.r2) {
+          for (const r2 of userConfig.wrangler.r2) {
+            bindings.push('--r2');
+            bindings.push(r2);
+          }
+        }
+
         const proxy = spawn(
           'npx',
           [

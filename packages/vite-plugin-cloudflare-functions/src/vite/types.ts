@@ -40,5 +40,25 @@ export interface UserConfig {
      * @default false
      */
     log?: boolean;
+
+    /**
+     * Bind variable/secret
+     */
+    binding?: Record<string, string>;
+
+    /**
+     * Bind KV namespace
+     */
+    kv?: string[];
+
+    /**
+     * Bind Durable Object
+     */
+    do?: Record<string, string>;
+
+    /**
+     * Bind R2 bucket
+     */
+    r2?: string[];
   };
 }
