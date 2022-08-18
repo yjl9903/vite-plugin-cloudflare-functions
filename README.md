@@ -2,8 +2,6 @@
 
 [![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml)
 
-:construction: Work in progress.
-
 Make Cloudflare Pages Functions works with Vite friendly.
 
 ## Features
