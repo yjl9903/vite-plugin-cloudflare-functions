@@ -54,7 +54,7 @@ export async function generate(functionsRoot: string, dtsPath: string) {
     `  interface PagesResponseBody {`,
     ...routes.flat(),
     `  }`,
-    `}`
+    `}\n`
   ].join('\n');
 }
 
