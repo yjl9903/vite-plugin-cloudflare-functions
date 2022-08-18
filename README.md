@@ -20,6 +20,7 @@ npm i -D vite-plugin-cloudflare-functions
 
 ```ts
 // vite.config.ts
+
 import { defineConfig } from 'vite';
 
 import CloudflarePagesFunctions from 'vite-plugin-cloudflare-functions';
@@ -30,6 +31,66 @@ export default defineConfig({
   ]
 });
 ```
+
+## Usage
+
+### Functions
+
+Just write pages functions as usual, but you should use the following utility functions to make auto-generation work.
+
+```ts
+// /api/[msg].ts
+
+import {
+  makeRawPagesFunction,
+  makePagesFunction,
+  makeResponse
+} from 'vite-plugin-cloudflare-functions/worker';
+
+export const onRequestGet = makePagesFunction(({ params }) => ({
+  status: 'OK',
+  data: 'Hello, ' + params.msg + '!'
+}));
+
+export const onRequestPost = makeRawPagesFunction(({ params }) =>
+  makeResponse({
+    status: 'OK',
+    data: 'Post ' + params.msg + ' OK!'
+  })
+);
+```
+
+#### Override environment
+
+For example, you set the environment variable `PASS`.
+
+```ts
+// cloudflare.d.ts
+
+import 'vite-plugin-cloudflare-functions/worker';
+
+declare module 'vite-plugin-cloudflare-functions/worker' {
+  interface PagesFunctionEnv {
+    PASS: string;
+  }
+
+  interface PagesFunctionData {}
+}
+```
+
+Then you can find the parameter `env` has corresponding type declarations.
+
+```ts
+// /api/index.ts
+
+import { makePagesFunction } from 'vite-plugin-cloudflare-functions/worker';
+
+export const onRequestGet = makePagesFunction(({ env }) => ({
+  pass: env.PASS
+}));
+```
+
+### Client
 
 ## Configuration
 
