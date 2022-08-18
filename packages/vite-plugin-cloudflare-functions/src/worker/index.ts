@@ -1,6 +1,10 @@
-import { CloudflareResponse, type CloudflarePagesFunction } from './types';
+import {
+  CloudflareResponse,
+  type CloudflareResponseBody,
+  type CloudflarePagesFunction
+} from './types';
 
-export { CloudflareResponse, type CloudflarePagesFunction };
+export { CloudflareResponse, type CloudflareResponseBody, type CloudflarePagesFunction };
 
 export interface PagesFunctionEnv {}
 

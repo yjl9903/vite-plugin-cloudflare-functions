@@ -2,6 +2,12 @@
 
 export class CloudflareResponse<T = any> extends Response {}
 
+export type CloudflareResponseBody<T> = T extends CloudflarePagesFunction<infer Resp>
+  ? Awaited<Resp> extends CloudflareResponse<infer R>
+    ? R
+    : never
+  : never;
+
 export type CloudflarePagesFunction<
   T = unknown,
   Env = unknown,
