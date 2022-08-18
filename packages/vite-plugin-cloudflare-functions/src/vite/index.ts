@@ -9,6 +9,10 @@ import { normalizePath } from 'vite';
 
 import type { UserConfig } from './types';
 
+import { prepare } from './prepare';
+
+export { prepare };
+
 const DefaultPort = 5173;
 const DefaultWranglerPort = 8788;
 
@@ -16,6 +20,8 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
   let root: string;
   let port: number;
   let functionsRoot: string;
+
+  let preparePromise: Promise<void>;
 
   return {
     name: 'vite-plugin-cloudflare-functions',
@@ -37,9 +43,12 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
           ? path.resolve(userConfig.root)
           : path.resolve(resolvedConfig.root, 'functions')
       );
+
       if (!functionsRoot.endsWith('functions') && functionsRoot.endsWith('functions/')) {
         console.log('Must in functions/');
       }
+
+      preparePromise = prepare(functionsRoot);
     },
     configureServer(_server) {
       const wranglerPort = userConfig.wrangler?.port ?? DefaultWranglerPort;

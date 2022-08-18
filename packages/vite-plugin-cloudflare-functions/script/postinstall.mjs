@@ -1,3 +1,4 @@
 try {
-  await import('../dist/index.mjs');
+  const { prepare } = await import('../dist/index.mjs');
+  await prepare('.');
 } catch {}
