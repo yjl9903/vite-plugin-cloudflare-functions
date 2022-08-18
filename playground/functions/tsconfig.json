@@ -1,4 +1,11 @@
 {
   "extends": "./.cloudflare/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "vite-plugin-cloudflare-functions": ["../../packages/vite-plugin-cloudflare-functions/src/index.ts"],
+      "vite-plugin-cloudflare-functions/server": ["../../packages/vite-plugin-cloudflare-functions/src/server.ts"],
+      "vite-plugin-cloudflare-functions/client": ["../../packages/vite-plugin-cloudflare-functions/src/client.ts"]
+    }
+  },
   "include": ["api"]
 }
