@@ -53,7 +53,8 @@
     "dev": "unbuild --watch",
     "test": "vitest",
     "test:ci": "vitest --run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "node script/postinstall.mjs"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^3.14.1",
