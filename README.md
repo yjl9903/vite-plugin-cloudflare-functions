@@ -62,7 +62,7 @@ export const onRequestPost = makeRawPagesFunction(({ params }) =>
 
 #### Override environment
 
-For example, you set the environment variable `PASS`.
+For example, you have set the environment variable `PASS`.
 
 ```ts
 // cloudflare.d.ts
@@ -92,6 +92,21 @@ export const onRequestGet = makePagesFunction(({ env }) => ({
 
 ### Client
 
+We generate the API endpoint response body type declarations automatically, so that with the provided client `useFunctions` (powered by [axios](https://github.com/axios/axios)), your IDE will provide smarter IntelliSense.
+
+```ts
+// /main.ts
+import { useFunctions } from 'vite-plugin-cloudflare-functions/client';
+
+const client = useFunctions();
+
+client.get('/api/world').then((resp) => {
+  // The type of resp is { status: string, data: string }
+});
+```
+
+Full example is [here](./playground/).
+
 ## Configuration
 
 ```ts
@@ -103,9 +118,11 @@ export default defineConfig({
   plugins: [
     CloudflarePagesFunctions({
       // Cloudflare Functions root directory
-      root: '../functions',
-      // Copy the functions directory to outDir
-      outDir: '../../',
+      root: './functions',
+      // Copy the functions directory to outDir or do nothing
+      outDir: undefined,
+      // Generate API type declarations
+      dts: './cloudflare.d.ts',
       // Wrangler configuration
       wrangler: {
         // Wrangler dev server port
