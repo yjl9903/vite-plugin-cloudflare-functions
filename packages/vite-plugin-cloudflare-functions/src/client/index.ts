@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import type { PagesResponseBody, TypedResponse } from './types';
 
-export { type PagesResponseBody };
+export { type PagesResponseBody, type TypedResponse };
 
 export function useFunctions(config: AxiosRequestConfig<any> = {}) {
   const api = axios.create(config);
