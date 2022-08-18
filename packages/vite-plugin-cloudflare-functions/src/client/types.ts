@@ -3,7 +3,9 @@ export type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 
 export interface PagesResponseBody {}
 
 export type MiddlewareOf<Route extends string, Method extends HttpMethod> = Exclude<
-  PagesResponseBody[MatchedRoutes<Route>] extends { ALL: infer R }
+  PagesResponseBody[MatchedRoutes<Route>] extends never
+    ? never
+    : PagesResponseBody[MatchedRoutes<Route>] extends { ALL: infer R }
     ? R
     : PagesResponseBody[MatchedRoutes<Route>][Method],
   Error | void
@@ -19,9 +21,9 @@ export type TypedResponse<Route, Method extends HttpMethod, Default = unknown> =
   ? Default
   : Route extends string
   ? MiddlewareOf<Route, Method> extends never
-    ? Default
+    ? any
     : MiddlewareOf<Route, Method>
-  : Default;
+  : any;
 
 // Copy from nitropack
 type MatchResult<Key extends string, Exact extends boolean = false, Score extends any[] = []> = {
