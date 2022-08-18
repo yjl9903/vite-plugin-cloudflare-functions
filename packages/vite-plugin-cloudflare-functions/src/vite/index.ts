@@ -10,6 +10,7 @@ import { normalizePath } from 'vite';
 import type { UserConfig } from './types';
 
 import { prepare } from './prepare';
+import { generate } from './generate';
 
 export { prepare };
 
@@ -22,6 +23,20 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
   let functionsRoot: string;
 
   let preparePromise: Promise<void>;
+
+  if (!userConfig.dts) {
+    userConfig.dts = true;
+  }
+
+  let shouldGen = false;
+  const doAutoGen = async () => {
+    if (userConfig.dts) {
+      const dts = userConfig.dts === true ? 'cloudflare.d.ts' : userConfig.dts;
+      const dtsPath = path.resolve(root, dts);
+      const content = await generate(functionsRoot, path.dirname(dtsPath));
+      await fs.promises.writeFile(dtsPath, content, 'utf-8');
+    }
+  };
 
   return {
     name: 'vite-plugin-cloudflare-functions',
@@ -45,62 +60,89 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       );
 
       if (!functionsRoot.endsWith('functions') && functionsRoot.endsWith('functions/')) {
-        console.log('Must in functions/');
+        console.log('You should put your worker in directory named as functions/');
       }
 
       preparePromise = prepare(functionsRoot);
+      doAutoGen();
     },
     configureServer(_server) {
+      if (userConfig.dts) {
+        setInterval(async () => {
+          if (shouldGen) {
+            shouldGen = false;
+            await doAutoGen();
+          }
+        }, 1000);
+      }
+
       const wranglerPort = userConfig.wrangler?.port ?? DefaultWranglerPort;
 
-      const proxy = spawn(
-        'npx',
-        [
-          'wrangler',
-          'pages',
-          'dev',
-          '--experimental-enable-local-persistence',
-          '--ip',
-          'localhost',
-          '--port',
-          String(wranglerPort),
-          '--proxy',
-          String(port),
-          '--',
-          'npm',
-          '--version'
-        ],
-        {
-          shell: process.platform === 'win32',
-          stdio: ['inherit', 'pipe', 'pipe'],
-          env: {
-            BROWSER: 'none',
-            ...process.env
-          },
-          cwd: path.dirname(functionsRoot)
-        }
-      );
-      proxy.stdout.on('data', (chunk) => {
-        const text = chunk.toString('utf8').slice(0, -1);
-        if (text.startsWith('[pages:inf] Listening on ')) {
-          const colorUrl = (url: string) =>
-            colors.cyan(url.replace(/:(\d+)\//, (_, port) => `:${colors.bold(port)}/`));
-          console.log(
-            `  ${colors.green('➜')}  ${colors.bold('Pages')}:   ${colorUrl(
-              `http://127.0.0.1:${wranglerPort}/`
-            )}`
-          );
-        }
-        if (userConfig.wrangler?.log && text) {
-          console.log(text);
-        }
-      });
-      proxy.stderr.on('data', (chunk) => {
-        if (userConfig.wrangler?.log) {
-          const text = chunk.toString('utf8').slice(0, -1);
-          console.error(text);
-        }
-      });
+      startWrangler();
+
+      function startWrangler() {
+        const proxy = spawn(
+          'npx',
+          [
+            'wrangler',
+            'pages',
+            'dev',
+            '--experimental-enable-local-persistence',
+            '--ip',
+            'localhost',
+            '--port',
+            String(wranglerPort),
+            '--proxy',
+            String(port),
+            '--',
+            'npm',
+            '--version'
+          ],
+          {
+            shell: process.platform === 'win32',
+            stdio: ['inherit', 'pipe', 'pipe'],
+            env: {
+              BROWSER: 'none',
+              ...process.env
+            },
+            cwd: path.dirname(functionsRoot)
+          }
+        );
+
+        let firstTime = true;
+        proxy.stdout.on('data', (chunk) => {
+          const text: string = chunk.toString('utf8').slice(0, -1);
+          if (text.indexOf('Worker reloaded!') !== -1) {
+            if (firstTime) {
+              doAutoGen();
+              firstTime = false;
+              const colorUrl = (url: string) =>
+                colors.cyan(url.replace(/:(\d+)\//, (_, port) => `:${colors.bold(port)}/`));
+              console.log(
+                `  ${colors.green('➜')}  ${colors.bold('Pages')}:   ${colorUrl(
+                  `http://127.0.0.1:${wranglerPort}/`
+                )}`
+              );
+            } else {
+              shouldGen = true;
+            }
+          }
+          if (userConfig.wrangler?.log && text) {
+            console.log(text);
+          }
+        });
+
+        proxy.stderr.on('data', (chunk) => {
+          if (userConfig.wrangler?.log) {
+            const text = chunk.toString('utf8').slice(0, -1);
+            console.error(text);
+          }
+        });
+
+        proxy.on('exit', () => {
+          startWrangler();
+        });
+      }
     },
     buildEnd() {
       if (userConfig.outDir) {

@@ -6,8 +6,10 @@ declare module 'vite-plugin-cloudflare-functions/client' {
   interface PagesResponseBody {
     '/api/:msg': {
       GET: CloudflareResponseBody<typeof import('../functions/api/[msg]')['onRequestGet']>;
+      POST: CloudflareResponseBody<typeof import('../functions/api/[msg]')['onRequestPost']>;
+    };
+    '/api/**': {
+      ALL: CloudflareResponseBody<typeof import('../functions/api/_middleware')['onRequest']>;
     };
   }
 }
-
-export {};
