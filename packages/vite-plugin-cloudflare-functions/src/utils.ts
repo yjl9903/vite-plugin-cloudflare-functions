@@ -1,3 +1,1 @@
-export function makeResponse<T>(body: T): T {
-  return body;
-}
+export * from './functions';

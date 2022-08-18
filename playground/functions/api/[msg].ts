@@ -1,4 +1,3 @@
-export const onRequestGet = () =>
-  new Response(JSON.stringify({ status: 'OK', data: 'Hello' }), {
-    headers: { 'Content-Type': 'application/json' }
-  });
+import { makeResponse } from 'vite-plugin-cloudflare-functions/utils';
+
+export const onRequestGet = () => makeResponse({ status: 'OK', data: 'Hello' });

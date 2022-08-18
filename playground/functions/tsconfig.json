@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
@@ -18,10 +19,10 @@
     "strict": true,
     "target": "ESNext",
     "types": [
-      "@cloudflare/workers-types"
+      "vite-plugin-cloudflare-functions/globals"
     ]
   },
   "include": [
-    "./"
+    "api"
   ]
 }

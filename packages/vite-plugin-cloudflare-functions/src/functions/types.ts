@@ -1,8 +1,8 @@
 /// <reference types="@cloudflare/workers-types" />
 
-declare type CloudflareResponse<T = any> = globalThis.Response;
+export type CloudflareResponse<T = any> = globalThis.Response;
 
-declare type CloudflarePagesFunction<
+export type CloudflarePagesFunction<
   T = unknown,
   Env = unknown,
   Params extends string = any,

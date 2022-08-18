@@ -24,6 +24,7 @@ importers:
 
   packages/vite-plugin-cloudflare-functions:
     specifiers:
+      '@cloudflare/workers-types': ^3.14.1
       '@types/node': ^18.0.0
       picocolors: ^1.0.0
       unbuild: ^0.8.8
@@ -31,6 +32,7 @@ importers:
       vitest: ^0.22.0
       wrangler: ^2.0.26
     dependencies:
+      '@cloudflare/workers-types': 3.14.1
       picocolors: 1.0.0
     devDependencies:
       '@types/node': 18.0.0
@@ -41,17 +43,23 @@ importers:
 
   playground/app:
     specifiers:
-      '@cloudflare/workers-types': ^3.14.1
       vite: ^3.0.8
       vite-plugin-cloudflare-functions: workspace:*
       vite-plugin-info: 0.3.1
       wrangler: ^2.0.26
     devDependencies:
-      '@cloudflare/workers-types': 3.14.1
       vite: 3.0.8
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-info: 0.3.1_vite@3.0.8
       wrangler: 2.0.26
+
+  playground/functions:
+    specifiers:
+      '@cloudflare/workers-types': ^3.14.1
+      vite-plugin-cloudflare-functions: workspace:*
+    devDependencies:
+      '@cloudflare/workers-types': 3.14.1
+      vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
 
 packages:
 
@@ -268,7 +276,6 @@ packages:
 
   /@cloudflare/workers-types/3.14.1:
     resolution: {integrity: sha512-B1/plF62pt+H2IJHvApK8fdOJAVsvojvacuac8x8s+JIyqbropMyqNqHTKLm3YD8ZFLGwYeFTudU+PQ7vGvBdA==}
-    dev: true
 
   /@esbuild-plugins/node-globals-polyfill/0.1.1_esbuild@0.14.51:
     resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}
