@@ -1,7 +1,7 @@
 import * as path from 'node:path';
 import { existsSync, promises as fs } from 'node:fs';
 
-import { getDefaultTsconfig } from './template';
+import { DtsFilename, getDefaultTsconfig, getDts } from './template';
 
 export async function prepare(root: string) {
   const internalRoot = path.join(root, '.cloudflare');
@@ -9,14 +9,18 @@ export async function prepare(root: string) {
     await fs.mkdir(internalRoot);
   }
 
-  const tsconfigPath = path.join(internalRoot, 'tsconfig.json');
-  const tsconfig = getDefaultTsconfig();
-  const tsconfigRaw = JSON.stringify(tsconfig, null, 2);
-  if (existsSync(tsconfigPath)) {
-    if ((await fs.readFile(tsconfigPath, 'utf-8')).trim() !== tsconfigRaw) {
-      await fs.writeFile(tsconfigPath, tsconfigRaw, 'utf-8');
+  async function diffWrite(name: string, content: string) {
+    const file = path.join(internalRoot, name);
+    if (existsSync(file)) {
+      if ((await fs.readFile(file, 'utf-8')).trim() !== content.trim()) {
+        await fs.writeFile(file, content, 'utf-8');
+      }
+    } else {
+      await fs.writeFile(file, content, 'utf-8');
     }
-  } else {
-    await fs.writeFile(tsconfigPath, tsconfigRaw, 'utf-8');
   }
+
+  await diffWrite('tsconfig.json', getDefaultTsconfig());
+
+  await diffWrite(DtsFilename, getDts());
 }
