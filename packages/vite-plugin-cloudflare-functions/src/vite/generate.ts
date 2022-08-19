@@ -29,22 +29,27 @@ export async function generate(functionsRoot: string, dtsPath: string) {
     files.map(async (f) => {
       const absPath = path.join(functionsRoot, f);
       const exports = await getExports(absPath);
-      const route = ensureRoute(f);
-      return [
-        `'${route}': {`,
-        ...exports.map((name) => {
-          const method = name.slice().slice(9).toUpperCase();
-          const realpath = normalizePath(path.relative(dtsPath, removeSuffix(absPath)));
 
-          return (
-            '  ' +
-            `${
-              !!method ? method : 'ALL'
-            }: CloudflareResponseBody<typeof import('${realpath}')['${name}']>;`
-          );
-        }),
-        `};`
-      ].map((t) => '    ' + t);
+      if (exports.length === 0) {
+        const route = ensureRoute(f);
+        return [
+          `'${route}': {`,
+          ...exports.map((name) => {
+            const method = name.slice().slice(9).toUpperCase();
+            const realpath = normalizePath(path.relative(dtsPath, removeSuffix(absPath)));
+
+            return (
+              '  ' +
+              `${
+                !!method ? method : 'ALL'
+              }: CloudflareResponseBody<typeof import('${realpath}')['${name}']>;`
+            );
+          }),
+          `};`
+        ].map((t) => '    ' + t);
+      } else {
+        return [];
+      }
     })
   );
 
