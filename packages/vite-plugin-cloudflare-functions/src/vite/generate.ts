@@ -78,5 +78,5 @@ const ALLOW_EXPORTS = new Set([
 async function getExports(filepath: string) {
   const code = await fs.readFile(filepath, 'utf-8');
   const exports = findExportNames(code);
-  return exports.filter((n) => ALLOW_EXPORTS.has(n));
+  return exports.filter((n) => ALLOW_EXPORTS.has(n)).sort();
 }
