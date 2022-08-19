@@ -1,5 +1,3 @@
-import { CloudflarePagesFunctions, prepare } from './vite';
+import { CloudflarePagesFunctions } from './vite';
 
 export default CloudflarePagesFunctions;
-
-export { prepare };

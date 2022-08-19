@@ -62,13 +62,11 @@
   },
   "files": [
     "dist",
-    "script",
     "*.d.ts"
   ],
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --watch",
-    "postinstall": "node script/postinstall.mjs",
     "test": "vitest",
     "test:ci": "vitest --run",
     "typecheck": "tsc --noEmit"

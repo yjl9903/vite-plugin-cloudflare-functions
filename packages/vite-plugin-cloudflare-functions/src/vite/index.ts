@@ -10,11 +10,8 @@ import kill from 'tree-kill';
 
 import type { UserConfig } from './types';
 
-import { prepare } from './prepare';
 import { generate } from './generate';
 import { normalizePath, debug } from './utils';
-
-export { prepare };
 
 const DefaultPort = 5173;
 const DefaultWranglerPort = 8788;
@@ -169,8 +166,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       }
 
       if (!preparePromise) {
-        preparePromise = prepare(functionsRoot);
-        doAutoGen();
+        preparePromise = doAutoGen();
       }
     },
     configureServer(_server) {
