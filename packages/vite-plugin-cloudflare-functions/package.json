@@ -75,11 +75,13 @@
   },
   "dependencies": {
     "@cloudflare/workers-types": "^3.14.1",
+    "debug": "^4.3.4",
     "fast-glob": "^3.2.11",
     "mlly": "^0.5.13",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.7",
     "@types/node": "^18.0.0",
     "axios": "^0.27.2",
     "ohmyfetch": "^0.4.18",

@@ -2,8 +2,9 @@ import * as path from 'node:path';
 import { promises as fs } from 'node:fs';
 
 import fg from 'fast-glob';
-import { normalizePath } from 'vite';
 import { findExportNames } from 'mlly';
+
+import { normalizePath } from './utils';
 
 export async function generate(functionsRoot: string, dtsPath: string) {
   const files = await fg(['**/*.ts', '**/*.js', '!**/*.d.ts', '!node_modules/**/*'], {

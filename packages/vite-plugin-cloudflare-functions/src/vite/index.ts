@@ -5,12 +5,12 @@ import * as path from 'node:path';
 import { spawn } from 'node:child_process';
 
 import colors from 'picocolors';
-import { normalizePath } from 'vite';
 
 import type { UserConfig } from './types';
 
 import { prepare } from './prepare';
 import { generate } from './generate';
+import { normalizePath, debug } from './utils';
 
 export { prepare };
 
@@ -58,6 +58,8 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
           ? path.resolve(userConfig.root)
           : path.resolve(resolvedConfig.root, 'functions')
       );
+
+      debug(`Functions root: ${functionsRoot}`);
 
       if (!functionsRoot.endsWith('functions') && functionsRoot.endsWith('functions/')) {
         console.log('You should put your worker in directory named as functions/');
@@ -107,33 +109,32 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
           }
         }
 
-        const proxy = spawn(
-          'npx',
-          [
-            'wrangler',
-            'pages',
-            'dev',
-            '--experimental-enable-local-persistence',
-            '--ip',
-            'localhost',
-            '--port',
-            String(wranglerPort),
-            '--proxy',
-            String(port),
-            '--',
-            'npm',
-            '--version'
-          ],
-          {
-            shell: process.platform === 'win32',
-            stdio: ['inherit', 'pipe', 'pipe'],
-            env: {
-              BROWSER: 'none',
-              ...process.env
-            },
-            cwd: path.dirname(functionsRoot)
-          }
-        );
+        const command = [
+          'wrangler',
+          'pages',
+          'dev',
+          '--experimental-enable-local-persistence',
+          '--ip',
+          'localhost',
+          '--port',
+          String(wranglerPort),
+          '--proxy',
+          String(port),
+          '--',
+          'npm',
+          '--version'
+        ];
+        debug(command);
+
+        const proxy = spawn('npx', command, {
+          shell: process.platform === 'win32',
+          stdio: ['inherit', 'pipe', 'pipe'],
+          env: {
+            BROWSER: 'none',
+            ...process.env
+          },
+          cwd: path.dirname(functionsRoot)
+        });
 
         let firstTime = true;
         proxy.stdout.on('data', (chunk) => {
