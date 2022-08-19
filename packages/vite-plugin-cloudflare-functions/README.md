@@ -1,6 +1,6 @@
 # vite-plugin-cloudflare-functions
 
-[![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml)
+[![version](https://img.shields.io/npm/v/vite-plugin-cloudflare-functions?color=rgb%2850%2C203%2C86%29&label=npm)](https://www.npmjs.com/package/vite-plugin-cloudflare-functions) [![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml) [![Demo](https://img.shields.io/badge/Demo-OK-brightgreen)](https://vite-plugin-cloudflare-functions.pages.dev/)
 
 Make Cloudflare Pages Functions works with Vite friendly.
 
