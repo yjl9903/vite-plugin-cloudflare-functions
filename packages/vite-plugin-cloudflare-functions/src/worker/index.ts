@@ -32,6 +32,13 @@ export function makePagesFunction<
   return async (context) => makeResponse(await fn(context));
 }
 
+export function makeRawResponse<T extends BodyInit | null | undefined>(
+  body: T,
+  init: ResponseInit = {}
+): CloudflareResponse<T> {
+  return new CloudflareResponse(body, init);
+}
+
 export function makeResponse<T = any>(
   body: T,
   init: ResponseInit = {}
