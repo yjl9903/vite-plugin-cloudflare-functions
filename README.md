@@ -40,9 +40,10 @@ export default defineConfig({
 
 Just write pages functions as usual, but you should use the following utility functions to make auto-generation work.
 
-+ `makeRawPagesFunction`
 + `makePagesFunction`
++ `makeRawPagesFunction`
 + `makeResponse`
++ `makeRawResponse`
 
 ```ts
 // /api/[msg].ts
