@@ -33,6 +33,7 @@ importers:
       mlly: ^0.5.13
       ohmyfetch: ^0.4.18
       picocolors: ^1.0.0
+      tree-kill: ^1.2.2
       unbuild: ^0.8.9
       vite: ^3.0.8
       vitest: ^0.22.1
@@ -43,6 +44,7 @@ importers:
       fast-glob: 3.2.11
       mlly: 0.5.13
       picocolors: 1.0.0
+      tree-kill: 1.2.2
     devDependencies:
       '@types/debug': 4.1.7
       '@types/node': 18.0.0
@@ -2405,6 +2407,11 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+
+  /tree-kill/1.2.2:
+    resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
+    hasBin: true
+    dev: false
 
   /turbo-android-arm64/1.4.3:
     resolution: {integrity: sha512-ZUvdoEHJkTkOFOO9PKWYrdONDBVqkNsvwEMufTVf07RXgqmbXDPkznzT4hcQm6xXyqWqJdjgSAMdlm+2nNE1Og==}

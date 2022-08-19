@@ -2,9 +2,11 @@ import type { Plugin } from 'vite';
 
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { spawn } from 'node:child_process';
+import { type Readable } from 'node:stream';
+import { type ChildProcessByStdio, spawn } from 'node:child_process';
 
 import colors from 'picocolors';
+import kill from 'tree-kill';
 
 import type { UserConfig } from './types';
 
@@ -22,7 +24,8 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
   let port: number;
   let functionsRoot: string;
 
-  let preparePromise: Promise<void>;
+  let preparePromise: Promise<void> | undefined;
+  let wranglerProcess: ChildProcessByStdio<null, Readable, Readable> | undefined;
 
   if (!userConfig.dts) {
     userConfig.dts = true;
@@ -37,6 +40,106 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       await fs.promises.writeFile(dtsPath, content, 'utf-8');
     }
   };
+
+  function startWrangler() {
+    if (wranglerProcess) return;
+
+    const wranglerPort = userConfig.wrangler?.port ?? DefaultWranglerPort;
+
+    const bindings: string[] = [];
+    if (userConfig.wrangler?.binding) {
+      for (const [key, value] of Object.entries(userConfig.wrangler.binding)) {
+        bindings.push('--binding');
+        bindings.push(`${key}=\\"${value}\\"`);
+      }
+    }
+    if (userConfig.wrangler?.kv) {
+      for (const kv of userConfig.wrangler.kv) {
+        bindings.push('--kv');
+        bindings.push(kv);
+      }
+    }
+    if (userConfig.wrangler?.do) {
+      for (const [key, value] of Object.entries(userConfig.wrangler.do)) {
+        bindings.push('--do');
+        bindings.push(`"${key}=${value}"`);
+      }
+    }
+    if (userConfig.wrangler?.r2) {
+      for (const r2 of userConfig.wrangler.r2) {
+        bindings.push('--r2');
+        bindings.push(r2);
+      }
+    }
+
+    const command = [
+      'wrangler',
+      'pages',
+      'dev',
+      '--ip',
+      'localhost',
+      '--port',
+      String(wranglerPort),
+      '--proxy',
+      String(port),
+      '--experimental-enable-local-persistence',
+      ...bindings,
+      '--',
+      'npm',
+      '--version'
+    ];
+    debug(command);
+
+    wranglerProcess = spawn('npx', command, {
+      shell: process.platform === 'win32',
+      stdio: ['ignore', 'pipe', 'pipe'],
+      env: process.env,
+      cwd: path.dirname(functionsRoot)
+    });
+
+    let firstTime = true;
+    wranglerProcess.stdout.on('data', (chunk) => {
+      const text: string = chunk.toString('utf8').slice(0, -1);
+      if (text.indexOf('Worker reloaded!') !== -1) {
+        if (firstTime) {
+          doAutoGen();
+          firstTime = false;
+          const colorUrl = (url: string) =>
+            colors.cyan(url.replace(/:(\d+)\//, (_, port) => `:${colors.bold(port)}/`));
+          console.log(
+            `  ${colors.green('➜')}  ${colors.bold('Pages')}:   ${colorUrl(
+              `http://127.0.0.1:${wranglerPort}/`
+            )}\n`
+          );
+        } else {
+          shouldGen = true;
+          console.log(
+            `${colors.dim(new Date().toLocaleTimeString())} ${colors.cyan(
+              colors.bold('[cloudflare pages]')
+            )} ${colors.green('functions reload')}`
+          );
+        }
+      }
+      if (userConfig.wrangler?.log && text) {
+        console.log(text);
+      }
+    });
+
+    wranglerProcess.stderr.on('data', (chunk) => {
+      if (userConfig.wrangler?.log) {
+        const text = chunk.toString('utf8').slice(0, -1);
+        console.error(text);
+      }
+    });
+
+    wranglerProcess.on('exit', () => {
+      // Kill wrangler dev server when reloading vite config
+      if (wranglerProcess) {
+        wranglerProcess = undefined;
+        startWrangler();
+      }
+    });
+  }
 
   return {
     name: 'vite-plugin-cloudflare-functions',
@@ -65,8 +168,10 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         console.log('You should put your worker in directory named as functions/');
       }
 
-      preparePromise = prepare(functionsRoot);
-      doAutoGen();
+      if (!preparePromise) {
+        preparePromise = prepare(functionsRoot);
+        doAutoGen();
+      }
     },
     configureServer(_server) {
       if (userConfig.dts) {
@@ -78,101 +183,19 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         }, 1000);
       }
 
-      const wranglerPort = userConfig.wrangler?.port ?? DefaultWranglerPort;
-
       startWrangler();
-
-      function startWrangler() {
-        const bindings: string[] = [];
-        if (userConfig.wrangler?.binding) {
-          for (const [key, value] of Object.entries(userConfig.wrangler.binding)) {
-            bindings.push('--binding');
-            bindings.push(`${key}=\\"${value}\\"`);
-          }
-        }
-        if (userConfig.wrangler?.kv) {
-          for (const kv of userConfig.wrangler.kv) {
-            bindings.push('--kv');
-            bindings.push(kv);
-          }
-        }
-        if (userConfig.wrangler?.do) {
-          for (const [key, value] of Object.entries(userConfig.wrangler.do)) {
-            bindings.push('--do');
-            bindings.push(`"${key}=${value}"`);
-          }
-        }
-        if (userConfig.wrangler?.r2) {
-          for (const r2 of userConfig.wrangler.r2) {
-            bindings.push('--r2');
-            bindings.push(r2);
-          }
-        }
-
-        const command = [
-          'wrangler',
-          'pages',
-          'dev',
-          '--ip',
-          'localhost',
-          '--port',
-          String(wranglerPort),
-          '--proxy',
-          String(port),
-          '--experimental-enable-local-persistence',
-          ...bindings,
-          '--',
-          'npm',
-          '--version'
-        ];
-        debug(command);
-
-        const proxy = spawn('npx', command, {
-          shell: process.platform === 'win32',
-          stdio: ['inherit', 'pipe', 'pipe'],
-          env: {
-            BROWSER: 'none',
-            ...process.env
-          },
-          cwd: path.dirname(functionsRoot)
-        });
-
-        let firstTime = true;
-        proxy.stdout.on('data', (chunk) => {
-          const text: string = chunk.toString('utf8').slice(0, -1);
-          if (text.indexOf('Worker reloaded!') !== -1) {
-            if (firstTime) {
-              doAutoGen();
-              firstTime = false;
-              const colorUrl = (url: string) =>
-                colors.cyan(url.replace(/:(\d+)\//, (_, port) => `:${colors.bold(port)}/`));
-              console.log(
-                `  ${colors.green('➜')}  ${colors.bold('Pages')}:   ${colorUrl(
-                  `http://127.0.0.1:${wranglerPort}/`
-                )}\n`
-              );
-            } else {
-              shouldGen = true;
-            }
-          }
-          if (userConfig.wrangler?.log && text) {
-            console.log(text);
-          }
-        });
-
-        proxy.stderr.on('data', (chunk) => {
-          if (userConfig.wrangler?.log) {
-            const text = chunk.toString('utf8').slice(0, -1);
-            console.error(text);
-          }
-        });
-
-        proxy.on('exit', () => {
-          startWrangler();
-        });
-      }
     },
     closeBundle() {
+      if (wranglerProcess) {
+        const pid = wranglerProcess.pid;
+        debug(`Kill wrangler (PID: ${pid})`);
+        wranglerProcess = undefined;
+        if (pid) {
+          return new Promise((res) => kill(pid, () => res()));
+        }
+      }
+    },
+    renderStart() {
       if (userConfig.outDir) {
         const functionsDst = normalizePath(
           userConfig.outDir === true
