@@ -36,7 +36,7 @@ export function makeResponse<T = any>(
   body: T,
   init: ResponseInit = {}
 ): CloudflareResponse<T extends CloudflareResponse<infer R> ? R : T> {
-  if (body instanceof Response) {
+  if (body instanceof Response || body instanceof CloudflareResponse) {
     return body;
   } else {
     return new CloudflareResponse(JSON.stringify(body), {
