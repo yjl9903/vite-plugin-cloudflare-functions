@@ -149,7 +149,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
               console.log(
                 `  ${colors.green('➜')}  ${colors.bold('Pages')}:   ${colorUrl(
                   `http://127.0.0.1:${wranglerPort}/`
-                )}`
+                )}\n`
               );
             } else {
               shouldGen = true;
