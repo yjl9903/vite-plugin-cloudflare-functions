@@ -30,7 +30,7 @@ export async function generate(functionsRoot: string, dtsPath: string) {
       const absPath = path.join(functionsRoot, f);
       const exports = await getExports(absPath);
 
-      if (exports.length === 0) {
+      if (exports.length > 0) {
         const route = ensureRoute(f);
         return [
           `'${route}': {`,
