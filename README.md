@@ -2,7 +2,11 @@
 
 [![version](https://img.shields.io/npm/v/vite-plugin-cloudflare-functions?color=rgb%2850%2C203%2C86%29&label=npm)](https://www.npmjs.com/package/vite-plugin-cloudflare-functions) [![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml) [![Demo](https://img.shields.io/badge/Demo-OK-brightgreen)](https://vite-plugin-cloudflare-functions.pages.dev/)
 
-Make Cloudflare Pages Functions works with Vite friendly.
+Make [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/platform/functions/) works with Vite friendly.
+
+> **Notice**
+>
+> Cloudflare Pages Functions is currently in beta stage.
 
 ## Features
 
@@ -36,6 +40,10 @@ export default defineConfig({
 
 Just write pages functions as usual, but you should use the following utility functions to make auto-generation work.
 
++ `makeRawPagesFunction`
++ `makePagesFunction`
++ `makeResponse`
+
 ```ts
 // /api/[msg].ts
 
@@ -60,7 +68,7 @@ export const onRequestPost = makeRawPagesFunction(({ params }) =>
 
 #### Override environment
 
-For example, you have set the environment variable `PASS`.
+For example, you have set the environment variable `PASS` (you can config it in the plugin option, see [Configuration](#configuration)).
 
 ```ts
 // cloudflare.d.ts
@@ -111,6 +119,8 @@ Full example is [here](./playground/).
 ## Configuration
 
 ```ts
+// vite.config.ts
+
 import { defineConfig } from 'vite';
 
 import CloudflarePagesFunctions from 'vite-plugin-cloudflare-functions';
