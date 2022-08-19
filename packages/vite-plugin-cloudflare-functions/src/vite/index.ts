@@ -172,7 +172,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         });
       }
     },
-    buildEnd() {
+    closeBundle() {
       if (userConfig.outDir) {
         const functionsDst = normalizePath(
           userConfig.outDir === true
