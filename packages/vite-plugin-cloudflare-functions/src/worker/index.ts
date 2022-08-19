@@ -32,7 +32,10 @@ export function makePagesFunction<
   return async (context) => makeResponse(await fn(context));
 }
 
-export function makeResponse<T = any>(body: T, init: ResponseInit = {}): CloudflareResponse<T> {
+export function makeResponse<T = any>(
+  body: T,
+  init: ResponseInit = {}
+): CloudflareResponse<T extends CloudflareResponse<infer R> ? R : T> {
   if (body instanceof Response) {
     return body;
   } else {
