@@ -7,9 +7,11 @@ import { findExportNames } from 'mlly';
 import { normalizePath } from './utils';
 
 export async function generate(functionsRoot: string, dtsPath: string) {
-  const files = await fg(['**/*.ts', '**/*.js', '!**/*.d.ts', '!node_modules/**/*'], {
-    cwd: functionsRoot
-  });
+  const files = (
+    await fg(['**/*.ts', '**/*.js', '!**/*.d.ts', '!node_modules/**/*'], {
+      cwd: functionsRoot
+    })
+  ).sort();
 
   const removeSuffix = (file: string) => file.replace(/\.\w+$/, '');
   const ensureRoute = (file: string) => {
@@ -64,19 +66,21 @@ export async function generate(functionsRoot: string, dtsPath: string) {
   ].join('\n');
 }
 
-const ALLOW_EXPORTS = new Set([
-  'onRequest',
-  'onRequestGet',
-  'onRequestPost',
-  'onRequestPut',
-  'onRequestPatch',
-  'onRequestDelete',
-  'onRequestHead',
-  'onRequestOptions'
+const ALLOW_EXPORTS = new Map([
+  ['onRequest', 0],
+  ['onRequestGet', 1],
+  ['onRequestHead', 2],
+  ['onRequestPost', 3],
+  ['onRequestPut', 4],
+  ['onRequestDelete', 5],
+  ['onRequestOptions', 6],
+  ['onRequestPatch', 7]
 ]);
 
 async function getExports(filepath: string) {
   const code = await fs.readFile(filepath, 'utf-8');
   const exports = findExportNames(code);
-  return exports.filter((n) => ALLOW_EXPORTS.has(n)).sort();
+  return exports
+    .filter((n) => ALLOW_EXPORTS.has(n))
+    .sort((a, b) => ALLOW_EXPORTS.get(a)! - ALLOW_EXPORTS.get(b)!);
 }
