@@ -54,13 +54,16 @@ export async function generate(functionsRoot: string, dtsPath: string) {
       }
     })
   );
+  const lines = routes.flat();
+
+  if (lines.length === 0) return '';
 
   return [
     `import type { CloudflareResponseBody } from 'vite-plugin-cloudflare-functions/worker';\n`,
     `import 'vite-plugin-cloudflare-functions/client';\n`,
     `declare module 'vite-plugin-cloudflare-functions/client' {`,
     `  interface PagesResponseBody {`,
-    ...routes.flat(),
+    ...lines,
     `  }`,
     `}\n`
   ].join('\n');

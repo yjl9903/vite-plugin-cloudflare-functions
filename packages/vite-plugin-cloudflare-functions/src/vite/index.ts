@@ -34,7 +34,9 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       const dts = userConfig.dts === true ? 'cloudflare.d.ts' : userConfig.dts;
       const dtsPath = path.resolve(root, dts);
       const content = await generate(functionsRoot, path.dirname(dtsPath));
-      await fs.promises.writeFile(dtsPath, content, 'utf-8');
+      if (content && content.length > 0) {
+        await fs.promises.writeFile(dtsPath, content, 'utf-8');
+      }
     }
   };
 
