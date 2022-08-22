@@ -30,7 +30,7 @@ importers:
       axios: ^0.27.2
       debug: ^4.3.4
       fast-glob: ^3.2.11
-      mlly: ^0.5.13
+      mlly: ^0.5.14
       ohmyfetch: ^0.4.18
       picocolors: ^1.0.0
       tree-kill: ^1.2.2
@@ -42,7 +42,7 @@ importers:
       '@cloudflare/workers-types': 3.14.1
       debug: 4.3.4
       fast-glob: 3.2.11
-      mlly: 0.5.13
+      mlly: 0.5.14
       picocolors: 1.0.0
       tree-kill: 1.2.2
     devDependencies:
@@ -1650,8 +1650,8 @@ packages:
     hasBin: true
     dev: true
 
-  /jsonc-parser/3.0.0:
-    resolution: {integrity: sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==}
+  /jsonc-parser/3.1.0:
+    resolution: {integrity: sha512-DRf0QjnNeCUds3xTjKlQQ3DpJD51GvDjJfnxUVWg6PZTo2otSm+slzNAxU/35hF8/oJIKoG9slq30JYOsF2azg==}
 
   /jsonfile/6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
@@ -1800,12 +1800,12 @@ packages:
       typescript: 4.7.4
     dev: true
 
-  /mlly/0.5.13:
-    resolution: {integrity: sha512-0SK2fqoan+PMjADs4I2egAtrtNtpjqRez6PDTCeAdGjUQNJCvO5o9v2NEq52WA1jFmMU97qBr/JgdvCquehDbA==}
+  /mlly/0.5.14:
+    resolution: {integrity: sha512-DgRgNUSX9NIxxCxygX4Xeg9C7GX7OUx1wuQ8cXx9o9LE0e9wrH+OZ9fcnrlEedsC/rtqry3ZhUddC759XD/L0w==}
     dependencies:
       acorn: 8.8.0
       pathe: 0.3.5
-      pkg-types: 0.3.3
+      pkg-types: 0.3.4
       ufo: 0.8.5
 
   /mri/1.2.0:
@@ -1901,9 +1901,6 @@ packages:
     resolution: {integrity: sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==}
     dev: true
 
-  /pathe/0.3.3:
-    resolution: {integrity: sha512-x3nrPvG0HDSDzUiJ0WqtzhN4MD+h5B+dFJ3/qyxVuARlr4Y3aJv8gri2cZzp9Z8sGs2a+aG9gNbKngh3gme57A==}
-
   /pathe/0.3.5:
     resolution: {integrity: sha512-grU/QeYP0ChuE5kjU2/k8VtAeODzbernHlue0gTa27+ayGIu3wqYBIPGfP9r5xSqgCgDd4nWrjKXEfxMillByg==}
 
@@ -1921,9 +1918,17 @@ packages:
   /pkg-types/0.3.3:
     resolution: {integrity: sha512-6AJcCMnjUQPQv/Wk960w0TOmjhdjbeaQJoSKWRQv9N3rgkessCu6J0Ydsog/nw1MbpnxHuPzYbfOn2KmlZO1FA==}
     dependencies:
-      jsonc-parser: 3.0.0
-      mlly: 0.5.13
-      pathe: 0.3.3
+      jsonc-parser: 3.1.0
+      mlly: 0.5.14
+      pathe: 0.3.5
+    dev: true
+
+  /pkg-types/0.3.4:
+    resolution: {integrity: sha512-s214f/xkRpwlwVBToWq9Mu0XlU3HhZMYCnr2var8+jjbavBHh/VCh4pBLsJW29rJ//B1jb4HlpMIaNIMH+W2/w==}
+    dependencies:
+      jsonc-parser: 3.1.0
+      mlly: 0.5.14
+      pathe: 0.3.5
 
   /postcss/8.4.16:
     resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==}
@@ -2016,7 +2021,7 @@ packages:
       es-module-lexer: 0.9.3
       esbuild: 0.15.5
       joycon: 3.1.1
-      jsonc-parser: 3.0.0
+      jsonc-parser: 3.1.0
       rollup: 2.78.0
     transitivePeerDependencies:
       - supports-color
@@ -2372,7 +2377,7 @@ packages:
       magic-string: 0.26.2
       mkdirp: 1.0.4
       mkdist: 0.3.13_typescript@4.7.4
-      mlly: 0.5.13
+      mlly: 0.5.14
       mri: 1.2.0
       pathe: 0.3.5
       pkg-types: 0.3.3
