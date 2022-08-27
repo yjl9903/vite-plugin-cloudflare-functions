@@ -37,7 +37,7 @@ importers:
       unbuild: ^0.8.9
       vite: ^3.0.9
       vitest: ^0.22.1
-      wrangler: ^2.0.26
+      wrangler: ^2.0.27
     dependencies:
       '@cloudflare/workers-types': 3.14.1
       debug: 4.3.4
@@ -53,7 +53,7 @@ importers:
       unbuild: 0.8.9
       vite: 3.0.9
       vitest: 0.22.1
-      wrangler: 2.0.26
+      wrangler: 2.0.27
 
   playground/app:
     specifiers:
@@ -61,14 +61,14 @@ importers:
       vite: ^3.0.9
       vite-plugin-cloudflare-functions: workspace:*
       vite-plugin-info: 0.3.1
-      wrangler: ^2.0.26
+      wrangler: ^2.0.27
     dependencies:
       axios: 0.27.2
     devDependencies:
       vite: 3.0.9
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-info: 0.3.1_vite@3.0.9
-      wrangler: 2.0.26
+      wrangler: 2.0.27
 
   playground/functions:
     specifiers:
@@ -2159,7 +2159,7 @@ packages:
     dev: true
 
   /stack-trace/0.0.10:
-    resolution: {integrity: sha1-VHxws0fo0ytOEI6hoqFZ5f3eGcA=}
+    resolution: {integrity: sha512-KGzahc7puUKkzyMt+IqAep+TVNbKP+k2Lmwhub39m1AsTSkaDutx56aDCo+HLDzf/D26BIHTJWNiTG1KAJiQCg==}
     dev: true
 
   /streamsearch/1.1.0:
@@ -2504,8 +2504,8 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /wrangler/2.0.26:
-    resolution: {integrity: sha512-r0uuk8Iu0iDmADG5l2DuN1++bis8giGSqjvXroiltd6jXd1xHgLhiAOowLpDK48CM9e6AYNVZ/0QF3XGCRUq/w==}
+  /wrangler/2.0.27:
+    resolution: {integrity: sha512-dH0Nv41OiFsHu+mZFMGv1kEO6lOEoxon8kKHToG0YSpGBsObsxurkoyWJDvkAgtnrM00QF8F1Chy15zs0sjJkg==}
     engines: {node: '>=16.7.0'}
     hasBin: true
     dependencies:
