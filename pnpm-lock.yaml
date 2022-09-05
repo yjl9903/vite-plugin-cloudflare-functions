@@ -11,7 +11,7 @@ importers:
       typescript: ^4.8.2
       unbuild: ^0.8.10
       vite: ^3.0.9
-      vitest: ^0.23.0
+      vitest: ^0.23.1
     devDependencies:
       '@types/node': 18.0.0
       bumpp: 8.2.1
@@ -20,7 +20,7 @@ importers:
       typescript: 4.8.2
       unbuild: 0.8.10
       vite: 3.0.9
-      vitest: 0.23.0
+      vitest: 0.23.1
 
   packages/vite-plugin-cloudflare-functions:
     specifiers:
@@ -36,7 +36,7 @@ importers:
       tree-kill: ^1.2.2
       unbuild: ^0.8.10
       vite: ^3.0.9
-      vitest: ^0.23.0
+      vitest: ^0.23.1
       wrangler: ^2.0.28
     dependencies:
       '@cloudflare/workers-types': 3.16.0
@@ -52,7 +52,7 @@ importers:
       ohmyfetch: 0.4.18
       unbuild: 0.8.10
       vite: 3.0.9
-      vitest: 0.23.0
+      vitest: 0.23.1
       wrangler: 2.0.28
 
   playground/app:
@@ -2465,8 +2465,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.23.0:
-    resolution: {integrity: sha512-I3ctlfiXYprA2tID1qP+m6pmgmKx3HYfRe66MetGOHKCHLY7hz74ihiwIEtN7LReJgF3U5cM735iYPkn/Go1iQ==}
+  /vitest/0.23.1:
+    resolution: {integrity: sha512-kn9pG+h6VA3yj/xRvwgLKEd33rOlzMqJEg3tl5HSm3WUPlkY1Lr1FK8RN1uIqVKvFxmz6HGU3EQW+xW2kazRkQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
