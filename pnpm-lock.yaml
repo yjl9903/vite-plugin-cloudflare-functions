@@ -31,7 +31,7 @@ importers:
       debug: ^4.3.4
       fast-glob: ^3.2.12
       mlly: ^0.5.14
-      ohmyfetch: ^0.4.18
+      ohmyfetch: ^0.4.19
       picocolors: ^1.0.0
       tree-kill: ^1.2.2
       unbuild: ^0.8.11
@@ -49,7 +49,7 @@ importers:
       '@types/debug': 4.1.7
       '@types/node': 18.0.0
       axios: 0.27.2_debug@4.3.4
-      ohmyfetch: 0.4.18
+      ohmyfetch: 0.4.19
       unbuild: 0.8.11
       vite: 3.1.3
       vitest: 0.23.4
@@ -1836,8 +1836,8 @@ packages:
     hasBin: true
     dev: true
 
-  /node-fetch-native/0.1.4:
-    resolution: {integrity: sha512-10EKpOCQPXwZVFh3U1ptOMWBgKTbsN7Vvo6WVKt5pw4hp8zbv6ZVBZPlXw+5M6Tyi1oc1iD4/sNPd71KYA16tQ==}
+  /node-fetch-native/0.1.5:
+    resolution: {integrity: sha512-4NYY0JOTYFsahDjKy4gId6uuf7TPzkIDSDMuvtmlFd2Jf25tj9fQsDD5+kLdzM7sm6BbG8lL/154tdrsgN25Zw==}
     dev: true
 
   /node-forge/1.3.1:
@@ -1854,13 +1854,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ohmyfetch/0.4.18:
-    resolution: {integrity: sha512-MslzNrQzBLtZHmiZBI8QMOcMpdNFlK61OJ34nFNFynZ4v+4BonfCQ7VIN4EGXvGGq5zhDzgdJoY3o9S1l2T7KQ==}
+  /ohmyfetch/0.4.19:
+    resolution: {integrity: sha512-OH2xVeRPNsHkx+JFdq1ewe9EwVDfTrv6lsBHpIx8wIWXowP5FyLhhYVaXIVlPsW542rt7gmwK14FwIDWUXEO+Q==}
     dependencies:
       destr: 1.1.1
-      node-fetch-native: 0.1.4
+      node-fetch-native: 0.1.5
       ufo: 0.8.5
-      undici: 5.5.1
+      undici: 5.10.0
     dev: true
 
   /once/1.4.0:
@@ -2404,8 +2404,8 @@ packages:
       - supports-color
     dev: true
 
-  /undici/5.5.1:
-    resolution: {integrity: sha512-MEvryPLf18HvlCbLSzCW0U00IMftKGI5udnjrQbC5D4P0Hodwffhv+iGfWuJwg16Y/TK11ZFK8i+BPVW2z/eAw==}
+  /undici/5.10.0:
+    resolution: {integrity: sha512-c8HsD3IbwmjjbLvoZuRI26TZic+TSEe8FPMLLOkN1AfYRhdjnKBU6yL+IwcSCbdZiX4e5t0lfMDLDCqj4Sq70g==}
     engines: {node: '>=12.18'}
     dev: true
 
