@@ -37,7 +37,7 @@ importers:
       unbuild: ^0.8.11
       vite: ^3.1.3
       vitest: ^0.23.4
-      wrangler: ^2.1.5
+      wrangler: ^2.1.6
     dependencies:
       '@cloudflare/workers-types': 3.16.0
       debug: 4.3.4
@@ -53,7 +53,7 @@ importers:
       unbuild: 0.8.11
       vite: 3.1.3
       vitest: 0.23.4
-      wrangler: 2.1.5
+      wrangler: 2.1.6
 
   playground/app:
     specifiers:
@@ -61,14 +61,14 @@ importers:
       vite: ^3.1.3
       vite-plugin-cloudflare-functions: workspace:*
       vite-plugin-info: 0.3.1
-      wrangler: ^2.1.5
+      wrangler: ^2.1.6
     dependencies:
       axios: 0.27.2
     devDependencies:
       vite: 3.1.3
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-info: 0.3.1_vite@3.1.3
-      wrangler: 2.1.5
+      wrangler: 2.1.6
 
   playground/functions:
     specifiers:
@@ -2522,8 +2522,8 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /wrangler/2.1.5:
-    resolution: {integrity: sha512-j8nTCSygWdsPwPBytZj0oUSAAUCt8sh6K8ZTewHMNzT8yGGAb5aXIdSfzyGYTfp6dnMqaafz4Khyf34XmHcXGQ==}
+  /wrangler/2.1.6:
+    resolution: {integrity: sha512-gwIdA5UPNA/u6U2vCVit3t75ldWmBiN11OQOK48G0u1xN/gdH/ktHWR/C8blDXTAM4c53mLJJw5u5X55ZR1LLw==}
     engines: {node: '>=16.13.0'}
     hasBin: true
     dependencies:
