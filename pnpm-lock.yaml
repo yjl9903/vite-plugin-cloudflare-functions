@@ -8,7 +8,7 @@ importers:
       bumpp: latest
       prettier: latest
       turbo: latest
-      typescript: ^4.8.3
+      typescript: ^4.8.4
       unbuild: ^0.8.11
       vite: ^3.1.3
       vitest: ^0.23.4
@@ -16,8 +16,8 @@ importers:
       '@types/node': 18.0.0
       bumpp: 8.2.1
       prettier: 2.7.1
-      turbo: 1.4.7
-      typescript: 4.8.3
+      turbo: 1.5.4
+      typescript: 4.8.4
       unbuild: 0.8.11
       vite: 3.1.3
       vitest: 0.23.4
@@ -1790,7 +1790,7 @@ packages:
     hasBin: true
     dev: true
 
-  /mkdist/0.3.13_typescript@4.8.3:
+  /mkdist/0.3.13_typescript@4.8.4:
     resolution: {integrity: sha512-+eCPpkr8l2X630y5PIlkts2tzYEsb+aGIgXdrQv9ZGtWE2bLlD6kVIFfI6FJwFpjjw4dPPyorxQc6Uhm/oXlvg==}
     hasBin: true
     peerDependencies:
@@ -1806,7 +1806,7 @@ packages:
       jiti: 1.14.0
       mri: 1.2.0
       pathe: 0.2.0
-      typescript: 4.8.3
+      typescript: 4.8.4
     dev: true
 
   /mlly/0.5.16:
@@ -2008,7 +2008,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.2_ihkqvyh37tzxtjmovjyy2yrv7m:
+  /rollup-plugin-dts/4.2.2_erg3lb24hqpi6uwikjfrj6uqyu:
     resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -2017,7 +2017,7 @@ packages:
     dependencies:
       magic-string: 0.26.3
       rollup: 2.79.0
-      typescript: 4.8.3
+      typescript: 4.8.4
     optionalDependencies:
       '@babel/code-frame': 7.18.6
     dev: true
@@ -2233,137 +2233,65 @@ packages:
     hasBin: true
     dev: false
 
-  /turbo-android-arm64/1.4.7:
-    resolution: {integrity: sha512-BtWtH8e8w1GhtYpGQmkcDS/AUzVZhQ4ZZN+qtUFei1wZD7VAdtJ9Wcsfi3WD+mXA6vtpIpRJVfQMcShr8l8ErA==}
-    cpu: [arm64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-darwin-64/1.4.7:
-    resolution: {integrity: sha512-bMvZaAz5diec9feZ0XpQosYI8U0kiOQM2tj2sv0Y2WZbe227wodVMCQMyUowmcotO8nr6NF76Xo5E+H+dnY6LQ==}
+  /turbo-darwin-64/1.5.4:
+    resolution: {integrity: sha512-Bdxnwf+m0bnRb5HsVZLe+GRer+MOUgLNjOxluwD7POETgH8CTWu99DXfIMAVDWNILVmPCZbWv8Qh2XwhmPlBqw==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.4.7:
-    resolution: {integrity: sha512-AyfxYfKgh1EigQKjypbnDoMLuy4e/n/go+KYiWKKIpOaWXWLBokrBWzYN/aI3NMDRUJWK5ExdlWI9Nleelq8uQ==}
+  /turbo-darwin-arm64/1.5.4:
+    resolution: {integrity: sha512-1Jdv6bl0v9TITEYDxwNFXdWMlYOifWdnrzkTDyaUV/IM0iL1oGiuD4ZdM9VfbR1D7y573dCmVPvbzgV3GQbJZA==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-freebsd-64/1.4.7:
-    resolution: {integrity: sha512-T5/osfbCh0rL53MFS5byFFfsR3vPMHIKIJ4fMMCNkoHsmFj2R0Pv53nqhEItogt0FJwCDHPyt7oBqO83H/AWQQ==}
-    cpu: [x64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-freebsd-arm64/1.4.7:
-    resolution: {integrity: sha512-PL+SaO78AUCas+YKj01UiS2rpmGcxz8XPmLdFWmq6PYjPX6GL5UBAc3pkBphIm0aTLZtsikoEul+JrwAuAy6UA==}
-    cpu: [arm64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-linux-32/1.4.7:
-    resolution: {integrity: sha512-dK94UwDzySMALoQtjBVVPbWJZP6xw3yHGuytM3q5p4kfMZPSA+rgNBn5T5Af2Rc7jxlLAsu5ODJ0SgIbWSF5Hg==}
-    cpu: [ia32]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-linux-64/1.4.7:
-    resolution: {integrity: sha512-F6IM23zgTYo9gYJaNp17gVvQBt0hMIvz52OF91DpPYSLpV2h9OSlzPJ3j5TGaWueS/bc/YCV23+VojXX/MauGQ==}
+  /turbo-linux-64/1.5.4:
+    resolution: {integrity: sha512-FbsXHOIkFnjX4Qu7ZtoCimmy5GlnTYuy66TO2re3i+jy+a59XOAnhU8tT/+FcA73oDAnSv/SAbz1gbsknCU4PA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm/1.4.7:
-    resolution: {integrity: sha512-FTh4itdMNZ7IxGKknFnQ6iPO9vGGKqyySkCYLR01lnw6BTnKL9KuM9XUCBRyn7dNmHhAnqu1ZtVsBkH7CE7DEw==}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-linux-arm64/1.4.7:
-    resolution: {integrity: sha512-kFe5jzj3FoY6jAEwyNEswndj1t/fPl0qyxfcQv6aNPz7Nb2Lh7mY/EEse+CG3ydIo5RZKba7ppQoBSDmHx7JsA==}
+  /turbo-linux-arm64/1.5.4:
+    resolution: {integrity: sha512-dYX2ekvYsHGSEsLI+NdoYskr1IEmUES+rup3vc9fFziYX+qOoQuttB7VYA9z6+E4fPpLCxAShPwzxmaXhplCNg==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-mips64le/1.4.7:
-    resolution: {integrity: sha512-756nG8dnPQVcnl9s70S4NQ43aJjpsnc2h0toktPO+9u2ayv9XTbIPvZLFsS55bDeYhodDGvxoB96W6Xnx01hyQ==}
-    cpu: [mipsel]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-linux-ppc64le/1.4.7:
-    resolution: {integrity: sha512-VS2ofGN/XsafNGJdZ21UguURHb7KRG879yWLj59hO1d+0xXXQbx7ljsmEPOhiE4UjEdx4Ur6P44BhztTgDx9Og==}
-    cpu: [ppc64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-windows-32/1.4.7:
-    resolution: {integrity: sha512-M5GkZdA0CbJAOcR8SScM63CBV+NtX7qjhoNNOl0F99nGJ+rO3dH71CcM/rbhlz9SQzKQoX8rcuwZHe4r2HZAug==}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /turbo-windows-64/1.4.7:
-    resolution: {integrity: sha512-ftZUtZ1BX1vi8MbxKr+a7riIkhwvGnNTtWGprVu+aDJ8PnV+lNqbkrLJGvKP7Cn22hGTfzcjNNPcJ5PBZpQEQw==}
+  /turbo-windows-64/1.5.4:
+    resolution: {integrity: sha512-xMmmfplaPrN2Bac+tmOo7bncKhcjv2a/6UGXobNspWzwf6dEboHtxbsP0kIfqoi/22gyj66jg/K/gFJgX08pnw==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64/1.4.7:
-    resolution: {integrity: sha512-mZ79XeJFfaeVKdBV3w0eoGaqAxFnwxrme0jZtSWemAbeDSCF/13wcbLGwtq0+Lu0LxEGweeQ5AqsCIc9t9i6sA==}
+  /turbo-windows-arm64/1.5.4:
+    resolution: {integrity: sha512-6/DfBdUK+FrbRavQQY9XnxW+1SHPMsuooVjrW8nSh9KFXxTccbFvslUO38usl/lZ0EMKu7MC8D7Vf/zQ9pYGyw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.4.7:
-    resolution: {integrity: sha512-oIk7PAISPidDOkTM5M+ydEe5GDQ/+TahDgIbaYKeAAy2Qpmur4s0HybSDWHIdxLqI96OPD/mOKymRLrjh3Mdhg==}
+  /turbo/1.5.4:
+    resolution: {integrity: sha512-8txVfU6J4H5ZkSxr6N6Qn7H+W2Cpr0Uh67VeCH4/ZIbH4u24qPFZA9emlGcss0tI1pZHKGJ0+KjoSzC7vWqN2g==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-android-arm64: 1.4.7
-      turbo-darwin-64: 1.4.7
-      turbo-darwin-arm64: 1.4.7
-      turbo-freebsd-64: 1.4.7
-      turbo-freebsd-arm64: 1.4.7
-      turbo-linux-32: 1.4.7
-      turbo-linux-64: 1.4.7
-      turbo-linux-arm: 1.4.7
-      turbo-linux-arm64: 1.4.7
-      turbo-linux-mips64le: 1.4.7
-      turbo-linux-ppc64le: 1.4.7
-      turbo-windows-32: 1.4.7
-      turbo-windows-64: 1.4.7
-      turbo-windows-arm64: 1.4.7
+      turbo-darwin-64: 1.5.4
+      turbo-darwin-arm64: 1.5.4
+      turbo-linux-64: 1.5.4
+      turbo-linux-arm64: 1.5.4
+      turbo-windows-64: 1.5.4
+      turbo-windows-arm64: 1.5.4
     dev: true
 
   /type-detect/4.0.8:
@@ -2371,8 +2299,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/4.8.3:
-    resolution: {integrity: sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==}
+  /typescript/4.8.4:
+    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
@@ -2399,7 +2327,7 @@ packages:
       jiti: 1.14.0
       magic-string: 0.26.3
       mkdirp: 1.0.4
-      mkdist: 0.3.13_typescript@4.8.3
+      mkdist: 0.3.13_typescript@4.8.4
       mlly: 0.5.16
       mri: 1.2.0
       pathe: 0.3.5
@@ -2407,10 +2335,10 @@ packages:
       pretty-bytes: 6.0.0
       rimraf: 3.0.2
       rollup: 2.79.0
-      rollup-plugin-dts: 4.2.2_ihkqvyh37tzxtjmovjyy2yrv7m
+      rollup-plugin-dts: 4.2.2_erg3lb24hqpi6uwikjfrj6uqyu
       rollup-plugin-esbuild: 4.10.1_ajqsvouysgwbbwdvvze7lmgc4q
       scule: 0.3.2
-      typescript: 4.8.3
+      typescript: 4.8.4
       untyped: 0.5.0
     transitivePeerDependencies:
       - supports-color
