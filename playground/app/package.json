@@ -7,7 +7,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.0.0"
   },
   "devDependencies": {
     "vite": "^3.1.3",
