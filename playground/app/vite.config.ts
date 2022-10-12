@@ -6,6 +6,10 @@ import CloudflarePagesFunctions from 'vite-plugin-cloudflare-functions';
 export default defineConfig({
   plugins: [
     Info(),
-    CloudflarePagesFunctions({ root: '../functions', outDir: '../../', wrangler: { log: true } })
+    CloudflarePagesFunctions({
+      root: '../functions',
+      outDir: '../../',
+      wrangler: { log: true, kv: ['STORE'] }
+    })
   ]
 });

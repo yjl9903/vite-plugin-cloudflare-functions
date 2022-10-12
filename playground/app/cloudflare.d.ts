@@ -11,5 +11,9 @@ declare module 'vite-plugin-cloudflare-functions/client' {
     '/api/**': {
       ALL: CloudflareResponseBody<typeof import('../functions/api/_middleware')['onRequest']>;
     };
+    '/api/state/:key': {
+      GET: CloudflareResponseBody<typeof import('../functions/api/state/[key]')['onRequestGet']>;
+      POST: CloudflareResponseBody<typeof import('../functions/api/state/[key]')['onRequestPost']>;
+    };
   }
 }
