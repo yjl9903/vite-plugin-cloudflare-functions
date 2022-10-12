@@ -87,13 +87,13 @@
     "unbuild": "^0.8.11",
     "vite": "^3.1.7",
     "vitest": "^0.24.1",
-    "wrangler": "^2.1.10"
+    "wrangler": "^2.1.11"
   },
   "peerDependencies": {
     "axios": "^1.0.0",
     "ohmyfetch": "^0.4.19",
     "vite": "^3.1.7",
-    "wrangler": "^2.1.10"
+    "wrangler": "^2.1.11"
   },
   "peerDependenciesMeta": {
     "axios": {
