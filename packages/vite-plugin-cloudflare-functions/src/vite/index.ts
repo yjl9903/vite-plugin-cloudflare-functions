@@ -53,7 +53,10 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       }
     }
     if (userConfig.wrangler?.kv) {
-      for (const kv of userConfig.wrangler.kv) {
+      const kvs = Array.isArray(userConfig.wrangler.kv)
+        ? userConfig.wrangler.kv
+        : [userConfig.wrangler.kv];
+      for (const kv of kvs) {
         bindings.push('--kv');
         bindings.push(kv);
       }
@@ -65,7 +68,10 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       }
     }
     if (userConfig.wrangler?.r2) {
-      for (const r2 of userConfig.wrangler.r2) {
+      const r2s = Array.isArray(userConfig.wrangler.r2)
+        ? userConfig.wrangler.r2
+        : [userConfig.wrangler.r2];
+      for (const r2 of r2s) {
         bindings.push('--r2');
         bindings.push(r2);
       }

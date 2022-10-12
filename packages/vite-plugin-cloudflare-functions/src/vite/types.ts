@@ -49,7 +49,7 @@ export interface UserConfig {
     /**
      * Bind KV namespace
      */
-    kv?: string[];
+    kv?: string | string[];
 
     /**
      * Bind Durable Object
@@ -59,6 +59,6 @@ export interface UserConfig {
     /**
      * Bind R2 bucket
      */
-    r2?: string[];
+    r2?: string | string[];
   };
 }

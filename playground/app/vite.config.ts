@@ -9,7 +9,7 @@ export default defineConfig({
     CloudflarePagesFunctions({
       root: '../functions',
       outDir: '../../',
-      wrangler: { log: true, kv: ['STORE'] }
+      wrangler: { log: true, kv: 'STORE' }
     })
   ]
 });
