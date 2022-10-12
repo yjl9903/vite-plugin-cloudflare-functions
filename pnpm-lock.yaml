@@ -27,7 +27,7 @@ importers:
       '@cloudflare/workers-types': ^3.16.0
       '@types/debug': ^4.1.7
       '@types/node': ^18.0.0
-      axios: ^1.0.0
+      axios: ^1.1.2
       debug: ^4.3.4
       fast-glob: ^3.2.12
       mlly: ^0.5.16
@@ -48,7 +48,7 @@ importers:
     devDependencies:
       '@types/debug': 4.1.7
       '@types/node': 18.0.0
-      axios: 1.0.0_debug@4.3.4
+      axios: 1.1.2_debug@4.3.4
       ohmyfetch: 0.4.19
       unbuild: 0.8.11
       vite: 3.1.7
@@ -57,13 +57,13 @@ importers:
 
   playground/app:
     specifiers:
-      axios: ^1.0.0
+      axios: ^1.1.2
       vite: ^3.1.7
       vite-plugin-cloudflare-functions: workspace:*
       vite-plugin-info: 0.3.1
       wrangler: ^2.1.11
     dependencies:
-      axios: 1.0.0
+      axios: 1.1.2
     devDependencies:
       vite: 3.1.7
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
@@ -731,8 +731,8 @@ packages:
   /asynckit/0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  /axios/1.0.0:
-    resolution: {integrity: sha512-SsHsGFN1qNPFT5QhSoSD37SHDfGyLSW5AESmyLk2JeCMHv5g0I9g0Hz/zQHx2KNe0jGXh2q2hAm7OdkXm360CA==}
+  /axios/1.1.2:
+    resolution: {integrity: sha512-bznQyETwElsXl2RK7HLLwb5GPpOLlycxHCtrpDR/4RqqBzjARaOTo3jz4IgtntWUYee7Ne4S8UHd92VCuzPaWA==}
     dependencies:
       follow-redirects: 1.15.1
       form-data: 4.0.0
@@ -741,8 +741,8 @@ packages:
       - debug
     dev: false
 
-  /axios/1.0.0_debug@4.3.4:
-    resolution: {integrity: sha512-SsHsGFN1qNPFT5QhSoSD37SHDfGyLSW5AESmyLk2JeCMHv5g0I9g0Hz/zQHx2KNe0jGXh2q2hAm7OdkXm360CA==}
+  /axios/1.1.2_debug@4.3.4:
+    resolution: {integrity: sha512-bznQyETwElsXl2RK7HLLwb5GPpOLlycxHCtrpDR/4RqqBzjARaOTo3jz4IgtntWUYee7Ne4S8UHd92VCuzPaWA==}
     dependencies:
       follow-redirects: 1.15.1_debug@4.3.4
       form-data: 4.0.0
