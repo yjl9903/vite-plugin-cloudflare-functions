@@ -82,7 +82,7 @@
   "devDependencies": {
     "@types/debug": "^4.1.7",
     "@types/node": "^18.0.0",
-    "axios": "^1.0.0",
+    "axios": "^1.1.2",
     "ohmyfetch": "^0.4.19",
     "unbuild": "^0.8.11",
     "vite": "^3.1.7",
@@ -90,7 +90,7 @@
     "wrangler": "^2.1.10"
   },
   "peerDependencies": {
-    "axios": "^1.0.0",
+    "axios": "^1.1.2",
     "ohmyfetch": "^0.4.19",
     "vite": "^3.1.7",
     "wrangler": "^2.1.10"
