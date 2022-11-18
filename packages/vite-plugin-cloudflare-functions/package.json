@@ -72,7 +72,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@cloudflare/workers-types": "^3.18.0",
+    "@cloudflare/workers-types": "^4.20221111.1",
     "debug": "^4.3.4",
     "fast-glob": "^3.2.12",
     "mlly": "^0.5.16",
