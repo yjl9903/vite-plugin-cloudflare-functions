@@ -83,7 +83,7 @@
     "@types/debug": "^4.1.7",
     "@types/node": "^18.0.0",
     "axios": "^1.2.1",
-    "ohmyfetch": "^0.4.20",
+    "ohmyfetch": "^0.4.21",
     "unbuild": "^1.0.2",
     "vite": "^3.1.8",
     "vitest": "^0.25.6",
@@ -91,7 +91,7 @@
   },
   "peerDependencies": {
     "axios": "^1.2.1",
-    "ohmyfetch": "^0.4.20",
+    "ohmyfetch": "^0.4.21",
     "vite": "^3.1.8",
     "wrangler": "^2.6.2"
   },
