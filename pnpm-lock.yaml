@@ -11,7 +11,7 @@ importers:
       typescript: ^4.9.4
       unbuild: ^1.0.2
       vite: ^3.1.8
-      vitest: ^0.25.6
+      vitest: ^0.26.1
     devDependencies:
       '@types/node': 18.0.0
       bumpp: 8.2.1
@@ -20,7 +20,7 @@ importers:
       typescript: 4.9.4
       unbuild: 1.0.2
       vite: 3.1.8
-      vitest: 0.25.6
+      vitest: 0.26.1
 
   packages/vite-plugin-cloudflare-functions:
     specifiers:
@@ -36,7 +36,7 @@ importers:
       tree-kill: ^1.2.2
       unbuild: ^1.0.2
       vite: ^3.1.8
-      vitest: ^0.25.6
+      vitest: ^0.26.1
       wrangler: ^2.6.2
     dependencies:
       '@cloudflare/workers-types': 4.20221111.1
@@ -52,7 +52,7 @@ importers:
       ohmyfetch: 0.4.20
       unbuild: 1.0.2
       vite: 3.1.8
-      vitest: 0.25.6
+      vitest: 0.26.1
       wrangler: 2.6.2
 
   playground/app:
@@ -680,11 +680,11 @@ packages:
   /@types/chai-subset/1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
     dependencies:
-      '@types/chai': 4.3.3
+      '@types/chai': 4.3.4
     dev: true
 
-  /@types/chai/4.3.3:
-    resolution: {integrity: sha512-hC7OMnszpxhZPduX+m+nrx+uFoLkWOMiR4oa/AZF3MuSETYTZmFfJAHqZEM8MVlvfG7BEUcgvtwoCTxBp6hm3g==}
+  /@types/chai/4.3.4:
+    resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
     dev: true
 
   /@types/debug/4.1.7:
@@ -856,13 +856,13 @@ packages:
     resolution: {integrity: sha512-zBUoFU0ZcxpvSt9IU66dXVT/3ctO1cy4y9cscs1szkPlcWb6pasYM144GqrUygUbT+k7cmUCW61cvskjcv0enQ==}
     dev: true
 
-  /chai/4.3.6:
-    resolution: {integrity: sha512-bbcp3YfHCUzMOvKqsztczerVgBKSsEijCySNlHHbX3VG1nskvqjz5Rfso1gGwD6w6oOV3eI60pKuMOV5MV7p3Q==}
+  /chai/4.3.7:
+    resolution: {integrity: sha512-HLnAzZ2iupm25PlN0xFreAlBA5zaBSv3og0DdeGA4Ar6h6rJ3A0rolRUKJhSF2V10GZKDgWF/VmAEsNWjCRB+A==}
     engines: {node: '>=4'}
     dependencies:
       assertion-error: 1.1.0
       check-error: 1.0.2
-      deep-eql: 3.0.1
+      deep-eql: 4.1.3
       get-func-name: 2.0.0
       loupe: 2.3.4
       pathval: 1.1.1
@@ -970,9 +970,9 @@ packages:
     dependencies:
       ms: 2.1.2
 
-  /deep-eql/3.0.1:
-    resolution: {integrity: sha512-+QeIQyN5ZuO+3Uk5DYh6/1eKO0m0YmJFGNmFHGACpf1ClL1nmlV/p4gNgbl2pJGxgXb4faqo6UE+M5ACEMyVcw==}
-    engines: {node: '>=0.12'}
+  /deep-eql/4.1.3:
+    resolution: {integrity: sha512-WaEtAOpRA1MQ0eohqZjpGD8zdI0Ovsm8mmFhaDN8dvDZzyoUMcYDnf5Y6iu7HTXxf8JDS23qWa4a+hKCDyOPzw==}
+    engines: {node: '>=6'}
     dependencies:
       type-detect: 4.0.8
     dev: true
@@ -2254,6 +2254,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /pathe/0.2.0:
+    resolution: {integrity: sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==}
+    dev: true
+
   /pathe/1.0.0:
     resolution: {integrity: sha512-nPdMG0Pd09HuSsr7QOKUXO2Jr9eqaDiZvDwdyIhNG5SHYujkQHYKDfGQkulBxvbDHz8oHLsTgKN86LSwYzSHAg==}
 
@@ -2720,6 +2724,25 @@ packages:
       builtins: 5.0.1
     dev: true
 
+  /vite-node/0.26.1:
+    resolution: {integrity: sha512-5FJSKZZJz48zFRKHE55WyevZe61hLMQEsqGn+ungfd60kxEztFybZ3yG9ToGFtOWNCCy7Vn5EVuXD8bdeHOSdw==}
+    engines: {node: '>=v14.16.0'}
+    hasBin: true
+    dependencies:
+      debug: 4.3.4
+      mlly: 1.0.0
+      pathe: 0.2.0
+      source-map: 0.6.1
+      source-map-support: 0.5.21
+      vite: 3.1.8
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - terser
+    dev: true
+
   /vite-plugin-info/0.4.0_vite@3.1.8:
     resolution: {integrity: sha512-KCDhf637MLkr3T5Pv2X7qo9qDOjXsFPD+EGhMAkOMnoYfsrJA68hvLNBqwxFpRGvHWCDmBKfggWER2bJadLlyg==}
     peerDependencies:
@@ -2759,8 +2782,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.25.6:
-    resolution: {integrity: sha512-jdPgmZ7BcDnm1+hmMPIl9BZjSy+b8Y8V0tQMsv7ECO90Qic7EZ5/+traILXLpsXgqK5KgVrUJmchevAUuKL/1w==}
+  /vitest/0.26.1:
+    resolution: {integrity: sha512-qTLRnjYmjmJpHlLUtErxtlRqGCe8WItFhGXKklpWivu7CLP9KXN9iTezROe+vf51Kb+BB/fzxK6fUG9DvFGL5Q==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -2781,12 +2804,12 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/chai': 4.3.3
+      '@types/chai': 4.3.4
       '@types/chai-subset': 1.3.3
       '@types/node': 18.0.0
       acorn: 8.8.1
       acorn-walk: 8.2.0
-      chai: 4.3.6
+      chai: 4.3.7
       debug: 4.3.4
       local-pkg: 0.4.2
       source-map: 0.6.1
@@ -2795,6 +2818,7 @@ packages:
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 3.1.8
+      vite-node: 0.26.1
     transitivePeerDependencies:
       - less
       - sass
