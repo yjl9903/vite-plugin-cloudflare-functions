@@ -7,10 +7,10 @@
     "dev": "vite"
   },
   "dependencies": {
-    "axios": "^1.2.1"
+    "axios": "^1.2.2"
   },
   "devDependencies": {
-    "vite": "^3.1.8",
+    "vite": "^4.0.4",
     "vite-plugin-cloudflare-functions": "workspace:*",
     "vite-plugin-info": "0.4.0",
     "wrangler": "^2.6.2"
