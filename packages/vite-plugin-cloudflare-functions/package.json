@@ -81,7 +81,7 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.11.18",
     "axios": "^1.2.2",
     "ohmyfetch": "^0.4.21",
     "unbuild": "^1.0.2",
@@ -110,6 +110,6 @@
     }
   },
   "engines": {
-    "node": ">=v16.17.1"
+    "node": ">=v18.13.0"
   }
 }
