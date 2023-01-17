@@ -11,16 +11,16 @@ importers:
       typescript: ^4.9.4
       unbuild: ^1.1.1
       vite: ^4.0.4
-      vitest: ^0.27.1
+      vitest: ^0.27.2
     devDependencies:
       '@types/node': 18.0.0
       bumpp: 8.2.1
-      prettier: 2.8.2
+      prettier: 2.8.3
       turbo: 1.7.0
       typescript: 4.9.4
       unbuild: 1.1.1
       vite: 4.0.4_@types+node@18.0.0
-      vitest: 0.27.1
+      vitest: 0.27.2
 
   packages/vite-plugin-cloudflare-functions:
     specifiers:
@@ -36,7 +36,7 @@ importers:
       tree-kill: ^1.2.2
       unbuild: ^1.1.1
       vite: ^4.0.4
-      vitest: ^0.27.1
+      vitest: ^0.27.2
       wrangler: ^2.6.2
     dependencies:
       '@cloudflare/workers-types': 4.20221111.1
@@ -52,7 +52,7 @@ importers:
       ohmyfetch: 0.4.21
       unbuild: 1.1.1
       vite: 4.0.4_@types+node@18.0.0
-      vitest: 0.27.1
+      vitest: 0.27.2
       wrangler: 2.6.2
 
   playground/app:
@@ -2264,8 +2264,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /prettier/2.8.2:
-    resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -2704,8 +2704,8 @@ packages:
       builtins: 5.0.1
     dev: true
 
-  /vite-node/0.27.1_@types+node@18.0.0:
-    resolution: {integrity: sha512-d6+ue/3NzsfndWaPbYh/bFkHbmAWfDXI4B874zRx+WREnG6CUHUbBC8lKaRYZjeR6gCPN5m1aVNNRXBYICA9XA==}
+  /vite-node/0.27.2_@types+node@18.0.0:
+    resolution: {integrity: sha512-IDwuVhslF10qCnWOGJui7/2KksAOBHi+UbVo6Pqt4f5lgn+kS2sVvYDsETRG5PSuslisGB5CFGvb9I6FQgymBQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     dependencies:
@@ -2806,8 +2806,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.27.1:
-    resolution: {integrity: sha512-1sIpQ1DVFTEn7c1ici1XHcVfdU4nKiBmPtPAtGKJJJLuJjojTv/OHGgcf69P57alM4ty8V4NMv+7Yoi5Cxqx9g==}
+  /vitest/0.27.2:
+    resolution: {integrity: sha512-y7tdsL2uaQy+KF18AlmNHZe29ukyFytlxrpSTwwmgLE2XHR/aPucJP9FLjWoqjgqFlXzRAjHlFJLU+HDyI/OsA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -2844,7 +2844,7 @@ packages:
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 4.0.4_@types+node@18.0.0
-      vite-node: 0.27.1_@types+node@18.0.0
+      vite-node: 0.27.2_@types+node@18.0.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
