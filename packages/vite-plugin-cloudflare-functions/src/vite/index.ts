@@ -112,7 +112,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
             colors.cyan(url.replace(/:(\d+)\//, (_, port) => `:${colors.bold(port)}/`));
           console.log(
             `  ${colors.green('➜')}  ${colors.bold('Pages')}:   ${colorUrl(
-              `http://127.0.0.1:${wranglerPort}/`
+              `http://localhost:${wranglerPort}/`
             )}\n`
           );
         } else {
