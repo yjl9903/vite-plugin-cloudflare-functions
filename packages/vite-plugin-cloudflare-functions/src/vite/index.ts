@@ -104,7 +104,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
     let firstTime = true;
     wranglerProcess.stdout.on('data', (chunk) => {
       const text: string = chunk.toString('utf8').slice(0, -1);
-      if (text.indexOf('Compiled Worker successfully.') !== -1) {
+      if (text.indexOf('Compiled Worker successfully') !== -1) {
         if (firstTime) {
           doAutoGen();
           firstTime = false;
