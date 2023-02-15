@@ -1,10 +1,10 @@
 # vite-plugin-cloudflare-functions
 
-[![version](https://img.shields.io/npm/v/vite-plugin-cloudflare-functions?color=rgb%2850%2C203%2C86%29&label=npm)](https://www.npmjs.com/package/vite-plugin-cloudflare-functions) [![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml) [![Demo](https://img.shields.io/badge/Demo-OK-brightgreen)](https://vite-plugin-cloudflare-functions.pages.dev/)
+[![version](https://img.shields.io/npm/v/vite-plugin-cloudflare-functions?color=rgb%2850%2C203%2C86%29&label=npm)](https://www.npmjs.com/package/vite-plugin-cloudflare-functions) [![CI](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-cloudflare-functions/actions/workflows/ci.yml) [![miki](https://img.shields.io/endpoint?url=https://pages.onekuma.cn/project/vite-plugin-cloudflare-functions&label=Demo)](https://vite-plugin-cloudflare-functions.pages.dev/)
 
 Make [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/platform/functions/) works with Vite friendly.
 
-> **Notice**
+> **Note**
 >
 > Cloudflare Pages Functions is currently in beta stage.
 
@@ -157,4 +157,4 @@ export default defineConfig({
 
 ## License
 
-MIT License © 2021 [XLor](https://github.com/yjl9903)
+MIT License © 2022 [XLor](https://github.com/yjl9903)
