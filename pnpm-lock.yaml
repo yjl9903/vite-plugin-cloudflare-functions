@@ -30,7 +30,7 @@ importers:
       axios: ^1.3.3
       debug: ^4.3.4
       fast-glob: ^3.2.12
-      mlly: ^1.0.0
+      mlly: ^1.1.0
       ohmyfetch: ^0.4.21
       picocolors: ^1.0.0
       tree-kill: ^1.2.2
@@ -42,7 +42,7 @@ importers:
       '@cloudflare/workers-types': 4.20221111.1
       debug: 4.3.4
       fast-glob: 3.2.12
-      mlly: 1.0.0
+      mlly: 1.1.0
       picocolors: 1.0.0
       tree-kill: 1.2.2
     devDependencies:
@@ -1947,15 +1947,6 @@ packages:
       typescript: 4.9.4
     dev: true
 
-  /mlly/1.0.0:
-    resolution: {integrity: sha512-QL108Hwt+u9bXdWgOI0dhzZfACovn5Aen4Xvc8Jasd9ouRH4NjnrXEiyP3nVvJo91zPlYjVRckta0Nt2zfoR6g==}
-    dependencies:
-      acorn: 8.8.1
-      pathe: 1.0.0
-      pkg-types: 1.0.1
-      ufo: 1.0.0
-    dev: false
-
   /mlly/1.1.0:
     resolution: {integrity: sha512-cwzBrBfwGC1gYJyfcy8TcZU1f+dbH/T+TuOhtYP2wLv/Fb51/uV7HJQfBPtEupZ2ORLRU1EKFS/QfS3eo9+kBQ==}
     dependencies:
@@ -2506,10 +2497,6 @@ packages:
   /ufo/0.8.6:
     resolution: {integrity: sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==}
     dev: true
-
-  /ufo/1.0.0:
-    resolution: {integrity: sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==}
-    dev: false
 
   /ufo/1.0.1:
     resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
