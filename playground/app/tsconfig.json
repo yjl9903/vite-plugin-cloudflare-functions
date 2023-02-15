@@ -32,7 +32,8 @@
     "**/dist/**"
   ],
   "include": [
-    "main.ts",
+    "src/*.ts",
+    "src/*.vue",
     "*.d.ts"
   ]
 }
