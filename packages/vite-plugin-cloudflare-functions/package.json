@@ -72,7 +72,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@cloudflare/workers-types": "^4.20221111.1",
+    "@cloudflare/workers-types": "^4.20230214.0",
     "debug": "^4.3.4",
     "fast-glob": "^3.2.12",
     "mlly": "^1.1.0",
@@ -93,7 +93,7 @@
     "axios": "^1.3.3",
     "ohmyfetch": "^0.4.21",
     "vite": "^3.1.8 || ^4.0.0",
-    "wrangler": "^2.6.2"
+    "wrangler": "^2.9.1"
   },
   "peerDependenciesMeta": {
     "axios": {
@@ -110,6 +110,6 @@
     }
   },
   "engines": {
-    "node": ">=v16.17.1"
+    "node": ">=v16"
   }
 }
