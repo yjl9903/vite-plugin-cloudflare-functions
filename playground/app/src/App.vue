@@ -28,7 +28,7 @@ watch(
 
 <template>
   <div text-xl flex justify-center my8>
-    <div space-y-4>
+    <div space-y-4 max-w="80vw">
       <h1 text-2xl font-bold pb4 border="b-1 base">Vite Plugin Cloudflare Functions</h1>
       <div flex justify-start items-center>
         <span mr2 text-base-500>Endpoint:</span><span mr1 font-bold>/api/</span
@@ -41,7 +41,7 @@ watch(
       </div>
       <div v-if="response">
         <span text-base-500>Response: </span>
-        <pre>{{ JSON.stringify(response, null, 2) }}</pre>
+        <pre overflow-x-auto max-w="80vw">{{ JSON.stringify(response, null, 2) }}</pre>
       </div>
       <div text-base-500 border="t-1 base" pt4>Build at: {{ now.toLocaleString() }}</div>
     </div>
