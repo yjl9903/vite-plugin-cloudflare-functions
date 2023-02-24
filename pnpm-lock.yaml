@@ -58,7 +58,7 @@ importers:
   playground/app:
     specifiers:
       '@onekuma/preset.css': ^0.1.9
-      '@onekuma/reset': ^0.1.8
+      '@onekuma/reset': ^0.1.9
       '@onekuma/ui': ^0.1.8
       '@onekuma/vite': ^0.1.8
       '@vitejs/plugin-vue': ^4.0.0
@@ -76,7 +76,7 @@ importers:
       vue: 3.2.47
     devDependencies:
       '@onekuma/preset.css': 0.1.9
-      '@onekuma/reset': 0.1.8
+      '@onekuma/reset': 0.1.9
       '@onekuma/ui': 0.1.8_55ibuij4zbboohaakajlsmpzny
       '@onekuma/vite': 0.1.8_unocss@0.50.0+vite@4.1.4
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
@@ -1204,8 +1204,8 @@ packages:
     engines: {node: '>=v16.19.0'}
     dev: true
 
-  /@onekuma/reset/0.1.8:
-    resolution: {integrity: sha512-9iT7vh2NrTW7IINN3H3gQHDXk7k4YwN7in9oVjxnb6FBZ+bnlFxZxPshC1UrrIjNyX8KwihXBd9cHWJfeSDJpg==}
+  /@onekuma/reset/0.1.9:
+    resolution: {integrity: sha512-xWwdtLrtLB9a1Z0/kFhzcLdk/2EJNbgw1HBybY+CazJQEsYQAzeJ0fQnQzzeVim8dayPvI9xPbf4KyGvmumBrA==}
     engines: {node: '>=v16.19.0'}
     dev: true
 
