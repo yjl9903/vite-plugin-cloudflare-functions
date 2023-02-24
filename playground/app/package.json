@@ -11,7 +11,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@onekuma/preset.css": "^0.1.8",
+    "@onekuma/preset.css": "^0.1.9",
     "@onekuma/reset": "^0.1.8",
     "@onekuma/ui": "^0.1.8",
     "@onekuma/vite": "^0.1.8",

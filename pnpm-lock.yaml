@@ -14,7 +14,7 @@ importers:
       vitest: ^0.28.5
     devDependencies:
       '@types/node': 18.0.0
-      bumpp: 8.2.1
+      bumpp: 9.0.0
       prettier: 2.8.4
       turbo: 1.8.2
       typescript: 4.9.5
@@ -57,7 +57,7 @@ importers:
 
   playground/app:
     specifiers:
-      '@onekuma/preset.css': ^0.1.8
+      '@onekuma/preset.css': ^0.1.9
       '@onekuma/reset': ^0.1.8
       '@onekuma/ui': ^0.1.8
       '@onekuma/vite': ^0.1.8
@@ -75,7 +75,7 @@ importers:
       axios: 1.3.3
       vue: 3.2.47
     devDependencies:
-      '@onekuma/preset.css': 0.1.8
+      '@onekuma/preset.css': 0.1.9
       '@onekuma/reset': 0.1.8
       '@onekuma/ui': 0.1.8_55ibuij4zbboohaakajlsmpzny
       '@onekuma/vite': 0.1.8_unocss@0.50.0+vite@4.1.4
@@ -1199,6 +1199,11 @@ packages:
     engines: {node: '>=v16.19.0'}
     dev: true
 
+  /@onekuma/preset.css/0.1.9:
+    resolution: {integrity: sha512-2O3dOqFuPDHIXSTblh/XhWggkN2CLEYWdbW40bHs7l75baThqFtvSsEX5N7ayMzrA8x5imGGxjegKlKous2u9Q==}
+    engines: {node: '>=v16.19.0'}
+    dev: true
+
   /@onekuma/reset/0.1.8:
     resolution: {integrity: sha512-9iT7vh2NrTW7IINN3H3gQHDXk7k4YwN7in9oVjxnb6FBZ+bnlFxZxPshC1UrrIjNyX8KwihXBd9cHWJfeSDJpg==}
     engines: {node: '>=v16.19.0'}
@@ -1812,20 +1817,19 @@ packages:
   /builtins/5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.3.7
+      semver: 7.3.8
     dev: true
 
-  /bumpp/8.2.1:
-    resolution: {integrity: sha512-4tHKsWC2mqHQvdjZ4AXgVhS2xMsz8qQ4zYt87vGRXW5tqAjrYa/UJqy7s/dGYI2OIe9ghBdiFhKpyKEX9SXffg==}
+  /bumpp/9.0.0:
+    resolution: {integrity: sha512-I2+JLFQin46NioHg6wi23hYQMVExiJyGblARp5fIHUzLv3rRz9me38eUe2xlQCAl7Ys9X+SlhTaIkttTxiL6cQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       '@jsdevtools/ez-spawn': 3.0.4
       cac: 6.7.14
       fast-glob: 3.2.12
-      kleur: 4.1.4
       prompts: 2.4.2
-      semver: 7.3.7
+      semver: 7.3.8
     dev: true
 
   /busboy/1.6.0:
@@ -2738,7 +2742,7 @@ packages:
     dependencies:
       execa: 6.1.0
       parse-package-name: 1.0.0
-      semver: 7.3.7
+      semver: 7.3.8
       validate-npm-package-name: 4.0.0
     dev: true
 
@@ -3017,8 +3021,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver/7.3.7:
-    resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
+  /semver/7.3.8:
+    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
