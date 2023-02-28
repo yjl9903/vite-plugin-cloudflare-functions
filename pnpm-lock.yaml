@@ -11,16 +11,16 @@ importers:
       typescript: ^4.9.5
       unbuild: ^1.1.2
       vite: ^4.1.4
-      vitest: ^0.29.1
+      vitest: ^0.29.2
     devDependencies:
       '@types/node': 18.0.0
       bumpp: 9.0.0
       prettier: 2.8.4
-      turbo: 1.8.2
+      turbo: 1.8.3
       typescript: 4.9.5
       unbuild: 1.1.2
       vite: 4.1.4_@types+node@18.0.0
-      vitest: 0.29.1
+      vitest: 0.29.2
 
   packages/vite-plugin-cloudflare-functions:
     specifiers:
@@ -36,7 +36,7 @@ importers:
       tree-kill: ^1.2.2
       unbuild: ^1.1.2
       vite: ^4.1.4
-      vitest: ^0.29.1
+      vitest: ^0.29.2
       wrangler: ^2.9.1
     dependencies:
       '@cloudflare/workers-types': 4.20230214.0
@@ -52,7 +52,7 @@ importers:
       ohmyfetch: 0.4.21
       unbuild: 1.1.2
       vite: 4.1.4_@types+node@18.0.0
-      vitest: 0.29.1
+      vitest: 0.29.2
       wrangler: 2.9.1
 
   playground/app:
@@ -1556,30 +1556,30 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /@vitest/expect/0.29.1:
-    resolution: {integrity: sha512-VFt1u34D+/L4pqjLA8VGPdHbdF8dgjX9Nq573L9KG6/7MIAL9jmbEIKpXudmxjoTwcyczOXRyDuUWBQHZafjoA==}
+  /@vitest/expect/0.29.2:
+    resolution: {integrity: sha512-wjrdHB2ANTch3XKRhjWZN0UueFocH0cQbi2tR5Jtq60Nb3YOSmakjdAvUa2JFBu/o8Vjhj5cYbcMXkZxn1NzmA==}
     dependencies:
-      '@vitest/spy': 0.29.1
-      '@vitest/utils': 0.29.1
+      '@vitest/spy': 0.29.2
+      '@vitest/utils': 0.29.2
       chai: 4.3.7
     dev: true
 
-  /@vitest/runner/0.29.1:
-    resolution: {integrity: sha512-VZ6D+kWpd/LVJjvxkt79OA29FUpyrI5L/EEwoBxH5m9KmKgs1QWNgobo/CGQtIWdifLQLvZdzYEK7Qj96w/ixQ==}
+  /@vitest/runner/0.29.2:
+    resolution: {integrity: sha512-A1P65f5+6ru36AyHWORhuQBJrOOcmDuhzl5RsaMNFe2jEkoj0faEszQS4CtPU/LxUYVIazlUtZTY0OEZmyZBnA==}
     dependencies:
-      '@vitest/utils': 0.29.1
+      '@vitest/utils': 0.29.2
       p-limit: 4.0.0
       pathe: 1.1.0
     dev: true
 
-  /@vitest/spy/0.29.1:
-    resolution: {integrity: sha512-sRXXK44pPzaizpiZOIQP7YMhxIs80J/b6v1yR3SItpxG952c8tdA7n0O2j4OsVkjiO/ZDrjAYFrXL3gq6hLx6Q==}
+  /@vitest/spy/0.29.2:
+    resolution: {integrity: sha512-Hc44ft5kaAytlGL2PyFwdAsufjbdOvHklwjNy/gy/saRbg9Kfkxfh+PklLm1H2Ib/p586RkQeNFKYuJInUssyw==}
     dependencies:
       tinyspy: 1.0.2
     dev: true
 
-  /@vitest/utils/0.29.1:
-    resolution: {integrity: sha512-6npOEpmyE6zPS2wsWb7yX5oDpp6WY++cC5BX6/qaaMhGC3ZlPd8BbTz3RtGPi1PfPerPvfs4KqS/JDOIaB6J3w==}
+  /@vitest/utils/0.29.2:
+    resolution: {integrity: sha512-F14/Uc+vCdclStS2KEoXJlOLAEyqRhnw0gM27iXw9bMTcyKRPJrQ+rlC6XZ125GIPvvKYMPpVxNhiou6PsEeYQ==}
     dependencies:
       cli-truncate: 3.1.0
       diff: 5.1.0
@@ -3194,65 +3194,65 @@ packages:
     hasBin: true
     dev: false
 
-  /turbo-darwin-64/1.8.2:
-    resolution: {integrity: sha512-j77U0uOeppENexFsIvvzExADSqMBEeCHnm+6LSNQfaajHSrbUVSTsuD6ZMYHamT6bslc+ZZm21jdecWkwZFBbw==}
+  /turbo-darwin-64/1.8.3:
+    resolution: {integrity: sha512-bLM084Wr17VAAY/EvCWj7+OwYHvI9s/NdsvlqGp8iT5HEYVimcornCHespgJS/yvZDfC+mX9EQkn3V2JmYgGGw==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.8.2:
-    resolution: {integrity: sha512-1NoAvjlwt2wycsAFJouauy9epn9DptSMy6BoGqxJVc4jiibsLepp9qYc4f1/ln0zjd3FR1IvhGOiBfdpqMN7hg==}
+  /turbo-darwin-arm64/1.8.3:
+    resolution: {integrity: sha512-4oZjXtzakopMK110kue3z/hqu3WLv+eDLZOX1NGdo49gqca9BeD8GbH+sXpAp6tqyeuzpss+PIliVYuyt7LgbA==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64/1.8.2:
-    resolution: {integrity: sha512-TcT3CRYnBYA46kLGGbGC2jDyCEAvMgVpUdpIZGTmod48EKpZaEfVgTkpa4GJde8W68yRFogPZjPVL3yJHFpXSA==}
+  /turbo-linux-64/1.8.3:
+    resolution: {integrity: sha512-uvX2VKotf5PU14FCxJA5iHItPQno2JWzerMd+g3/h/Asay6dvxvtVjc39MQeGT0H5njSvzVKFkT+3/5q8lgOEg==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64/1.8.2:
-    resolution: {integrity: sha512-Mb9+KBy4YJzPMZ6WGoMzMVZ6EtueCSvOvgmNpVFgkwbtabfBuaBOvN+irtg4RRSWvJQTDTziLABieocEEXZImQ==}
+  /turbo-linux-arm64/1.8.3:
+    resolution: {integrity: sha512-E1p+oH3XKMaPS4rqWhYsL4j2Pzc0d/9P5KU7Kn1kqVLo2T3iRA7n2KVULEieUNE0nTH+aIJPXYXOpqCI5wFJaA==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64/1.8.2:
-    resolution: {integrity: sha512-/+R5ikRrw2w2w38JtNPubGLIQHgUC70m783DI9aPgaM5c8P5D/Y0k6HgjuC/uXgiaz2h3R7p7YWlr+2/E0bqyA==}
+  /turbo-windows-64/1.8.3:
+    resolution: {integrity: sha512-cnzAytHtoLXd0J7aNzRpZFpL/GTjcBmkvAPlbOdf/Pl1iwS4qzGrudZQ+OM1lmLgLIfBPIavsGHBknTwTNib4A==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64/1.8.2:
-    resolution: {integrity: sha512-s07viz5nXSx4kyiksuPM4FGLRkoaGMaw0BpwFjdRQsl1p+WclUN1IPdokVPKOmFpu5pNCVYlG/raP/mXAEzDCg==}
+  /turbo-windows-arm64/1.8.3:
+    resolution: {integrity: sha512-ulIiItNm2w/zYJdD5/oAzjzNns1IjbpweRzpsE8tLXaWwo6+fnXXkyloUug0IUhcd2k6fJXfoiDZfygqpOVuXg==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.8.2:
-    resolution: {integrity: sha512-G/uJx6bZK5RwTWHsRN/MP0MvXFznmCaL3MQXdSf+OG/q0o8GE7+yivyyWEplWI1Asc8AEN909A/wlIkoz2FKTg==}
+  /turbo/1.8.3:
+    resolution: {integrity: sha512-zGrkU1EuNFmkq6iky6LcMqD4h0OLE8XysVFxQWRIZbcTNnf0XAycbsbeEyiJpiWeqb7qtg2bVuY9EYcNoNhVuQ==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.8.2
-      turbo-darwin-arm64: 1.8.2
-      turbo-linux-64: 1.8.2
-      turbo-linux-arm64: 1.8.2
-      turbo-windows-64: 1.8.2
-      turbo-windows-arm64: 1.8.2
+      turbo-darwin-64: 1.8.3
+      turbo-darwin-arm64: 1.8.3
+      turbo-linux-64: 1.8.3
+      turbo-linux-arm64: 1.8.3
+      turbo-windows-64: 1.8.3
+      turbo-windows-arm64: 1.8.3
     dev: true
 
   /type-detect/4.0.8:
@@ -3401,8 +3401,8 @@ packages:
       builtins: 5.0.1
     dev: true
 
-  /vite-node/0.29.1_@types+node@18.0.0:
-    resolution: {integrity: sha512-Ey9bTlQOQrCxQN0oJ7sTg+GrU4nTMLg44iKTFCKf31ry60csqQz4E+Q04hdWhwE4cTgpxUC+zEB1kHbf5jNkFA==}
+  /vite-node/0.29.2_@types+node@18.0.0:
+    resolution: {integrity: sha512-5oe1z6wzI3gkvc4yOBbDBbgpiWiApvuN4P55E8OI131JGrSuo4X3SOZrNmZYo4R8Zkze/dhi572blX0zc+6SdA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     dependencies:
@@ -3520,8 +3520,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.29.1:
-    resolution: {integrity: sha512-iSy6d9VwsIn7pz5I8SjVwdTLDRGKNZCRJVzROwjt0O0cffoymKwazIZ2epyMpRGpeL5tsXAl1cjXiT7agTyVug==}
+  /vitest/0.29.2:
+    resolution: {integrity: sha512-ydK9IGbAvoY8wkg29DQ4ivcVviCaUi3ivuPKfZEVddMTenFHUfB8EEDXQV8+RasEk1ACFLgMUqAaDuQ/Nk+mQA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -3545,10 +3545,10 @@ packages:
       '@types/chai': 4.3.4
       '@types/chai-subset': 1.3.3
       '@types/node': 18.0.0
-      '@vitest/expect': 0.29.1
-      '@vitest/runner': 0.29.1
-      '@vitest/spy': 0.29.1
-      '@vitest/utils': 0.29.1
+      '@vitest/expect': 0.29.2
+      '@vitest/runner': 0.29.2
+      '@vitest/spy': 0.29.2
+      '@vitest/utils': 0.29.2
       acorn: 8.8.2
       acorn-walk: 8.2.0
       cac: 6.7.14
@@ -3564,7 +3564,7 @@ packages:
       tinypool: 0.3.1
       tinyspy: 1.0.2
       vite: 4.1.4_@types+node@18.0.0
-      vite-node: 0.29.1_@types+node@18.0.0
+      vite-node: 0.29.2_@types+node@18.0.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
