@@ -68,7 +68,7 @@ importers:
       vite: ^4.1.4
       vite-plugin-cloudflare-functions: workspace:*
       vite-plugin-info: 0.4.0
-      vite-plugin-inspect: ^0.7.15
+      vite-plugin-inspect: ^0.7.16
       vue: ^3.2.47
       wrangler: ^2.9.1
     dependencies:
@@ -85,7 +85,7 @@ importers:
       vite: 4.1.4
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-info: 0.4.0_vite@4.1.4
-      vite-plugin-inspect: 0.7.15_vite@4.1.4
+      vite-plugin-inspect: 0.7.16_vite@4.1.4
       wrangler: 2.9.1
 
   playground/functions:
@@ -2755,7 +2755,7 @@ packages:
     dependencies:
       destr: 1.2.2
       node-fetch-native: 1.0.2
-      ufo: 1.1.0
+      ufo: 1.1.1
     dev: true
 
   /ohmyfetch/0.4.21:
@@ -3283,12 +3283,12 @@ packages:
     resolution: {integrity: sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==}
     dev: true
 
-  /ufo/1.0.1:
-    resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
-    dev: true
-
   /ufo/1.1.0:
     resolution: {integrity: sha512-LQc2s/ZDMaCN3QLpa+uzHUOQ7SdV0qgv3VBXOolQGXTaaZpIur6PwUclF5nN2hNkiTRcUugXd1zFOW3FLJ135Q==}
+
+  /ufo/1.1.1:
+    resolution: {integrity: sha512-MvlCc4GHrmZdAllBc0iUDowff36Q9Ndw/UzqmEKyrfSzokTd9ZCy1i+IIk5hrYKkjoYVQyNbrw7/F8XJ2rEwTg==}
+    dev: true
 
   /unbuild/1.1.2:
     resolution: {integrity: sha512-EK5LeABThyn5KbX0eo5c7xKRQhnHVxKN8/e5Y+YQEf4ZobJB6OZ766756wbVqzIY/G/MvAfLbc6EwFPdSNnlpA==}
@@ -3448,8 +3448,8 @@ packages:
       vite: 4.1.4
     dev: true
 
-  /vite-plugin-inspect/0.7.15_vite@4.1.4:
-    resolution: {integrity: sha512-oxeZCljacA/slhGFbDNlBqdhDU9fgdHL84i7Nz7DnaAIE7DhTiW2djanw3d/BKuZtduKUY82vRUQ4iaG917t2A==}
+  /vite-plugin-inspect/0.7.16_vite@4.1.4:
+    resolution: {integrity: sha512-WnyoicZ+mSQgrWoQdwrGydvlbfmlTKDVlMtub8RYCld3oXbC5kset3WmtgisrLmiDPobDvx2v7zUtPNQSySWXA==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
@@ -3460,7 +3460,7 @@ packages:
       fs-extra: 11.1.0
       kolorist: 1.7.0
       sirv: 2.0.2
-      ufo: 1.0.1
+      ufo: 1.1.1
       vite: 4.1.4
     transitivePeerDependencies:
       - rollup
