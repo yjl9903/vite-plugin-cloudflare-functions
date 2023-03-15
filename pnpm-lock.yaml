@@ -68,7 +68,7 @@ importers:
       vite: ^4.1.4
       vite-plugin-cloudflare-functions: workspace:*
       vite-plugin-info: 0.4.0
-      vite-plugin-inspect: ^0.7.16
+      vite-plugin-inspect: ^0.7.17
       vue: ^3.2.47
       wrangler: ^2.9.1
     dependencies:
@@ -85,7 +85,7 @@ importers:
       vite: 4.1.4
       vite-plugin-cloudflare-functions: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-info: 0.4.0_vite@4.1.4
-      vite-plugin-inspect: 0.7.16_vite@4.1.4
+      vite-plugin-inspect: 0.7.17_vite@4.1.4
       wrangler: 2.9.1
 
   playground/functions:
@@ -3448,8 +3448,8 @@ packages:
       vite: 4.1.4
     dev: true
 
-  /vite-plugin-inspect/0.7.16_vite@4.1.4:
-    resolution: {integrity: sha512-WnyoicZ+mSQgrWoQdwrGydvlbfmlTKDVlMtub8RYCld3oXbC5kset3WmtgisrLmiDPobDvx2v7zUtPNQSySWXA==}
+  /vite-plugin-inspect/0.7.17_vite@4.1.4:
+    resolution: {integrity: sha512-0z33Z7ap6DOzOO3iulGROWZq9oUbarmMKHtdVbCMJ3OL0JOd8UvEqnTazU/2Y8Y2WpOyaZuEV6USJ9KHoZ7f+A==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
