@@ -49,7 +49,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
     if (userConfig.wrangler?.binding) {
       for (const [key, value] of Object.entries(userConfig.wrangler.binding)) {
         bindings.push('--binding');
-        bindings.push(`${key}=\\"${value}\\"`);
+        bindings.push(`${key}=${value}`);
       }
     }
     if (userConfig.wrangler?.kv) {

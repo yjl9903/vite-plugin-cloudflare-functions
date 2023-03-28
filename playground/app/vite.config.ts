@@ -16,7 +16,7 @@ export default defineConfig({
     CloudflarePagesFunctions({
       root: '../functions',
       outDir: '../../',
-      wrangler: { log: false, kv: 'STORE' }
+      wrangler: { log: false, kv: 'STORE', binding: { USER: 'yjl9903' } }
     })
   ]
 });

@@ -8,6 +8,8 @@ import 'vite-plugin-cloudflare-functions/worker';
 declare module 'vite-plugin-cloudflare-functions/worker' {
   interface PagesFunctionEnv {
     STORE: KVNamespace;
+
+    USER: string;
   }
 
   interface PagesFunctionData {}
