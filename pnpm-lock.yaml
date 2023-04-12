@@ -15,7 +15,7 @@ importers:
         version: 2.8.7
       turbo:
         specifier: latest
-        version: 1.8.8
+        version: 1.9.1
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
@@ -115,8 +115,8 @@ importers:
         specifier: 0.4.0
         version: 0.4.0(vite@4.2.1)
       vite-plugin-inspect:
-        specifier: ^0.7.20
-        version: 0.7.20(rollup@3.20.2)(vite@4.2.1)(vue@3.2.47)
+        specifier: ^0.7.21
+        version: 0.7.21(rollup@3.20.2)(vite@4.2.1)
       wrangler:
         specifier: ^2.13.0
         version: 2.13.0
@@ -2106,13 +2106,6 @@ packages:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
     dev: true
 
-  /echarts@5.4.2:
-    resolution: {integrity: sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==}
-    dependencies:
-      tslib: 2.3.0
-      zrender: 5.4.3
-    dev: true
-
   /electron-to-chromium@1.4.284:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: true
@@ -3086,10 +3079,6 @@ packages:
       parse-git-config: 3.0.0
     dev: true
 
-  /resize-detector@0.3.0:
-    resolution: {integrity: sha512-R/tCuvuOHQ8o2boRP6vgx8hXCCy87H1eY9V5imBYeVNyNVpuL9ciReSccLj2gDcax9+2weXy3bc8Vv+NRXeEvQ==}
-    dev: true
-
   /resolve@1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
@@ -3359,69 +3348,65 @@ packages:
     hasBin: true
     dev: false
 
-  /tslib@2.3.0:
-    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
-    dev: true
-
-  /turbo-darwin-64@1.8.8:
-    resolution: {integrity: sha512-18cSeIm7aeEvIxGyq7PVoFyEnPpWDM/0CpZvXKHpQ6qMTkfNt517qVqUTAwsIYqNS8xazcKAqkNbvU1V49n65Q==}
+  /turbo-darwin-64@1.9.1:
+    resolution: {integrity: sha512-IX/Ph4CO80lFKd9pPx3BWpN2dynt6mcUFifyuHUNVkOP1Usza/G9YuZnKQFG6wUwKJbx40morFLjk1TTeLe04w==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@1.8.8:
-    resolution: {integrity: sha512-ruGRI9nHxojIGLQv1TPgN7ud4HO4V8mFBwSgO6oDoZTNuk5ybWybItGR+yu6fni5vJoyMHXOYA2srnxvOc7hjQ==}
+  /turbo-darwin-arm64@1.9.1:
+    resolution: {integrity: sha512-6tCbmIboy9dTbhIZ/x9KIpje73nvxbiyVnHbr9xKnsxLJavD0xqjHZzbL5U2tHp8chqmYf0E4WYOXd+XCNg+OQ==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@1.8.8:
-    resolution: {integrity: sha512-N/GkHTHeIQogXB1/6ZWfxHx+ubYeb8Jlq3b/3jnU4zLucpZzTQ8XkXIAfJG/TL3Q7ON7xQ8yGOyGLhHL7MpFRg==}
+  /turbo-linux-64@1.9.1:
+    resolution: {integrity: sha512-ti8XofnJFO1XaadL92lYJXgxb0VBl03Yu9VfhxkOTywFe7USTLBkJcdvQ4EpFk/KZwLiTdCmT2NQVxsG4AxBiQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@1.8.8:
-    resolution: {integrity: sha512-hKqLbBHgUkYf2Ww8uBL9UYdBFQ5677a7QXdsFhONXoACbDUPvpK4BKlz3NN7G4NZ+g9dGju+OJJjQP0VXRHb5w==}
+  /turbo-linux-arm64@1.9.1:
+    resolution: {integrity: sha512-XYvIbeiCCCr+ENujd2Jtck/lJPTKWb8T2MSL/AEBx21Zy3Sa7HgrQX6LX0a0pNHjaleHz00XXt1D0W5hLeP+tA==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@1.8.8:
-    resolution: {integrity: sha512-2ndjDJyzkNslXxLt+PQuU21AHJWc8f6MnLypXy3KsN4EyX/uKKGZS0QJWz27PeHg0JS75PVvhfFV+L9t9i+Yyg==}
+  /turbo-windows-64@1.9.1:
+    resolution: {integrity: sha512-x7lWAspe4/v3XQ0gaFRWDX/X9uyWdhwFBPEfb8BA0YKtnsrPOHkV0mRHCRrXzvzjA7pcDCl2agGzb7o863O+Jg==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@1.8.8:
-    resolution: {integrity: sha512-xCA3oxgmW9OMqpI34AAmKfOVsfDljhD5YBwgs0ZDsn5h3kCHhC4x9W5dDk1oyQ4F5EXSH3xVym5/xl1J6WRpUg==}
+  /turbo-windows-arm64@1.9.1:
+    resolution: {integrity: sha512-QSLNz8dRBLDqXOUv/KnoesBomSbIz2Huef/a3l2+Pat5wkQVgMfzFxDOnkK5VWujPYXz+/prYz+/7cdaC78/kw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@1.8.8:
-    resolution: {integrity: sha512-qYJ5NjoTX+591/x09KgsDOPVDUJfU9GoS+6jszQQlLp1AHrf1wRFA3Yps8U+/HTG03q0M4qouOfOLtRQP4QypA==}
+  /turbo@1.9.1:
+    resolution: {integrity: sha512-Rqe8SP96e53y4Pk29kk2aZbA8EF11UtHJ3vzXJseadrc1T3V6UhzvAWwiKJL//x/jojyOoX1axnoxmX3UHbZ0g==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.8.8
-      turbo-darwin-arm64: 1.8.8
-      turbo-linux-64: 1.8.8
-      turbo-linux-arm64: 1.8.8
-      turbo-windows-64: 1.8.8
-      turbo-windows-arm64: 1.8.8
+      turbo-darwin-64: 1.9.1
+      turbo-darwin-arm64: 1.9.1
+      turbo-linux-64: 1.9.1
+      turbo-linux-arm64: 1.9.1
+      turbo-windows-64: 1.9.1
+      turbo-windows-arm64: 1.9.1
     dev: true
 
   /type-detect@4.0.8:
@@ -3615,8 +3600,8 @@ packages:
       vite: 4.2.1(@types/node@18.15.11)
     dev: true
 
-  /vite-plugin-inspect@0.7.20(rollup@3.20.2)(vite@4.2.1)(vue@3.2.47):
-    resolution: {integrity: sha512-vpfIAGtkBtpeEWFWUulxmU9tG/EgLMS37te7zzXnoshH+FxcgO7/kUTHaKTF7gOXkMNpHsVX9+BWMMx4iM5dqg==}
+  /vite-plugin-inspect@0.7.21(rollup@3.20.2)(vite@4.2.1):
+    resolution: {integrity: sha512-zIyTGkoj76EnDV/Hj20cYjRCtOvzab6EX2tcKy4QWe/qrW/Apxuqc2nZgv4BkTg/bXyL1/1cozlxzx7GfAh9yw==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
@@ -3624,18 +3609,13 @@ packages:
       '@antfu/utils': 0.7.2
       '@rollup/pluginutils': 5.0.2(rollup@3.20.2)
       debug: 4.3.4
-      echarts: 5.4.2
       fs-extra: 11.1.1
-      kolorist: 1.7.0
+      picocolors: 1.0.0
       sirv: 2.0.2
-      ufo: 1.1.1
       vite: 4.2.1(@types/node@18.15.11)
-      vue-echarts: 6.5.4(echarts@5.4.2)(vue@3.2.47)
     transitivePeerDependencies:
-      - '@vue/composition-api'
       - rollup
       - supports-color
-      - vue
     dev: true
 
   /vite@4.2.1(@types/node@18.15.11):
@@ -3753,23 +3733,6 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /vue-echarts@6.5.4(echarts@5.4.2)(vue@3.2.47):
-    resolution: {integrity: sha512-pLJTk2hfhauoWdmiZGXByAtcO6bpfnAS+jkJqKimSBSV5I5ckh2nka9duLlIVbTvQOEb2tFa0XiXjACQNcEfpA==}
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.5
-      echarts: ^5.4.1
-      vue: ^2.6.12 || ^3.1.1
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      echarts: 5.4.2
-      resize-detector: 0.3.0
-      vue: 3.2.47
-      vue-demi: 0.13.11(vue@3.2.47)
-    dev: true
-
   /vue@3.2.47:
     resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}
     dependencies:
@@ -3877,10 +3840,4 @@ packages:
       cookie: 0.4.2
       mustache: 4.2.0
       stack-trace: 0.0.10
-    dev: true
-
-  /zrender@5.4.3:
-    resolution: {integrity: sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==}
-    dependencies:
-      tslib: 2.3.0
     dev: true
