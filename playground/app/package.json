@@ -15,7 +15,7 @@
     "@onekuma/reset": "^0.1.9",
     "@onekuma/ui": "^0.1.9",
     "@onekuma/vite": "^0.1.9",
-    "@vitejs/plugin-vue": "^4.2.0",
+    "@vitejs/plugin-vue": "^4.2.1",
     "@vueuse/core": "^10.1.0",
     "unocss": "^0.51.8",
     "vite": "^4.3.2",
