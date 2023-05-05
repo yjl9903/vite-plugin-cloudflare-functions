@@ -92,10 +92,10 @@ importers:
         version: 0.1.10
       '@onekuma/ui':
         specifier: ^0.1.10
-        version: 0.1.10(@onekuma/vite@0.1.9)(@vueuse/core@10.1.2)(vue@3.2.47)
+        version: 0.1.10(@onekuma/vite@0.1.10)(@vueuse/core@10.1.2)(vue@3.2.47)
       '@onekuma/vite':
-        specifier: ^0.1.9
-        version: 0.1.9(unocss@0.51.8)(vite@4.3.4)
+        specifier: ^0.1.10
+        version: 0.1.10(unocss@0.51.8)(vite@4.3.4)
       '@vitejs/plugin-vue':
         specifier: ^4.2.1
         version: 4.2.1(vite@4.3.4)(vue@3.2.47)
@@ -1040,7 +1040,7 @@ packages:
     engines: {node: '>=v18.15.0'}
     dev: true
 
-  /@onekuma/ui@0.1.10(@onekuma/vite@0.1.9)(@vueuse/core@10.1.2)(vue@3.2.47):
+  /@onekuma/ui@0.1.10(@onekuma/vite@0.1.10)(@vueuse/core@10.1.2)(vue@3.2.47):
     resolution: {integrity: sha512-o/1jIxwDZbQ82cQezeReXOCpaeO557qDV+4C/Vd4E6LIZC16M+EB5Me/EWM49VLEAJgneQX0P799cB1G2i5QPQ==}
     engines: {node: '>=v18.15.0'}
     peerDependencies:
@@ -1049,14 +1049,14 @@ packages:
       vue: ^3.2.47
     dependencies:
       '@onekuma/preset.css': 0.1.10
-      '@onekuma/vite': 0.1.9(unocss@0.51.8)(vite@4.3.4)
+      '@onekuma/vite': 0.1.10(unocss@0.51.8)(vite@4.3.4)
       '@vueuse/core': 10.1.2(vue@3.2.47)
       vue: 3.2.47
     dev: true
 
-  /@onekuma/vite@0.1.9(unocss@0.51.8)(vite@4.3.4):
-    resolution: {integrity: sha512-Cf/LCYwpEzbkshE1iNM3jMBlRvM3g3K3IsJv3MXiB8L41h8oDtulpZe08Xtt+On9keTltWvj3oZRlGrA/l395Q==}
-    engines: {node: '>=v16.19.0'}
+  /@onekuma/vite@0.1.10(unocss@0.51.8)(vite@4.3.4):
+    resolution: {integrity: sha512-SB0bWaa89IIk71Zcfpqlrw2F6cDuUXmYF2A3JMNRti8yTsvahoyvd+LoLbY+VsJhUAXED8N5lEaB/BIvj6M3nQ==}
+    engines: {node: '>=v18.15.0'}
     peerDependencies:
       unocss: ^0.50.0
       vite: ^4.1.1
