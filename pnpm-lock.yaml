@@ -72,8 +72,8 @@ importers:
         specifier: ^0.31.1
         version: 0.31.1
       wrangler:
-        specifier: ^2.17.0
-        version: 2.17.0
+        specifier: ^2.20.0
+        version: 2.20.0
 
   playground/app:
     dependencies:
@@ -118,8 +118,8 @@ importers:
         specifier: ^0.7.26
         version: 0.7.26(rollup@3.20.2)(vite@4.3.8)
       wrangler:
-        specifier: ^2.17.0
-        version: 2.17.0
+        specifier: ^2.20.0
+        version: 2.20.0
 
   playground/functions:
     devDependencies:
@@ -2604,12 +2604,6 @@ packages:
     hasBin: true
     dev: true
 
-  /nanoid@3.3.4:
-    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
   /nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -3542,8 +3536,8 @@ packages:
       stackback: 0.0.2
     dev: true
 
-  /wrangler@2.17.0:
-    resolution: {integrity: sha512-ucmVHP5BAUVyC/18hReEKgxGSgU0EOxGd+ElHRHVBeGH6LPcsOoC1TolTaDYYnbOuZMbYmHAR5OH1agayr3kZg==}
+  /wrangler@2.20.0:
+    resolution: {integrity: sha512-UdKJ2LD7qgDxDvll/GkR1HnRP+bcEdqi/HJjDI+7eF4lv9V940jmm3orxCkSEosGyE14q0q6dBRM95+fBI8tdQ==}
     engines: {node: '>=16.13.0'}
     hasBin: true
     dependencies:
@@ -3557,7 +3551,7 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.16.3
       miniflare: 2.13.0
-      nanoid: 3.3.4
+      nanoid: 3.3.6
       path-to-regexp: 6.2.1
       selfsigned: 2.0.1
       source-map: 0.7.4
