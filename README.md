@@ -10,9 +10,18 @@ Make [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/platfo
 
 ## Features
 
+When should you use this plugin?
+
++ If it is not necessary to use a heavy SSR framework like [nuxt](https://nuxt.com)
++ If your application is a static SPA, but you also want to write several API endpoints
+
+If you have used some meta SSR framework like [nuxt](https://nuxt.com), there is no need to use this plugin. But if you want to add some API endpoints to your SPA, just use it.
+
+This plugin provides some simple utilities to help you develop a SPA with serverless API endpoints powered by [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/platform/functions/).
+
 + **Dev**: Automatically start wrangler pages dev server
-+ **Dev**: Automatically generate functions API type declaration
-+ **Build**: Automatically move the functions source directory
++ **Dev**: Automatically generate serverless functions API type declaration
++ **Build**: Automatically move the functions source directory for monorepo
 
 ## Installation
 
