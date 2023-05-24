@@ -61,6 +61,15 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         bindings.push(kv);
       }
     }
+    if (userConfig.wrangler?.d1) {
+      const d1s = Array.isArray(userConfig.wrangler.d1)
+        ? userConfig.wrangler.d1
+        : [userConfig.wrangler.d1];
+      for (const d1 of d1s) {
+        bindings.push('--d1');
+        bindings.push(d1);
+      }
+    }
     if (userConfig.wrangler?.do) {
       for (const [key, value] of Object.entries(userConfig.wrangler.do)) {
         bindings.push('--do');

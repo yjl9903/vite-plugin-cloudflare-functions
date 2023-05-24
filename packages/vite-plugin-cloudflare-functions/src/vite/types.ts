@@ -52,6 +52,11 @@ export interface UserConfig {
     kv?: string | string[];
 
     /**
+     * Bind D1 database
+     */
+    d1?: string | string[];
+
+    /**
      * Bind Durable Object
      */
     do?: Record<string, string>;
