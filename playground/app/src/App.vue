@@ -10,14 +10,14 @@ const client = useFunctions();
 
 const endpoint = ref('world');
 
-const message = ref('');
+const message = ref<object>({});
 
 const response = ref();
 
 watch(
   endpoint,
   async (endpoint) => {
-    client.raw.get('/api/' + endpoint).then((resp) => {
+    client.raw.get(`/api/${endpoint}`).then((resp) => {
       response.value = resp;
       message.value = resp.data;
     });
@@ -32,7 +32,7 @@ watch(
       <h1 text-2xl font-bold pb4 border="b-1 base">Vite Plugin Cloudflare Functions</h1>
       <div flex justify-start items-center>
         <span mr2 text-base-500>Endpoint:</span><span mr1 font-bold>/api/</span
-        ><c-input type="text" id="endpoint" v-model="endpoint" name="" class="font-bold"
+        ><c-input type="text" id="endpoint" v-model="endpoint" class="font-bold"
           ><template #label></template
         ></c-input>
       </div>
