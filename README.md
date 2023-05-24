@@ -155,6 +155,10 @@ export default defineConfig({
 });
 ```
 
+> **Note**
+>
+> The configuration field `binding`, `kv`, `do`, `d1`, `r2` are passed to run the command `wrangler pages dev` to start pages dev server. You can find more information about this command at [Commands - Cloudflare Worker docs](https://developers.cloudflare.com/workers/wrangler/commands/#dev-1).
+
 ## License
 
 MIT License © 2022 [XLor](https://github.com/yjl9903)
