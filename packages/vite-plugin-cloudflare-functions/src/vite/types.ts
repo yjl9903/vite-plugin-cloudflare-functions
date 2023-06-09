@@ -65,5 +65,10 @@ export interface UserConfig {
      * Bind R2 bucket
      */
     r2?: string | string[];
+
+    /**
+     * Determines which version of the Workers runtime is used. 
+     */
+    compatibilityDate?: string;
   };
 }
