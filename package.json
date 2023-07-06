@@ -20,7 +20,7 @@
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
     "vite": "^4.4.1",
-    "vitest": "^0.32.4"
+    "vitest": "^0.33.0"
   },
   "packageManager": "pnpm@8.6.6",
   "engines": {
