@@ -16,7 +16,7 @@ importers:
         version: 9.1.1
       prettier:
         specifier: latest
-        version: 2.8.8
+        version: 3.0.0
       turbo:
         specifier: latest
         version: 1.10.7
@@ -36,8 +36,8 @@ importers:
   packages/vite-plugin-cloudflare-functions:
     dependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230518.0
-        version: 4.20230518.0
+        specifier: ^4.20230628.0
+        version: 4.20230628.0
       debug:
         specifier: ^4.3.4
         version: 4.3.4
@@ -354,8 +354,8 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/workers-types@4.20230518.0:
-    resolution: {integrity: sha512-A0w1V+5SUawGaaPRlhFhSC/SCDT9oQG8TMoWOKFLA4qbqagELqEAFD4KySBIkeVOvCBLT1DZSYBMCxbXddl0kw==}
+  /@cloudflare/workers-types@4.20230628.0:
+    resolution: {integrity: sha512-dpOFJJPEEWahLJKhj+xRY+VwXu/s/634CVsLVnTNDCfs2KXZx9nwQ/04M0OKBJFdc6jheWwAAv/AGvRvrTDkDg==}
     dev: false
 
   /@esbuild-plugins/node-globals-polyfill@0.1.1(esbuild@0.16.3):
@@ -2851,9 +2851,9 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier@3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
