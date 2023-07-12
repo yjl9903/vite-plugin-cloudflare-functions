@@ -119,8 +119,8 @@ importers:
         specifier: 0.4.1
         version: 0.4.1(vite@4.4.3)
       vite-plugin-inspect:
-        specifier: ^0.7.32
-        version: 0.7.32(rollup@3.26.2)(vite@4.4.3)
+        specifier: ^0.7.33
+        version: 0.7.33(rollup@3.26.2)(vite@4.4.3)
       wrangler:
         specifier: ^2.20.0
         version: 2.20.0
@@ -3657,8 +3657,8 @@ packages:
       vite: 4.4.3(@types/node@18.16.19)
     dev: true
 
-  /vite-plugin-inspect@0.7.32(rollup@3.26.2)(vite@4.4.3):
-    resolution: {integrity: sha512-TqRLHwOM3FTJPOGCCHJmub4SVVogSjZ9LSDo1Q6WeN2Zvc7HB7tr7cqYlAyStXCI90KvVnb1BRwI22+HXlghXQ==}
+  /vite-plugin-inspect@0.7.33(rollup@3.26.2)(vite@4.4.3):
+    resolution: {integrity: sha512-cQRLQKa/+Ua++5hN0IZfqNn1JYXBg2eCQOSUatPTwhXMO7nwfSvhhSc45E1nXfBBEhzLLOxgr1OdbDu55PiDDA==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
