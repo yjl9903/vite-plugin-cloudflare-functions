@@ -36,8 +36,8 @@ importers:
   packages/vite-plugin-cloudflare-functions:
     dependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230717.0
-        version: 4.20230717.0
+        specifier: ^4.20230717.1
+        version: 4.20230717.1
       debug:
         specifier: ^4.3.4
         version: 4.3.4
@@ -352,8 +352,8 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/workers-types@4.20230717.0:
-    resolution: {integrity: sha512-OJWM1s0n9Il+GjfHvZhEcUGC+qY9IsijMtzRBDRpwSUR2jTy1WdjS9+SEh7sJlNQX2WzHQCgJMGjH2lI/Tf+tQ==}
+  /@cloudflare/workers-types@4.20230717.1:
+    resolution: {integrity: sha512-JmtYqsn/rc0gq83rlgItGsh/aJsTQh6ebJTDbq794kGOH7ym6MlpLtbCJj/Qz+hCPgdqoHDOLTlQQguARLi78A==}
     dev: false
 
   /@esbuild-plugins/node-globals-polyfill@0.1.1(esbuild@0.16.3):
