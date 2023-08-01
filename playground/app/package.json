@@ -21,7 +21,7 @@
     "vite": "^4.4.8",
     "vite-plugin-cloudflare-functions": "workspace:*",
     "vite-plugin-info": "0.4.1",
-    "vite-plugin-inspect": "^0.7.33",
+    "vite-plugin-inspect": "^0.7.35",
     "wrangler": "^2.20.0"
   }
 }
