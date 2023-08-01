@@ -18,7 +18,7 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "@vueuse/core": "^10.3.0",
     "unocss": "^0.54.1",
-    "vite": "^4.4.7",
+    "vite": "^4.4.8",
     "vite-plugin-cloudflare-functions": "workspace:*",
     "vite-plugin-info": "0.4.1",
     "vite-plugin-inspect": "^0.7.33",
