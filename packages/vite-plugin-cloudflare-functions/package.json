@@ -87,7 +87,7 @@
     "unbuild": "^1.2.1",
     "vite": "^4.4.8",
     "vitest": "^0.34.1",
-    "wrangler": "^2.20.0"
+    "wrangler": "^3.0.0"
   },
   "peerDependencies": {
     "axios": "^1.4.0",
