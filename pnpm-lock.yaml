@@ -119,8 +119,8 @@ importers:
         specifier: 0.4.1
         version: 0.4.1(vite@4.4.9)
       vite-plugin-inspect:
-        specifier: ^0.7.37
-        version: 0.7.37(rollup@3.27.2)(vite@4.4.9)
+        specifier: ^0.7.38
+        version: 0.7.38(rollup@3.27.2)(vite@4.4.9)
       wrangler:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2072,6 +2072,10 @@ packages:
       once: 1.4.0
     dev: true
 
+  /error-stack-parser-es@0.1.1:
+    resolution: {integrity: sha512-g/9rfnvnagiNf+DRMHEVGuGuIBlCIMDFoTA616HaP2l9PlCjGjVhD98PNbVSJvmK4TttqT5mV5tInMhoFgi+aA==}
+    dev: true
+
   /esbuild@0.16.3:
     resolution: {integrity: sha512-71f7EjPWTiSguen8X/kxEpkAS7BFHwtQKisCDDV3Y4GLGWBaoSCyD5uXkaUew6JDzA9FEN1W23mdnSwW9kqCeg==}
     engines: {node: '>=12'}
@@ -3707,8 +3711,8 @@ packages:
       vite: 4.4.9(@types/node@18.17.5)
     dev: true
 
-  /vite-plugin-inspect@0.7.37(rollup@3.27.2)(vite@4.4.9):
-    resolution: {integrity: sha512-cRHzaE8g8/UUK0hA5DunAXiN3eJnq7Dpcu2bVf5dCRj/MYBKGeAv0Z27vYMhm2F/oeE5aG3+oYF4tkdhOlpXxg==}
+  /vite-plugin-inspect@0.7.38(rollup@3.27.2)(vite@4.4.9):
+    resolution: {integrity: sha512-+p6pJVtBOLGv+RBrcKAFUdx+euizg0bjL35HhPyM0MjtKlqoC5V9xkCmO9Ctc8JrTyXqODbHqiLWJKumu5zJ7g==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
@@ -3720,6 +3724,7 @@ packages:
       '@antfu/utils': 0.7.5
       '@rollup/pluginutils': 5.0.2(rollup@3.27.2)
       debug: 4.3.4
+      error-stack-parser-es: 0.1.1
       fs-extra: 11.1.1
       open: 9.1.0
       picocolors: 1.0.0
