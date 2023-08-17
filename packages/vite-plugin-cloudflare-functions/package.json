@@ -86,7 +86,7 @@
     "ohmyfetch": "^0.4.21",
     "unbuild": "^1.2.1",
     "vite": "^4.4.9",
-    "vitest": "^0.34.1",
+    "vitest": "^0.34.2",
     "wrangler": "^3.0.0"
   },
   "peerDependencies": {
