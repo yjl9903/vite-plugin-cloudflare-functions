@@ -84,7 +84,7 @@
     "@types/node": "^18.17.7",
     "axios": "^1.4.0",
     "ohmyfetch": "^0.4.21",
-    "unbuild": "^1.2.1",
+    "unbuild": "^2.0.0",
     "vite": "^4.4.9",
     "vitest": "^0.34.2",
     "wrangler": "^3.0.0"
