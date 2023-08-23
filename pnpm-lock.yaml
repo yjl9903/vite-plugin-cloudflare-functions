@@ -13,10 +13,10 @@ importers:
         version: 18.17.8
       bumpp:
         specifier: latest
-        version: 9.1.1
+        version: 9.2.0
       prettier:
         specifier: latest
-        version: 3.0.1
+        version: 3.0.2
       turbo:
         specifier: ^1.10.13
         version: 1.10.13
@@ -89,17 +89,17 @@ importers:
         version: 3.3.4
     devDependencies:
       '@onekuma/preset.css':
-        specifier: ^0.1.10
-        version: 0.1.10
+        specifier: ^0.1.11
+        version: 0.1.11
       '@onekuma/reset':
-        specifier: ^0.1.10
-        version: 0.1.10
+        specifier: ^0.1.11
+        version: 0.1.11
       '@onekuma/ui':
-        specifier: ^0.1.10
-        version: 0.1.10(@onekuma/vite@0.1.10)(@vueuse/core@10.3.0)(vue@3.3.4)
+        specifier: ^0.1.11
+        version: 0.1.11(@onekuma/vite@0.1.11)(@vueuse/core@10.3.0)(vue@3.3.4)
       '@onekuma/vite':
-        specifier: ^0.1.10
-        version: 0.1.10(unocss@0.55.2)(vite@4.4.9)
+        specifier: ^0.1.11
+        version: 0.1.11(unocss@0.55.2)(vite@4.4.9)
       '@vitejs/plugin-vue':
         specifier: ^4.3.3
         version: 4.3.3(vite@4.4.9)(vue@3.3.4)
@@ -1093,36 +1093,36 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@onekuma/preset.css@0.1.10:
-    resolution: {integrity: sha512-EAcETsDtSpVmB10rOHQ5/VleKLdLmbMbXA7XEw/1s4L5gpdGHBB4Me1QuV69AabEJ1h2mFyGDVUUJph3HgT7AQ==}
-    engines: {node: '>=v18.15.0'}
+  /@onekuma/preset.css@0.1.11:
+    resolution: {integrity: sha512-BMkKJ6jy8jxfuGqAMHtCIVyVvkHpk6ynFlteYhfzPsyfZHCZ7MGoon7CTInNdBSYne49WuVqJBMX2wbG01pjlw==}
+    engines: {node: '>=v18.16.0'}
     dev: true
 
-  /@onekuma/reset@0.1.10:
-    resolution: {integrity: sha512-KRLnytbPmNYId0SjAF2Y0h3ILLBN+T35NI6oLsYLcVu5ZpQ3rYEOqCRfryVRsRExlIyLnaaT1UvOCHXRdMZVTA==}
-    engines: {node: '>=v18.15.0'}
+  /@onekuma/reset@0.1.11:
+    resolution: {integrity: sha512-vaa5BQphXCB4hsyv6PI0N+I/LXo6y+G/xSCtqL87n+m9vR1Bvn3o42gi6Y3j1U6z0evpFqt7io6uJDgwta3GfQ==}
+    engines: {node: '>=v18.16.0'}
     dev: true
 
-  /@onekuma/ui@0.1.10(@onekuma/vite@0.1.10)(@vueuse/core@10.3.0)(vue@3.3.4):
-    resolution: {integrity: sha512-o/1jIxwDZbQ82cQezeReXOCpaeO557qDV+4C/Vd4E6LIZC16M+EB5Me/EWM49VLEAJgneQX0P799cB1G2i5QPQ==}
-    engines: {node: '>=v18.15.0'}
+  /@onekuma/ui@0.1.11(@onekuma/vite@0.1.11)(@vueuse/core@10.3.0)(vue@3.3.4):
+    resolution: {integrity: sha512-mKNie7uOOJE9zOeiDf0/kKCaDDmVXTbPmhoW7iBKk/LNln0I7LNW+C5fcuggXIpr5zkZ9+L/zJ+SU17PBJXgaw==}
+    engines: {node: '>=v18.16.0'}
     peerDependencies:
-      '@onekuma/vite': 0.1.10
-      '@vueuse/core': ^9.13.0
-      vue: ^3.2.47
+      '@onekuma/vite': 0.1.11
+      '@vueuse/core': ^10.3.0
+      vue: ^3.3.4
     dependencies:
-      '@onekuma/preset.css': 0.1.10
-      '@onekuma/vite': 0.1.10(unocss@0.55.2)(vite@4.4.9)
+      '@onekuma/preset.css': 0.1.11
+      '@onekuma/vite': 0.1.11(unocss@0.55.2)(vite@4.4.9)
       '@vueuse/core': 10.3.0(vue@3.3.4)
       vue: 3.3.4
     dev: true
 
-  /@onekuma/vite@0.1.10(unocss@0.55.2)(vite@4.4.9):
-    resolution: {integrity: sha512-SB0bWaa89IIk71Zcfpqlrw2F6cDuUXmYF2A3JMNRti8yTsvahoyvd+LoLbY+VsJhUAXED8N5lEaB/BIvj6M3nQ==}
-    engines: {node: '>=v18.15.0'}
+  /@onekuma/vite@0.1.11(unocss@0.55.2)(vite@4.4.9):
+    resolution: {integrity: sha512-awZS8Gy9KtQpnDUKtCrOrlU8GIog3ITDWeXuElgrZkbKlV9IpbAGYSNalKtrHkoDCTzVmrBJr/VO16i0QFejTQ==}
+    engines: {node: '>=v18.16.0'}
     peerDependencies:
-      unocss: ^0.50.0
-      vite: ^4.1.1
+      unocss: ^0.55.2
+      vite: ^4.4.9
     dependencies:
       unocss: 0.55.2(postcss@8.4.28)(rollup@3.28.1)(vite@4.4.9)
       vite: 4.4.9(@types/node@18.17.8)
@@ -1756,8 +1756,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /bumpp@9.1.1:
-    resolution: {integrity: sha512-T7/2QmRNhHRkH2+HgDs/xk4keom3nlCjwQn6kHdz0I0dQMVrs+YMOH5HyuhV0R3tha/tTYP030RG9uQKpQ9CRg==}
+  /bumpp@9.2.0:
+    resolution: {integrity: sha512-pgp7y3jp33QTaXFVDrE0IKuZF5Y8EsIz+ywZXFALW2nD+ZD+4crxJe/GypBQBoJuZrr5dc6TGrR3wl7fk3+C6w==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -3053,8 +3053,8 @@ packages:
       tunnel-agent: 0.6.0
     dev: true
 
-  /prettier@3.0.1:
-    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
