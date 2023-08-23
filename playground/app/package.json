@@ -11,10 +11,10 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@onekuma/preset.css": "^0.1.10",
-    "@onekuma/reset": "^0.1.10",
-    "@onekuma/ui": "^0.1.10",
-    "@onekuma/vite": "^0.1.10",
+    "@onekuma/preset.css": "^0.1.11",
+    "@onekuma/reset": "^0.1.11",
+    "@onekuma/ui": "^0.1.11",
+    "@onekuma/vite": "^0.1.11",
     "@vitejs/plugin-vue": "^4.3.3",
     "@vueuse/core": "^10.3.0",
     "unocss": "^0.55.2",
