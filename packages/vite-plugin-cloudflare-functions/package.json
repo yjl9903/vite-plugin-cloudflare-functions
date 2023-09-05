@@ -93,7 +93,7 @@
     "axios": "^1.5.0",
     "ohmyfetch": "^0.4.21",
     "vite": "^3.1.8 || ^4.0.0",
-    "wrangler": "^2.20.0"
+    "wrangler": "^2.20.1"
   },
   "peerDependenciesMeta": {
     "axios": {
