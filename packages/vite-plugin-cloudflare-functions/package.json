@@ -80,7 +80,7 @@
     "tree-kill": "^1.2.2"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.8",
+    "@types/debug": "^4.1.9",
     "@types/node": "^18.17.18",
     "axios": "^1.5.0",
     "ohmyfetch": "^0.4.21",
