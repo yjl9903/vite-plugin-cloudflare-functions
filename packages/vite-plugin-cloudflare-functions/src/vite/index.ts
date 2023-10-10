@@ -110,10 +110,17 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
 
     debug(command);
 
+    // Disable inherit http_prxoy or https_proxy env
+    const wranglerEnv = { ...process.env };
+    for (const key of ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']) {
+      if (key in wranglerEnv) {
+        delete wranglerEnv[key];
+      }
+    }
     wranglerProcess = spawn('npx', command, {
       shell: process.platform === 'win32',
       stdio: ['ignore', 'pipe', 'pipe'],
-      env: process.env,
+      env: wranglerEnv,
       cwd: path.dirname(functionsRoot)
     });
 

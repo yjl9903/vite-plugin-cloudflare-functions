@@ -17,10 +17,13 @@ const response = ref();
 watch(
   endpoint,
   async (endpoint) => {
-    client.raw.get(`/api/${endpoint}`).then((resp) => {
+    try {
+      const resp = await client.raw.get(`/api/${endpoint}`);
       response.value = resp;
       message.value = resp.data;
-    });
+    } catch (error) {
+      console.error(error);
+    }
   },
   { immediate: true }
 );
@@ -28,7 +31,7 @@ watch(
 
 <template>
   <div text-xl flex justify-center my8>
-    <div space-y-4 max-w="80vw">
+    <div space-y-4 max-w="80vw" min-w="60vw">
       <h1 text-2xl font-bold pb4 border="b-1 base">Vite Plugin Cloudflare Functions</h1>
       <div flex justify-start items-center>
         <span mr2 text-base-500>Endpoint:</span><span mr1 font-bold>/api/</span
