@@ -13,7 +13,6 @@ export const onRequestGet = makePagesFunction(async ({ params, env }) => {
 export const onRequestPost = makePagesFunction(async ({ params, request, env }) => {
   const key = params.key as string;
   const value = await request.text();
-  console.log(env);
   await env.STORE.put(key, value);
 
   return {
