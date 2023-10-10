@@ -4,10 +4,6 @@
 
 Make [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/platform/functions/) works with Vite friendly.
 
-> **Note**
->
-> Cloudflare Pages Functions is currently in beta stage.
-
 ## Features
 
 When should you use this plugin?
@@ -47,7 +43,7 @@ export default defineConfig({
 
 ### Functions
 
-Just write pages functions as usual, but you should use the following utility functions to make auto-generation and IDE type inference work.
+Just write pages functions as usual, but you can use the following utility functions to make auto-generation and IDE type inference work.
 
 + `makePagesFunction`
 + `makeRawPagesFunction`
@@ -111,7 +107,7 @@ export const onRequestGet = makePagesFunction(({ env }) => ({
 
 ### Client
 
-We generate the API endpoint response body type declarations automatically, so that with the provided client `useFunctions` (powered by [axios](https://github.com/axios/axios)), your IDE will provide smarter IntelliSense.
+Just write you client code as usual, but for we generate the API endpoint response body type declarations automatically, so that with the provided client `useFunctions` (powered by [axios](https://github.com/axios/axios)), your IDE will provide smarter IntelliSense.
 
 ```ts
 // /main.ts
