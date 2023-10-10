@@ -81,10 +81,8 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.9",
-    "@types/node": "^18.18.4",
     "axios": "^1.5.1",
     "ohmyfetch": "^0.4.21",
-    "unbuild": "^2.0.0",
     "vite": "^4.4.11",
     "vitest": "^0.34.6",
     "wrangler": "^3.11.0"

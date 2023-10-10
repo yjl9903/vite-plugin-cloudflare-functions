@@ -57,18 +57,12 @@ importers:
       '@types/debug':
         specifier: ^4.1.9
         version: 4.1.9
-      '@types/node':
-        specifier: ^18.18.4
-        version: 18.18.4
       axios:
         specifier: ^1.5.1
         version: 1.5.1(debug@4.3.4)
       ohmyfetch:
         specifier: ^0.4.21
         version: 0.4.21
-      unbuild:
-        specifier: ^2.0.0
-        version: 2.0.0(typescript@5.2.2)
       vite:
         specifier: ^4.4.11
         version: 4.4.11(@types/node@18.18.4)
