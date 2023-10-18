@@ -80,7 +80,7 @@
     "tree-kill": "^1.2.2"
   },
   "devDependencies": {
-    "@types/debug": "^4.1.9",
+    "@types/debug": "^4.1.10",
     "axios": "^1.5.1",
     "ohmyfetch": "^0.4.21",
     "typescript": "^5.2.2",
