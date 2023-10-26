@@ -5,8 +5,9 @@ import * as path from 'node:path';
 import { type Readable } from 'node:stream';
 import { type ChildProcessByStdio, spawn } from 'node:child_process';
 
-import colors from 'picocolors';
 import kill from 'tree-kill';
+import colors from 'picocolors';
+import { onDeath } from '@breadc/death';
 
 import type { UserConfig } from './types';
 
@@ -23,6 +24,28 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
 
   let preparePromise: Promise<void> | undefined;
   let wranglerProcess: ChildProcessByStdio<null, Readable, Readable> | undefined;
+  let workerProcess: ChildProcessByStdio<null, Readable, Readable> | undefined;
+  const killProcess = async () => {
+    if (wranglerProcess) {
+      const pid = wranglerProcess.pid;
+      debug(`Kill wrangler (PID: ${pid})`);
+      wranglerProcess = undefined;
+      if (pid) {
+        await new Promise((res) => kill(pid, () => res(undefined)));
+      }
+    }
+    if (workerProcess) {
+      const pid = workerProcess.pid;
+      debug(`Kill wrangler (PID: ${pid})`);
+      workerProcess = undefined;
+      if (pid) {
+        await new Promise((res) => kill(pid, () => res(undefined)));
+      }
+    }
+  };
+  onDeath(async () => {
+    await killProcess();
+  });
 
   if (!userConfig.dts) {
     userConfig.dts = true;
@@ -40,8 +63,10 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
     }
   };
 
-  function startWrangler() {
-    if (wranglerProcess) return;
+  async function startWrangler() {
+    if (wranglerProcess) {
+      await killProcess();
+    }
 
     const wranglerPort = userConfig.wrangler?.port ?? DefaultWranglerPort;
 
@@ -118,6 +143,8 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         delete wranglerEnv[key];
       }
     }
+
+    // Spawn process
     wranglerProcess = spawn('npx', command, {
       shell: process.platform === 'win32',
       stdio: ['ignore', 'pipe', 'pipe'],
@@ -160,13 +187,38 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       }
     });
 
-    wranglerProcess.on('exit', () => {
-      // Kill wrangler dev server when reloading vite config
-      if (wranglerProcess) {
-        wranglerProcess = undefined;
-        startWrangler();
+    if (userConfig.wrangler?.do) {
+      const command = [
+        'wrangler',
+        'dev',
+        '--persist-to',
+        path.join(functionsRoot, '.wrangler/state')
+      ];
+      if (compatibilityDate) {
+        command.push(`--compatibility-date=${compatibilityDate}`);
       }
-    });
+
+      workerProcess = spawn('npx', command, {
+        shell: process.platform === 'win32',
+        stdio: ['ignore', 'pipe', 'pipe'],
+        env: wranglerEnv,
+        cwd: functionsRoot
+      });
+
+      workerProcess.stdout.on('data', (chunk) => {
+        const text: string = chunk.toString('utf8').slice(0, -1);
+        if (userConfig.wrangler?.log && text) {
+          console.log(text);
+        }
+      });
+
+      workerProcess.stderr.on('data', (chunk) => {
+        const text = chunk.toString('utf8').slice(0, -1);
+        if (userConfig.wrangler?.log && text) {
+          console.error(text);
+        }
+      });
+    }
   }
 
   return {
@@ -200,7 +252,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         preparePromise = doAutoGen();
       }
     },
-    configureServer(_server) {
+    async configureServer(_server) {
       if (userConfig.dts) {
         setInterval(async () => {
           if (shouldGen) {
@@ -210,17 +262,10 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         }, 1000);
       }
 
-      startWrangler();
+      await startWrangler();
     },
-    closeBundle() {
-      if (wranglerProcess) {
-        const pid = wranglerProcess.pid;
-        debug(`Kill wrangler (PID: ${pid})`);
-        wranglerProcess = undefined;
-        if (pid) {
-          return new Promise((res) => kill(pid, () => res()));
-        }
-      }
+    async closeBundle() {
+      await killProcess();
     },
     renderStart() {
       if (userConfig.outDir) {

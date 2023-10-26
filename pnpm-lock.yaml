@@ -35,6 +35,9 @@ importers:
 
   packages/vite-plugin-cloudflare-functions:
     dependencies:
+      '@breadc/death':
+        specifier: ^0.9.7
+        version: 0.9.7
       '@cloudflare/workers-types':
         specifier: ^4.20231025.0
         version: 4.20231025.0
@@ -341,6 +344,10 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+
+  /@breadc/death@0.9.7:
+    resolution: {integrity: sha512-eIWHb5Hrnd5j/RLSgbY1mtRPECMSjRbqlxZmlG+mgNi0h0YNieaS86EYsIHxnPT+J682N/OE7LoHSVDTRmp6jw==}
+    dev: false
 
   /@cloudflare/kv-asset-handler@0.2.0:
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
