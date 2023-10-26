@@ -1,0 +1,10 @@
+name = "vite-plugin-cloudflare-functions"
+compatibility_date = "2023-10-26"
+main = "index.ts"
+
+[durable_objects]
+bindings = [{ name = "COUNTER", class_name = "Counter" }]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Counter"]

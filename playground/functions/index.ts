@@ -37,3 +37,5 @@ export class Counter implements DurableObject {
     return new Response('' + value);
   }
 }
+
+export default function () {}
