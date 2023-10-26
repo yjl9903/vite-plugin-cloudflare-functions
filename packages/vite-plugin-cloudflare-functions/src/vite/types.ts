@@ -59,7 +59,7 @@ export interface UserConfig {
     /**
      * Bind Durable Object
      */
-    do?: Record<string, string>;
+    do?: Record<string, string | { class: string; script: string }>;
 
     /**
      * Bind R2 bucket
@@ -67,7 +67,7 @@ export interface UserConfig {
     r2?: string | string[];
 
     /**
-     * Determines which version of the Workers runtime is used. 
+     * Determines which version of the Workers runtime is used.
      */
     compatibilityDate?: string;
   };

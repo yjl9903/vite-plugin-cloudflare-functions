@@ -72,8 +72,9 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
     }
     if (userConfig.wrangler?.do) {
       for (const [key, value] of Object.entries(userConfig.wrangler.do)) {
+        const config = typeof value === 'string' ? value : `${value.class}@${value.script}`;
         bindings.push('--do');
-        bindings.push(`"${key}=${value}"`);
+        bindings.push(`"${key}=${config}"`);
       }
     }
     if (userConfig.wrangler?.r2) {
