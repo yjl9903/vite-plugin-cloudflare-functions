@@ -10,6 +10,8 @@ declare module 'vite-plugin-cloudflare-functions/worker' {
     STORE: KVNamespace;
 
     USER: string;
+
+    COUNTER: DurableObjectNamespace;
   }
 
   interface PagesFunctionData {}

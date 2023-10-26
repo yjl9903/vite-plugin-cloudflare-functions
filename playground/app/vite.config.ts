@@ -16,7 +16,13 @@ export default defineConfig({
     CloudflarePagesFunctions({
       root: '../functions',
       outDir: '../../',
-      wrangler: { log: false, kv: 'STORE', binding: { USER: 'yjl9903' } }
+      wrangler: {
+        log: true,
+        compatibilityDate: '2023-10-26',
+        kv: 'STORE',
+        binding: { USER: 'yjl9903' },
+        do: { COUNTER: { class: 'Counter', script: 'do' } }
+      }
     })
   ]
 });

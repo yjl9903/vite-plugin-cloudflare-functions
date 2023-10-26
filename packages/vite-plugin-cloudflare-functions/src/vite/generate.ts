@@ -22,6 +22,9 @@ export async function generate(functionsRoot: string, dtsPath: string) {
     if (!file.startsWith('/')) {
       file = '/' + file;
     }
+    if (file.endsWith('/index')) {
+      file = file.replace(/index$/, '');
+    }
     file = file.replace(/\[\[([\w]+)\]\]$/g, '**:$1');
     file = file.replace(/\[([\w]+)\]/g, ':$1');
     return file;
