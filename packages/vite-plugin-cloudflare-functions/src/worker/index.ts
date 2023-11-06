@@ -36,6 +36,7 @@ export function makeRawResponse<T extends BodyInit | null | undefined>(
   body: T,
   init: ResponseInit = {}
 ): CloudflareResponse<T> {
+  // @ts-ignore
   return new CloudflareResponse(body, init);
 }
 
