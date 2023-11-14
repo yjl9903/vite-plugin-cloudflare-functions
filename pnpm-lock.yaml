@@ -61,8 +61,8 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       axios:
-        specifier: ^1.6.1
-        version: 1.6.1(debug@4.3.4)
+        specifier: ^1.6.2
+        version: 1.6.2(debug@4.3.4)
       ohmyfetch:
         specifier: ^0.4.21
         version: 0.4.21
@@ -82,8 +82,8 @@ importers:
   playground/app:
     dependencies:
       axios:
-        specifier: ^1.6.1
-        version: 1.6.1(debug@4.3.4)
+        specifier: ^1.6.2
+        version: 1.6.2(debug@4.3.4)
       vue:
         specifier: ^3.3.8
         version: 3.3.8(typescript@5.2.2)
@@ -1689,8 +1689,8 @@ packages:
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  /axios@1.6.1(debug@4.3.4):
-    resolution: {integrity: sha512-vfBmhDpKafglh0EldBEbVuoe7DyAavGSLWhuSm5ZSEKQnHhBf0xAAwybbNH1IkrJNGnS/VG4I5yxig1pCEXE4g==}
+  /axios@1.6.2(debug@4.3.4):
+    resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
     dependencies:
       follow-redirects: 1.15.3(debug@4.3.4)
       form-data: 4.0.0
