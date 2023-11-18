@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^20.9.1
-        version: 20.9.1
+        specifier: ^20.9.2
+        version: 20.9.2
       bumpp:
         specifier: latest
         version: 9.2.0
@@ -28,7 +28,7 @@ importers:
         version: 2.0.0(typescript@5.2.2)
       vite:
         specifier: ^5.0.0
-        version: 5.0.0(@types/node@20.9.1)
+        version: 5.0.0(@types/node@20.9.2)
       vitest:
         specifier: ^0.34.6
         version: 0.34.6
@@ -71,7 +71,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^5.0.0
-        version: 5.0.0(@types/node@20.9.1)
+        version: 5.0.0(@types/node@20.9.2)
       vitest:
         specifier: ^0.34.6
         version: 0.34.6
@@ -111,7 +111,7 @@ importers:
         version: 0.57.5(postcss@8.4.31)(rollup@3.29.4)(vite@5.0.0)
       vite:
         specifier: ^5.0.0
-        version: 5.0.0(@types/node@20.9.1)
+        version: 5.0.0(@types/node@20.9.2)
       vite-plugin-cloudflare-functions:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
@@ -1134,7 +1134,7 @@ packages:
       vite: ^4.4.9
     dependencies:
       unocss: 0.57.5(postcss@8.4.31)(rollup@3.29.4)(vite@5.0.0)
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
     dev: true
 
   /@polka/url@1.0.0-next.23:
@@ -1359,7 +1359,7 @@ packages:
   /@types/node-forge@1.3.9:
     resolution: {integrity: sha512-meK88cx/sTalPSLSoCzkiUB4VPIFHmxtXm5FaaqRDqBX2i/Sy8bJ4odsan0b20RBjPh06dAQ+OTTdnyQyhJZyQ==}
     dependencies:
-      '@types/node': 20.9.1
+      '@types/node': 20.9.2
     dev: true
 
   /@types/node@20.9.0:
@@ -1368,8 +1368,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.9.1:
-    resolution: {integrity: sha512-HhmzZh5LSJNS5O8jQKpJ/3ZcrrlG6L70hpGqMIAoM9YVD0YBRNWYsfwcXq8VnSjlNpCpgLzMXdiPo+dxcvSmiA==}
+  /@types/node@20.9.2:
+    resolution: {integrity: sha512-WHZXKFCEyIUJzAwh3NyyTHYSR35SevJ6mZ1nWwJafKtiQbqRTIKSRcw3Ma3acqgsent3RRDqeVwpHntMk+9irg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1393,7 +1393,7 @@ packages:
       '@unocss/core': 0.57.5
       '@unocss/reset': 0.57.5
       '@unocss/vite': 0.57.5(rollup@3.29.4)(vite@5.0.0)
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1586,7 +1586,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.3.2
       magic-string: 0.30.5
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1598,7 +1598,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
       vue: 3.3.8(typescript@5.2.2)
     dev: true
 
@@ -3556,7 +3556,7 @@ packages:
       '@unocss/transformer-directives': 0.57.5
       '@unocss/transformer-variant-group': 0.57.5
       '@unocss/vite': 0.57.5(rollup@3.29.4)(vite@5.0.0)
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -3625,7 +3625,7 @@ packages:
       git-repo-info: 2.1.1
       parse-github-url: 1.0.2
       remote-origin-url: 2.0.0
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
     dev: true
 
   /vite-plugin-inspect@0.7.42(rollup@3.29.4)(vite@5.0.0):
@@ -3646,7 +3646,7 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       sirv: 2.0.3
-      vite: 5.0.0(@types/node@20.9.1)
+      vite: 5.0.0(@types/node@20.9.2)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3688,7 +3688,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vite@5.0.0(@types/node@20.9.1):
+  /vite@5.0.0(@types/node@20.9.2):
     resolution: {integrity: sha512-ESJVM59mdyGpsiNAeHQOR/0fqNoOyWPYesFto8FFZugfmhdHx8Fzd8sF3Q/xkVhZsyOxHfdM7ieiVAorI9RjFw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3716,7 +3716,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.9.1
+      '@types/node': 20.9.2
       esbuild: 0.19.5
       postcss: 8.4.31
       rollup: 4.4.1
