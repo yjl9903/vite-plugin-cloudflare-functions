@@ -84,7 +84,7 @@
     "@types/debug": "^4.1.12",
     "axios": "^1.6.2",
     "ohmyfetch": "^0.4.21",
-    "typescript": "^5.2.2",
+    "typescript": "^5.3.2",
     "vite": "^5.0.0",
     "vitest": "^0.34.6",
     "wrangler": "^3.16.0"
