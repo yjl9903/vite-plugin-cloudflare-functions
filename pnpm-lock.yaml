@@ -119,8 +119,8 @@ importers:
         specifier: 0.4.1
         version: 0.4.1(vite@5.0.4)
       vite-plugin-inspect:
-        specifier: ^0.8.0
-        version: 0.8.0(rollup@3.29.4)(vite@5.0.4)
+        specifier: ^0.8.1
+        version: 0.8.1(rollup@3.29.4)(vite@5.0.4)
       wrangler:
         specifier: ^3.18.0
         version: 3.18.0
@@ -4072,8 +4072,8 @@ packages:
       vite: 5.0.4(@types/node@20.10.2)
     dev: true
 
-  /vite-plugin-inspect@0.8.0(rollup@3.29.4)(vite@5.0.4):
-    resolution: {integrity: sha512-6Ijifcb/dWYSZoTlkYaJmLfnsi3tR19qB706CV7D4mG6PBgBx4e5cGmICaxAFwlF9yJv6MeMwmNlXa4exA9DQw==}
+  /vite-plugin-inspect@0.8.1(rollup@3.29.4)(vite@5.0.4):
+    resolution: {integrity: sha512-oPBPVGp6tBd5KdY/qY6lrbLXqrbHRG0hZLvEaJfiZ/GQfDB+szRuLHblQh1oi1Hhh8GeLit/50l4xfs2SA+TCA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
