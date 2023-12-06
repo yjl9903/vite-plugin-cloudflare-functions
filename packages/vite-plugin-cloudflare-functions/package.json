@@ -85,7 +85,7 @@
     "axios": "^1.6.2",
     "ohmyfetch": "^0.4.21",
     "typescript": "^5.3.2",
-    "vite": "^5.0.5",
+    "vite": "^5.0.6",
     "vitest": "^1.0.1",
     "wrangler": "^3.19.0"
   },
