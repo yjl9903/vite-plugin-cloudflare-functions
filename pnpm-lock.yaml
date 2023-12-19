@@ -76,8 +76,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@types/node@20.10.5)
       wrangler:
-        specifier: ^3.21.0
-        version: 3.21.0
+        specifier: ^3.22.0
+        version: 3.22.0
 
   playground/app:
     dependencies:
@@ -122,8 +122,8 @@ importers:
         specifier: ^0.8.1
         version: 0.8.1(rollup@3.29.4)(vite@5.0.10)
       wrangler:
-        specifier: ^3.21.0
-        version: 3.21.0
+        specifier: ^3.22.0
+        version: 3.22.0
 
   playground/functions:
     devDependencies:
@@ -4287,8 +4287,8 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20231030.0
     dev: true
 
-  /wrangler@3.21.0:
-    resolution: {integrity: sha512-DLoo4XfjeyuGRAVWZFHmU1jWnZIfyLGDm6Ika9oy/CLCPfJzVJvf2jI70EU5BlEHWDZXMSJKw7FDdgSqwhaQXg==}
+  /wrangler@3.22.0:
+    resolution: {integrity: sha512-P+HJ2iXsPIVb2uXvfG1HubFVz+GowXfTZv+vTuNWZq7xRgJroB9JSZIM6rZIrtq2rC+I8UxxbBEvwldLVw8+FA==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     dependencies:
