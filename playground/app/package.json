@@ -22,6 +22,6 @@
     "vite-plugin-cloudflare-functions": "workspace:*",
     "vite-plugin-info": "0.4.1",
     "vite-plugin-inspect": "^0.8.1",
-    "wrangler": "^3.22.3"
+    "wrangler": "^3.22.4"
   }
 }
