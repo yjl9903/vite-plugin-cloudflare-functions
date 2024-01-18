@@ -86,7 +86,7 @@
     "ohmyfetch": "^0.4.21",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
-    "vitest": "^1.2.0",
+    "vitest": "^1.2.1",
     "wrangler": "^3.22.5"
   },
   "peerDependencies": {
