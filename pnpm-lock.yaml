@@ -61,8 +61,8 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       axios:
-        specifier: ^1.6.3
-        version: 1.6.7(debug@4.3.4)
+        specifier: ^1.6.8
+        version: 1.6.8(debug@4.3.4)
       ohmyfetch:
         specifier: ^0.4.21
         version: 0.4.21
@@ -82,8 +82,8 @@ importers:
   playground/app:
     dependencies:
       axios:
-        specifier: ^1.6.3
-        version: 1.6.7(debug@4.3.4)
+        specifier: ^1.6.8
+        version: 1.6.8(debug@4.3.4)
       vue:
         specifier: ^3.4.25
         version: 3.4.25(typescript@5.3.3)
@@ -108,7 +108,7 @@ importers:
         version: 10.7.2(vue@3.4.25)
       unocss:
         specifier: ^0.58.5
-        version: 0.58.5(postcss@8.4.33)(rollup@3.29.4)(vite@5.0.12)
+        version: 0.58.5(postcss@8.4.38)(rollup@3.29.4)(vite@5.0.12)
       vite:
         specifier: ^5.0.12
         version: 5.0.12(@types/node@20.11.16)
@@ -1088,7 +1088,7 @@ packages:
       unocss: ^0.55.2
       vite: ^4.4.9
     dependencies:
-      unocss: 0.58.5(postcss@8.4.33)(rollup@3.29.4)(vite@5.0.12)
+      unocss: 0.58.5(postcss@8.4.38)(rollup@3.29.4)(vite@5.0.12)
       vite: 5.0.12(@types/node@20.11.16)
     dev: true
 
@@ -1399,7 +1399,7 @@ packages:
       sirv: 2.0.4
     dev: true
 
-  /@unocss/postcss@0.58.5(postcss@8.4.33):
+  /@unocss/postcss@0.58.5(postcss@8.4.38):
     resolution: {integrity: sha512-m4L2YRdYfT6CV306Kl2VwEwbqa/92EpW4GE2Kqak1RuJyFJXBnWEEMJV4Uy6B1jWKLlCEWkuVUW33JUg7X6BxQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1411,7 +1411,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.2
       magic-string: 0.30.6
-      postcss: 8.4.33
+      postcss: 8.4.38
     dev: true
 
   /@unocss/preset-attributify@0.58.5:
@@ -1750,10 +1750,10 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /axios@1.6.7(debug@4.3.4):
-    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
+  /axios@1.6.8(debug@4.3.4):
+    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
     dependencies:
-      follow-redirects: 1.15.5(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.4)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -2385,8 +2385,8 @@ packages:
     hasBin: true
     dev: true
 
-  /follow-redirects@1.15.5(debug@4.3.4):
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
+  /follow-redirects@1.15.6(debug@4.3.4):
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -3974,7 +3974,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.58.5(postcss@8.4.33)(rollup@3.29.4)(vite@5.0.12):
+  /unocss@0.58.5(postcss@8.4.38)(rollup@3.29.4)(vite@5.0.12):
     resolution: {integrity: sha512-0g4P6jLgRRNnhscxw7nQ9RHGrKJ1UPPiHPet+YT3TXUcmy4mTiYgo9+kGQf5bjyrzsELJ10cT6Qz2y6g9Tls4g==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3990,7 +3990,7 @@ packages:
       '@unocss/cli': 0.58.5(rollup@3.29.4)
       '@unocss/core': 0.58.5
       '@unocss/extractor-arbitrary-variants': 0.58.5
-      '@unocss/postcss': 0.58.5(postcss@8.4.33)
+      '@unocss/postcss': 0.58.5(postcss@8.4.38)
       '@unocss/preset-attributify': 0.58.5
       '@unocss/preset-icons': 0.58.5
       '@unocss/preset-mini': 0.58.5
