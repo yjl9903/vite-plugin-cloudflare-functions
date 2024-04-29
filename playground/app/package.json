@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "axios": "^1.6.8",
-    "vue": "^3.4.25"
+    "vue": "^3.4.26"
   },
   "devDependencies": {
     "@onekuma/preset.css": "^0.1.11",
