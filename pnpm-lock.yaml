@@ -27,8 +27,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(typescript@5.4.5)
       vite:
-        specifier: ^5.2.10
-        version: 5.2.10(@types/node@20.12.8)
+        specifier: ^5.2.11
+        version: 5.2.11(@types/node@20.12.8)
       vitest:
         specifier: ^1.5.3
         version: 1.5.3(@types/node@20.12.8)
@@ -70,8 +70,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       vite:
-        specifier: ^5.2.10
-        version: 5.2.10(@types/node@20.12.8)
+        specifier: ^5.2.11
+        version: 5.2.11(@types/node@20.12.8)
       vitest:
         specifier: ^1.5.3
         version: 1.5.3(@types/node@20.12.8)
@@ -96,31 +96,31 @@ importers:
         version: 0.1.11
       '@onekuma/ui':
         specifier: ^0.1.11
-        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)))(vite@5.2.10(@types/node@20.12.8)))(@vueuse/core@10.9.0(vue@3.4.26(typescript@5.4.5)))(vue@3.4.26(typescript@5.4.5))
+        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)))(vite@5.2.11(@types/node@20.12.8)))(@vueuse/core@10.9.0(vue@3.4.26(typescript@5.4.5)))(vue@3.4.26(typescript@5.4.5))
       '@onekuma/vite':
         specifier: ^0.1.11
-        version: 0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)))(vite@5.2.10(@types/node@20.12.8))
+        version: 0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)))(vite@5.2.11(@types/node@20.12.8))
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
-        version: 5.0.4(vite@5.2.10(@types/node@20.12.8))(vue@3.4.26(typescript@5.4.5))
+        version: 5.0.4(vite@5.2.11(@types/node@20.12.8))(vue@3.4.26(typescript@5.4.5))
       '@vueuse/core':
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.26(typescript@5.4.5))
       unocss:
         specifier: ^0.59.4
-        version: 0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))
+        version: 0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))
       vite:
-        specifier: ^5.2.10
-        version: 5.2.10(@types/node@20.12.8)
+        specifier: ^5.2.11
+        version: 5.2.11(@types/node@20.12.8)
       vite-plugin-cloudflare-functions:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-info:
         specifier: 0.4.1
-        version: 0.4.1(vite@5.2.10(@types/node@20.12.8))
+        version: 0.4.1(vite@5.2.11(@types/node@20.12.8))
       vite-plugin-inspect:
         specifier: ^0.8.4
-        version: 0.8.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))
+        version: 0.8.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))
       wrangler:
         specifier: ^3.53.0
         version: 3.53.0(@cloudflare/workers-types@4.20240423.0)
@@ -2522,8 +2522,8 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite@5.2.10:
-    resolution: {integrity: sha512-PAzgUZbP7msvQvqdSD+ErD5qGnSFiGOoWmV5yAKUEI0kdhjbH6nMWVyZQC/hSc4aXwc0oJ9aEdIiF9Oje0JFCw==}
+  vite@5.2.11:
+    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -3177,17 +3177,17 @@ snapshots:
 
   '@onekuma/reset@0.1.11': {}
 
-  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)))(vite@5.2.10(@types/node@20.12.8)))(@vueuse/core@10.9.0(vue@3.4.26(typescript@5.4.5)))(vue@3.4.26(typescript@5.4.5))':
+  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)))(vite@5.2.11(@types/node@20.12.8)))(@vueuse/core@10.9.0(vue@3.4.26(typescript@5.4.5)))(vue@3.4.26(typescript@5.4.5))':
     dependencies:
       '@onekuma/preset.css': 0.1.11
-      '@onekuma/vite': 0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)))(vite@5.2.10(@types/node@20.12.8))
+      '@onekuma/vite': 0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)))(vite@5.2.11(@types/node@20.12.8))
       '@vueuse/core': 10.9.0(vue@3.4.26(typescript@5.4.5))
       vue: 3.4.26(typescript@5.4.5)
 
-  '@onekuma/vite@0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)))(vite@5.2.10(@types/node@20.12.8))':
+  '@onekuma/vite@0.1.11(unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)))(vite@5.2.11(@types/node@20.12.8))':
     dependencies:
-      unocss: 0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))
-      vite: 5.2.10(@types/node@20.12.8)
+      unocss: 0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))
+      vite: 5.2.11(@types/node@20.12.8)
 
   '@polka/url@1.0.0-next.25': {}
 
@@ -3322,13 +3322,13 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@unocss/astro@0.59.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))':
+  '@unocss/astro@0.59.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))':
     dependencies:
       '@unocss/core': 0.59.4
       '@unocss/reset': 0.59.4
-      '@unocss/vite': 0.59.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))
+      '@unocss/vite': 0.59.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))
     optionalDependencies:
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
     transitivePeerDependencies:
       - rollup
 
@@ -3459,7 +3459,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.59.4
 
-  '@unocss/vite@0.59.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))':
+  '@unocss/vite@0.59.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.17.0)
@@ -3471,13 +3471,13 @@ snapshots:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.10
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
     transitivePeerDependencies:
       - rollup
 
-  '@vitejs/plugin-vue@5.0.4(vite@5.2.10(@types/node@20.12.8))(vue@3.4.26(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.0.4(vite@5.2.11(@types/node@20.12.8))(vue@3.4.26(typescript@5.4.5))':
     dependencies:
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
       vue: 3.4.26(typescript@5.4.5)
 
   '@vitest/expect@1.5.3':
@@ -4945,9 +4945,9 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)):
+  unocss@0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)):
     dependencies:
-      '@unocss/astro': 0.59.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))
+      '@unocss/astro': 0.59.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))
       '@unocss/cli': 0.59.4(rollup@4.17.0)
       '@unocss/core': 0.59.4
       '@unocss/extractor-arbitrary-variants': 0.59.4
@@ -4966,9 +4966,9 @@ snapshots:
       '@unocss/transformer-compile-class': 0.59.4
       '@unocss/transformer-directives': 0.59.4
       '@unocss/transformer-variant-group': 0.59.4
-      '@unocss/vite': 0.59.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8))
+      '@unocss/vite': 0.59.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8))
     optionalDependencies:
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -5000,7 +5000,7 @@ snapshots:
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5011,15 +5011,15 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-info@0.4.1(vite@5.2.10(@types/node@20.12.8)):
+  vite-plugin-info@0.4.1(vite@5.2.11(@types/node@20.12.8)):
     dependencies:
       ci-info: 3.9.0
       git-repo-info: 2.1.1
       parse-github-url: 1.0.2
       remote-origin-url: 2.0.0
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
 
-  vite-plugin-inspect@0.8.4(rollup@4.17.0)(vite@5.2.10(@types/node@20.12.8)):
+  vite-plugin-inspect@0.8.4(rollup@4.17.0)(vite@5.2.11(@types/node@20.12.8)):
     dependencies:
       '@antfu/utils': 0.7.7
       '@rollup/pluginutils': 5.1.0(rollup@4.17.0)
@@ -5030,12 +5030,12 @@ snapshots:
       perfect-debounce: 1.0.0
       picocolors: 1.0.0
       sirv: 2.0.4
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite@5.2.10(@types/node@20.12.8):
+  vite@5.2.11(@types/node@20.12.8):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
@@ -5063,7 +5063,7 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.2.10(@types/node@20.12.8)
+      vite: 5.2.11(@types/node@20.12.8)
       vite-node: 1.5.3(@types/node@20.12.8)
       why-is-node-running: 2.2.2
     optionalDependencies:
