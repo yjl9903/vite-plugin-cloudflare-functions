@@ -87,7 +87,7 @@
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
     "vitest": "^1.5.3",
-    "wrangler": "^3.53.0"
+    "wrangler": "^3.53.1"
   },
   "peerDependencies": {
     "axios": "^1.5.0",
