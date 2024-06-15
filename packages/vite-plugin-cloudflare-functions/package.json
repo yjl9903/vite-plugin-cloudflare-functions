@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@breadc/death": "^0.9.7",
-    "@cloudflare/workers-types": "^4.20240423.0",
+    "@cloudflare/workers-types": "^4.20240614.0",
     "debug": "^4.3.4",
     "fast-glob": "^3.3.2",
     "mlly": "^1.6.1",
