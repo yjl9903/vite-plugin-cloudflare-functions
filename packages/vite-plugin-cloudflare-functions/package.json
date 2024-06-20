@@ -76,7 +76,7 @@
     "@cloudflare/workers-types": "^4.20240423.0",
     "debug": "^4.3.4",
     "fast-glob": "^3.3.2",
-    "mlly": "^1.6.1",
+    "mlly": "^1.7.1",
     "picocolors": "^1.0.0",
     "tree-kill": "^1.2.2"
   },
