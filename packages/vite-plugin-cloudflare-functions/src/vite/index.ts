@@ -47,7 +47,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
     await killProcess();
   });
 
-  if (!userConfig.dts) {
+  if (typeof userConfig.dts !== 'boolean' && typeof userConfig.dts !== 'string') {
     userConfig.dts = true;
   }
 
