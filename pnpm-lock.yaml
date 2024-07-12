@@ -39,7 +39,7 @@ importers:
         specifier: ^0.9.7
         version: 0.9.7
       '@cloudflare/workers-types':
-        specifier: ^4.20240423.0
+        specifier: ^4.20240701.0
         version: 4.20240701.0
       debug:
         specifier: ^4.3.5
@@ -76,7 +76,7 @@ importers:
         specifier: ^5.5.3
         version: 5.5.3
       wrangler:
-        specifier: ^3.53.1
+        specifier: ^3.64.0
         version: 3.64.0(@cloudflare/workers-types@4.20240701.0)
 
   playground/app:
@@ -119,7 +119,7 @@ importers:
         specifier: ^0.8.4
         version: 0.8.4(rollup@4.18.1)(vite@5.3.3(@types/node@20.14.10))
       wrangler:
-        specifier: ^3.53.1
+        specifier: ^3.64.0
         version: 3.64.0(@cloudflare/workers-types@4.20240701.0)
 
   playground/functions:
