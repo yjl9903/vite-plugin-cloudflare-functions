@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 import vue from '@vitejs/plugin-vue';
-import Info from 'vite-plugin-info';
+import Info from 'unplugin-info';
 import Inspect from 'vite-plugin-inspect';
 import CloudflarePagesFunctions from 'vite-plugin-cloudflare-functions';
 

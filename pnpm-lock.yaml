@@ -63,6 +63,9 @@ importers:
       axios:
         specifier: ^1.6.8
         version: 1.6.8(debug@4.3.5)
+      ofetch:
+        specifier: ^1.3.4
+        version: 1.3.4
       ohmyfetch:
         specifier: ^0.4.21
         version: 0.4.21
@@ -109,15 +112,15 @@ importers:
       unocss:
         specifier: ^0.59.4
         version: 0.59.4(postcss@8.4.38)(rollup@4.17.0)(vite@5.3.1(@types/node@20.12.10))
+      unplugin-info:
+        specifier: ^1.1.0
+        version: 1.1.0(esbuild@0.21.5)(rollup@4.17.0)(vite@5.3.1(@types/node@20.12.10))
       vite:
         specifier: ^5.3.1
         version: 5.3.1(@types/node@20.12.10)
       vite-plugin-cloudflare-functions:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
-      vite-plugin-info:
-        specifier: 0.4.1
-        version: 0.4.1(vite@5.3.1(@types/node@20.12.10))
       vite-plugin-inspect:
         specifier: ^0.8.4
         version: 0.8.4(rollup@4.17.0)(vite@5.3.1(@types/node@20.12.10))
@@ -940,6 +943,12 @@ packages:
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
 
+  '@kwsites/file-exists@1.1.1':
+    resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}
+
+  '@kwsites/promise-deferred@1.1.1':
+    resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1413,8 +1422,8 @@ packages:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
 
-  ci-info@3.9.0:
-    resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
+  ci-info@4.0.0:
+    resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
     engines: {node: '>=8'}
 
   citty@0.1.6:
@@ -1720,13 +1729,11 @@ packages:
     resolution: {integrity: sha512-8EHPljDvs7qKykr6uw8b+lqLiUc/vUg+KVTI0uND4s63TdsZM2Xus3mflvF0DDG9SiM4RlCkFGL+7aAjRmV7KA==}
     hasBin: true
 
-  git-config-path@2.0.0:
-    resolution: {integrity: sha512-qc8h1KIQbJpp+241id3GuAtkdyJ+IK+LIVtkiFTRKRrmddDzs3SI9CvP1QYmWBFvm1I/PWRwj//of8bgAc0ltA==}
-    engines: {node: '>=4'}
+  git-up@7.0.0:
+    resolution: {integrity: sha512-ONdIrbBCFusq1Oy0sC71F5azx8bVkvtZtMJAsv+a6lz5YAmbNnLD6HAB4gptHZVLPR8S2/kVN6Gab7lryq5+lQ==}
 
-  git-repo-info@2.1.1:
-    resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
-    engines: {node: '>= 4.0'}
+  git-url-parse@14.0.0:
+    resolution: {integrity: sha512-NnLweV+2A4nCvn4U/m2AoYu0pPKlsmhK9cknG7IMwsjFY1S2jxM+mAhsDxyxfCIGfGaD+dozsyX4b6vkYc83yQ==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -1789,9 +1796,6 @@ packages:
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
-  ini@1.3.8:
-    resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
-
   is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
@@ -1830,6 +1834,9 @@ packages:
 
   is-reference@1.2.1:
     resolution: {integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==}
+
+  is-ssh@1.4.0:
+    resolution: {integrity: sha512-x7+VxdxOdlV3CYpjvRLBv5Lo9OJerlYanjwFrPR9fuGPjCiNiCzFgAWpiLAohSbsnH4ZAys3SBh+hq5rJosxUQ==}
 
   is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
@@ -2090,14 +2097,11 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  parse-git-config@3.0.0:
-    resolution: {integrity: sha512-wXoQGL1D+2COYWCD35/xbiKma1Z15xvZL8cI25wvxzled58V51SJM04Urt/uznS900iQor7QO04SgdfT/XlbuA==}
-    engines: {node: '>=8'}
+  parse-path@7.0.0:
+    resolution: {integrity: sha512-Euf9GG8WT9CdqwuWJGdf3RkUcTBArppHABkO7Lm8IzRQp0e2r/kkFnmhu4TSK30Wcu5rVAZLmfPKSBBi9tWFog==}
 
-  parse-github-url@1.0.2:
-    resolution: {integrity: sha512-kgBf6avCbO3Cn6+RnzRGLkUsv4ZVqv/VfAYkRsyBcgkshNvVBkRn1FEZcW0Jb+npXQWm2vHPnnOqFteZxRRGNw==}
-    engines: {node: '>=0.10.0'}
-    hasBin: true
+  parse-url@8.1.0:
+    resolution: {integrity: sha512-xDvOoLU5XRrcOZvnI6b8zA6n9O9ejNk/GExuz1yBuWUGn9KA97GI6HTs6u02wKara1CeVmZhH+0TZFdWScR89w==}
 
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
@@ -2346,6 +2350,9 @@ packages:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
     engines: {node: '>= 6'}
 
+  protocols@2.0.1:
+    resolution: {integrity: sha512-/XJ368cyBJ7fzLMwLKv1e4vLxOju2MNAIokcr7meSaNcVbWz/CPcW22cP04mwxOErdA5mwjA8Q6w/cdAQxVn7Q==}
+
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
@@ -2361,10 +2368,6 @@ packages:
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
-
-  remote-origin-url@2.0.0:
-    resolution: {integrity: sha512-4TKz5bTDEHFzsqgjQZY/NxNqceWhtWD69Fgwetm+172GT2NoljyQssB649ECUBHGhBINuGwKw8mfcjQFugdIlg==}
-    engines: {node: '>=8'}
 
   resolve.exports@2.0.2:
     resolution: {integrity: sha512-X2UW6Nw3n/aMgDVy+0rSqgHlv39WZAlZrXCdnbyEiKm17DSqHX4MmQMaST3FbeWR5FTuRcUwYAziZajji0Y7mg==}
@@ -2445,6 +2448,9 @@ packages:
   signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  simple-git@3.25.0:
+    resolution: {integrity: sha512-KIY5sBnzc4yEcJXW7Tdv4viEz8KyG+nU0hay+DWZasvdFOYKeUZ6Xc25LUHHjw0tinPT7O1eY6pzX7pRT1K8rw==}
 
   sirv@2.0.4:
     resolution: {integrity: sha512-94Bdh3cC2PKrbgSOUqTiGPWVZeSiXfKOVZNJniWoqrWrRkB1CJzBU3NEbiTsPcYy1lDsANA/THzS+9WBiy5nfQ==}
@@ -2642,6 +2648,33 @@ packages:
       vite:
         optional: true
 
+  unplugin-info@1.1.0:
+    resolution: {integrity: sha512-sJfczOBdpY+6tpJswBrQej0qvyAPLODe7cimnu1PCRgWHOuMnSAwaWUps1BUlBKhnWEXe7nzLjfw9fWOUM/P9Q==}
+    peerDependencies:
+      '@nuxt/kit': ^3
+      '@nuxt/schema': ^3
+      esbuild: '*'
+      rollup: ^2 || ^3 || ^4
+      vite: '>=3.2.7'
+      webpack: ^4 || ^5
+    peerDependenciesMeta:
+      '@nuxt/kit':
+        optional: true
+      '@nuxt/schema':
+        optional: true
+      esbuild:
+        optional: true
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+
+  unplugin@1.11.0:
+    resolution: {integrity: sha512-3r7VWZ/webh0SGgJScpWl2/MRCZK5d3ZYFcNaeci/GQ7Teop7zf0Nl2pUuz7G21BwPd9pcUPOC5KmJ2L3WgC5g==}
+    engines: {node: '>=14.0.0'}
+
   untyped@1.4.2:
     resolution: {integrity: sha512-nC5q0DnPEPVURPhfPQLahhSTnemVtPzdx7ofiRxXpOB2SYnb3MfdU3DVGyJdS8Lx+tBWeAePO8BfU/3EgksM7Q==}
     hasBin: true
@@ -2659,11 +2692,6 @@ packages:
     resolution: {integrity: sha512-de6HJgzC+TFzOu0NTC4RAIsyf/DY/ibWDYQUcuEA84EMHhcefTUGkjFHKKEJhQN4A+6I0u++kr3l36ZF2d7XRw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
-
-  vite-plugin-info@0.4.1:
-    resolution: {integrity: sha512-CP+B3N1+tdEM/o2Cu3kQpU7H/qABvNb5GqDVsbuH3ICJfdUyHn8xCZPEVQ5dB8/gr/vzFnzRoPbX2YcZQzG7jQ==}
-    peerDependencies:
-      vite: ^2.9.13 || ^3.0.0 || ^4.0.0
 
   vite-plugin-inspect@0.8.4:
     resolution: {integrity: sha512-G0N3rjfw+AiiwnGw50KlObIHYWfulVwaCBUBLh2xTW9G1eM9ocE5olXkEYUbwyTmX+azM8duubi+9w5awdCz+g==}
@@ -2746,6 +2774,13 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  webpack-sources@3.2.3:
+    resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
+    engines: {node: '>=10.13.0'}
+
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -3387,6 +3422,14 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
+  '@kwsites/file-exists@1.1.1':
+    dependencies:
+      debug: 4.3.5
+    transitivePeerDependencies:
+      - supports-color
+
+  '@kwsites/promise-deferred@1.1.1': {}
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -3962,7 +4005,7 @@ snapshots:
 
   chownr@2.0.0: {}
 
-  ci-info@3.9.0: {}
+  ci-info@4.0.0: {}
 
   citty@0.1.6:
     dependencies:
@@ -4356,9 +4399,14 @@ snapshots:
       pathe: 1.1.2
       tar: 6.2.1
 
-  git-config-path@2.0.0: {}
+  git-up@7.0.0:
+    dependencies:
+      is-ssh: 1.4.0
+      parse-url: 8.1.0
 
-  git-repo-info@2.1.1: {}
+  git-url-parse@14.0.0:
+    dependencies:
+      git-up: 7.0.0
 
   glob-parent@5.1.2:
     dependencies:
@@ -4420,8 +4468,6 @@ snapshots:
 
   inherits@2.0.4: {}
 
-  ini@1.3.8: {}
-
   is-binary-path@2.1.0:
     dependencies:
       binary-extensions: 2.3.0
@@ -4453,6 +4499,10 @@ snapshots:
   is-reference@1.2.1:
     dependencies:
       '@types/estree': 1.0.5
+
+  is-ssh@1.4.0:
+    dependencies:
+      protocols: 2.0.1
 
   is-stream@2.0.1: {}
 
@@ -4699,12 +4749,13 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  parse-git-config@3.0.0:
+  parse-path@7.0.0:
     dependencies:
-      git-config-path: 2.0.0
-      ini: 1.3.8
+      protocols: 2.0.1
 
-  parse-github-url@1.0.2: {}
+  parse-url@8.1.0:
+    dependencies:
+      parse-path: 7.0.0
 
   path-exists@4.0.0: {}
 
@@ -4924,6 +4975,8 @@ snapshots:
       kleur: 3.0.3
       sisteransi: 1.0.5
 
+  protocols@2.0.1: {}
+
   proxy-from-env@1.1.0: {}
 
   queue-microtask@1.2.3: {}
@@ -4938,10 +4991,6 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
-
-  remote-origin-url@2.0.0:
-    dependencies:
-      parse-git-config: 3.0.0
 
   resolve.exports@2.0.2: {}
 
@@ -5031,6 +5080,14 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
+
+  simple-git@3.25.0:
+    dependencies:
+      '@kwsites/file-exists': 1.1.1
+      '@kwsites/promise-deferred': 1.1.1
+      debug: 4.3.5
+    transitivePeerDependencies:
+      - supports-color
 
   sirv@2.0.4:
     dependencies:
@@ -5233,6 +5290,26 @@ snapshots:
       - rollup
       - supports-color
 
+  unplugin-info@1.1.0(esbuild@0.21.5)(rollup@4.17.0)(vite@5.3.1(@types/node@20.12.10)):
+    dependencies:
+      ci-info: 4.0.0
+      git-url-parse: 14.0.0
+      simple-git: 3.25.0
+      unplugin: 1.11.0
+    optionalDependencies:
+      esbuild: 0.21.5
+      rollup: 4.17.0
+      vite: 5.3.1(@types/node@20.12.10)
+    transitivePeerDependencies:
+      - supports-color
+
+  unplugin@1.11.0:
+    dependencies:
+      acorn: 8.11.3
+      chokidar: 3.6.0
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.6.2
+
   untyped@1.4.2:
     dependencies:
       '@babel/core': 7.24.4
@@ -5269,14 +5346,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-
-  vite-plugin-info@0.4.1(vite@5.3.1(@types/node@20.12.10)):
-    dependencies:
-      ci-info: 3.9.0
-      git-repo-info: 2.1.1
-      parse-github-url: 1.0.2
-      remote-origin-url: 2.0.0
-      vite: 5.3.1(@types/node@20.12.10)
 
   vite-plugin-inspect@0.8.4(rollup@4.17.0)(vite@5.3.1(@types/node@20.12.10)):
     dependencies:
@@ -5349,6 +5418,10 @@ snapshots:
       '@vue/shared': 3.4.31
     optionalDependencies:
       typescript: 5.4.5
+
+  webpack-sources@3.2.3: {}
+
+  webpack-virtual-modules@0.6.2: {}
 
   which@2.0.2:
     dependencies:

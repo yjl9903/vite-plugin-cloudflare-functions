@@ -18,7 +18,7 @@
     "target": "ESNext",
     "types": [
       "vite/client",
-      "vite-plugin-info/client"
+      "unplugin-info/client"
     ],
     "paths": {
       "vite-plugin-cloudflare-functions": ["../../packages/vite-plugin-cloudflare-functions/src/index.ts"],
