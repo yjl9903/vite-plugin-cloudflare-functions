@@ -85,7 +85,7 @@
     "axios": "^1.7.2",
     "ofetch": "^1.3.4",
     "ohmyfetch": "^0.4.21",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.3",
     "wrangler": "^3.53.1"
   },
   "peerDependencies": {
