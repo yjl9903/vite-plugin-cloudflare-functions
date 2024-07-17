@@ -116,8 +116,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-inspect:
-        specifier: ^0.8.4
-        version: 0.8.4(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11))
+        specifier: ^0.8.5
+        version: 0.8.5(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11))
       wrangler:
         specifier: ^3.65.0
         version: 3.65.0(@cloudflare/workers-types@4.20240712.0)
@@ -2530,8 +2530,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-inspect@0.8.4:
-    resolution: {integrity: sha512-G0N3rjfw+AiiwnGw50KlObIHYWfulVwaCBUBLh2xTW9G1eM9ocE5olXkEYUbwyTmX+azM8duubi+9w5awdCz+g==}
+  vite-plugin-inspect@0.8.5:
+    resolution: {integrity: sha512-JvTUqsP1JNDw0lMZ5Z/r5cSj81VK2B7884LO1DC3GMBhdcjcsAnJjdWq7bzQL01Xbh+v60d3lju3g+z7eAtNew==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
@@ -5147,7 +5147,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-inspect@0.8.4(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)):
+  vite-plugin-inspect@0.8.5(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.0(rollup@4.18.1)
