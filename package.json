@@ -13,7 +13,7 @@
     "preversion": "pnpm build && pnpm test"
   },
   "devDependencies": {
-    "@types/node": "^20.14.12",
+    "@types/node": "^20.14.15",
     "bumpp": "latest",
     "prettier": "latest",
     "turbo": "^2.0.9",
