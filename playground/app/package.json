@@ -16,7 +16,7 @@
     "@onekuma/ui": "^0.1.11",
     "@onekuma/vite": "^0.1.11",
     "@vitejs/plugin-vue": "^5.1.1",
-    "@vueuse/core": "^10.11.0",
+    "@vueuse/core": "^10.11.1",
     "unocss": "^0.61.6",
     "unplugin-info": "^1.1.0",
     "vite-plugin-cloudflare-functions": "workspace:*",
