@@ -112,8 +112,14 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       }
     }
     if (userConfig.wrangler?.ai) {
-      bindings.push('--ai');
-      bindings.push('AI');
+      const ais = Array.isArray(userConfig.wrangler.ai)
+        ? userConfig.wrangler.ai
+        : [userConfig.wrangler.ai];
+
+      for (const ai of ais) {
+        bindings.push('--ai');
+        bindings.push(ai);
+      }
     }
 
     const command = [
