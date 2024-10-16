@@ -69,7 +69,7 @@ export interface UserConfig {
     /**
      * Bind Workers AI
      */
-    ai?: boolean;
+    ai?: string | string[];
 
     /**
      * Determines which version of the Workers runtime is used.

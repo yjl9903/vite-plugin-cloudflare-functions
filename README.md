@@ -167,7 +167,9 @@ export default defineConfig({
           'BUCKET'
         ],
         // Bind Workers AI
-        ai: true
+        ai: [
+          'AI'
+        ]
       }
     })
   ]
