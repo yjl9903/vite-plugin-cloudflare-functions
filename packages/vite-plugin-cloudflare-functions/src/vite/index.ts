@@ -111,6 +111,10 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
         bindings.push(r2);
       }
     }
+    if (userConfig.wrangler?.ai) {
+      bindings.push('--ai');
+      bindings.push('AI');
+    }
 
     const command = [
       'wrangler',
