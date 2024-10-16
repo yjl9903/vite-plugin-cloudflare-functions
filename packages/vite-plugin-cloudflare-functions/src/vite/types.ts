@@ -67,6 +67,11 @@ export interface UserConfig {
     r2?: string | string[];
 
     /**
+     * Bind Workers AI
+     */
+    ai?: boolean;
+
+    /**
      * Determines which version of the Workers runtime is used.
      */
     compatibilityDate?: string;
