@@ -48,8 +48,8 @@ importers:
         specifier: ^3.3.2
         version: 3.3.2
       mlly:
-        specifier: ^1.7.1
-        version: 1.7.1
+        specifier: ^1.7.2
+        version: 1.7.2
       picocolors:
         specifier: ^1.0.1
         version: 1.0.1
@@ -2076,9 +2076,6 @@ packages:
       vue-tsc:
         optional: true
 
-  mlly@1.7.1:
-    resolution: {integrity: sha512-rrVRZRELyQzrIUAVMHxP97kv+G786pHmOKzuFII8zDYahFBS7qnHh2AlYSl1GAHhaMPCz6/oHjVMcfFYgFYHgA==}
-
   mlly@1.7.2:
     resolution: {integrity: sha512-tN3dvVHYVz4DhSXinXIk7u9syPYaJvio118uomkovAtWBT+RdbP6Lfh/5Lvo519YMmwBafwlh20IPTXIStscpA==}
 
@@ -3651,7 +3648,7 @@ snapshots:
       debug: 4.3.7
       kolorist: 1.8.0
       local-pkg: 0.5.0
-      mlly: 1.7.1
+      mlly: 1.7.2
     transitivePeerDependencies:
       - supports-color
 
@@ -4221,7 +4218,7 @@ snapshots:
       dotenv: 16.4.5
       giget: 1.2.3
       jiti: 1.21.6
-      mlly: 1.7.1
+      mlly: 1.7.2
       ohash: 1.1.3
       pathe: 1.1.2
       perfect-debounce: 1.0.0
@@ -4753,7 +4750,7 @@ snapshots:
       jiti: 2.0.0-beta.2
       jiti-v1: jiti@1.21.6
       pathe: 1.1.2
-      pkg-types: 1.1.3
+      pkg-types: 1.2.1
       tsx: 4.17.0
     transitivePeerDependencies:
       - supports-color
@@ -4843,8 +4840,8 @@ snapshots:
 
   local-pkg@0.5.0:
     dependencies:
-      mlly: 1.7.1
-      pkg-types: 1.1.3
+      mlly: 1.7.2
+      pkg-types: 1.2.1
 
   locate-path@6.0.0:
     dependencies:
@@ -4945,7 +4942,7 @@ snapshots:
       fs-extra: 11.2.0
       globby: 14.0.2
       jiti: 1.21.6
-      mlly: 1.7.1
+      mlly: 1.7.2
       mri: 1.2.0
       pathe: 1.1.2
       pkg-types: 1.1.3
@@ -4954,13 +4951,6 @@ snapshots:
       semver: 7.6.2
     optionalDependencies:
       typescript: 5.5.4
-
-  mlly@1.7.1:
-    dependencies:
-      acorn: 8.12.1
-      pathe: 1.1.2
-      pkg-types: 1.1.3
-      ufo: 1.5.3
 
   mlly@1.7.2:
     dependencies:
@@ -5095,7 +5085,7 @@ snapshots:
   pkg-types@1.1.3:
     dependencies:
       confbox: 0.1.7
-      mlly: 1.7.1
+      mlly: 1.7.2
       pathe: 1.1.2
 
   pkg-types@1.2.1:
@@ -5563,7 +5553,7 @@ snapshots:
       jiti: 1.21.6
       magic-string: 0.30.10
       mkdist: 1.5.3(typescript@5.5.4)
-      mlly: 1.7.1
+      mlly: 1.7.2
       pathe: 1.1.2
       pkg-types: 1.1.3
       pretty-bytes: 6.1.1
