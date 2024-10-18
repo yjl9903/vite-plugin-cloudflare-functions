@@ -67,8 +67,8 @@ importers:
         specifier: ^1.7.7
         version: 1.7.7(debug@4.3.7)
       ofetch:
-        specifier: ^1.3.4
-        version: 1.3.4
+        specifier: ^1.4.1
+        version: 1.4.1
       ohmyfetch:
         specifier: ^0.4.21
         version: 0.4.21
@@ -2219,8 +2219,8 @@ packages:
     engines: {node: ^14.16.0 || >=16.10.0}
     hasBin: true
 
-  ofetch@1.3.4:
-    resolution: {integrity: sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==}
+  ofetch@1.4.1:
+    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
 
   ohash@1.1.4:
     resolution: {integrity: sha512-FlDryZAahJmEF3VR3w1KogSEdWX3WhA5GPakFx4J81kEAiHyLMpdLLElS8n8dfNadMgAne/MywcvmogzscVt4g==}
@@ -2792,9 +2792,6 @@ packages:
 
   ufo@0.8.6:
     resolution: {integrity: sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==}
-
-  ufo@1.5.3:
-    resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
 
   ufo@1.5.4:
     resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
@@ -4049,7 +4046,7 @@ snapshots:
     dependencies:
       '@iconify/utils': 2.1.30
       '@unocss/core': 0.62.1
-      ofetch: 1.3.4
+      ofetch: 1.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -4078,7 +4075,7 @@ snapshots:
   '@unocss/preset-web-fonts@0.62.1':
     dependencies:
       '@unocss/core': 0.62.1
-      ofetch: 1.3.4
+      ofetch: 1.4.1
 
   '@unocss/preset-wind@0.62.1':
     dependencies:
@@ -5133,11 +5130,11 @@ snapshots:
       pkg-types: 1.2.1
       ufo: 1.5.4
 
-  ofetch@1.3.4:
+  ofetch@1.4.1:
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4
-      ufo: 1.5.3
+      ufo: 1.5.4
 
   ohash@1.1.4: {}
 
@@ -5675,8 +5672,6 @@ snapshots:
   typescript@5.5.4: {}
 
   ufo@0.8.6: {}
-
-  ufo@1.5.3: {}
 
   ufo@1.5.4: {}
 
