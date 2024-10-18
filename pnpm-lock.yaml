@@ -116,8 +116,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-inspect:
-        specifier: ^0.8.5
-        version: 0.8.5(rollup@4.18.1)(vite@5.4.0(@types/node@20.14.15))
+        specifier: ^0.8.7
+        version: 0.8.7(rollup@4.18.1)(vite@5.4.0(@types/node@20.14.15))
       wrangler:
         specifier: ^3.81.0
         version: 3.81.0(@cloudflare/workers-types@4.20241011.0)
@@ -1655,8 +1655,8 @@ packages:
     resolution: {integrity: sha512-BeJFvFRJddxobhvEdm5GqHzRV/X+ACeuw0/BuuxsCh1EUZcAIz8+kYmBp/LrQuloy6K1f3a0M7+IhmZ7QnkISA==}
     engines: {node: '>=0.12'}
 
-  error-stack-parser-es@0.1.4:
-    resolution: {integrity: sha512-l0uy0kAoo6toCgVOYaAayqtPa2a1L15efxUMEnQebKwLQX2X0OpS6wMMQdc4juJXmxd9i40DuaUHq+mjIya9TQ==}
+  error-stack-parser-es@0.1.5:
+    resolution: {integrity: sha512-xHku1X40RO+fO8yJ8Wh2f2rZWVjqyhb1zgq1yZ8aZRQkv6OOKhKWRUaht3eSCUbAOBaKIgM+ykwFLE+QUxgGeg==}
 
   esbuild@0.17.19:
     resolution: {integrity: sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw==}
@@ -2801,8 +2801,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-inspect@0.8.5:
-    resolution: {integrity: sha512-JvTUqsP1JNDw0lMZ5Z/r5cSj81VK2B7884LO1DC3GMBhdcjcsAnJjdWq7bzQL01Xbh+v60d3lju3g+z7eAtNew==}
+  vite-plugin-inspect@0.8.7:
+    resolution: {integrity: sha512-/XXou3MVc13A5O9/2Nd6xczjrUwt7ZyI9h8pTnUMkr5SshLcb0PJUOVq2V+XVkdeU4njsqAtmK87THZuO2coGA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
@@ -4448,7 +4448,7 @@ snapshots:
 
   entities@5.0.0: {}
 
-  error-stack-parser-es@0.1.4: {}
+  error-stack-parser-es@0.1.5: {}
 
   esbuild@0.17.19:
     optionalDependencies:
@@ -5675,12 +5675,12 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-inspect@0.8.5(rollup@4.18.1)(vite@5.4.0(@types/node@20.14.15)):
+  vite-plugin-inspect@0.8.7(rollup@4.18.1)(vite@5.4.0(@types/node@20.14.15)):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.0(rollup@4.18.1)
       debug: 4.3.6
-      error-stack-parser-es: 0.1.4
+      error-stack-parser-es: 0.1.5
       fs-extra: 11.2.0
       open: 10.1.0
       perfect-debounce: 1.0.0
