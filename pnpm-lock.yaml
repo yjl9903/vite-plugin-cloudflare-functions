@@ -21,11 +21,11 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
       typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
+        specifier: ^5.6.3
+        version: 5.6.3
       unbuild:
         specifier: ^2.0.0
-        version: 2.0.0(typescript@5.5.4)
+        version: 2.0.0(typescript@5.6.3)
       vite:
         specifier: ^5.4.9
         version: 5.4.9(@types/node@20.16.13)
@@ -73,8 +73,8 @@ importers:
         specifier: ^0.4.21
         version: 0.4.21
       typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
+        specifier: ^5.6.3
+        version: 5.6.3
       wrangler:
         specifier: ^3.81.0
         version: 3.81.0(@cloudflare/workers-types@4.20241018.0)
@@ -86,7 +86,7 @@ importers:
         version: 1.7.7(debug@4.3.7)
       vue:
         specifier: ^3.5.12
-        version: 3.5.12(typescript@5.5.4)
+        version: 3.5.12(typescript@5.6.3)
     devDependencies:
       '@onekuma/preset.css':
         specifier: ^0.1.11
@@ -96,16 +96,16 @@ importers:
         version: 0.1.11
       '@onekuma/ui':
         specifier: ^0.1.11
-        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13)))(@vueuse/core@10.11.1(vue@3.5.12(typescript@5.5.4)))(vue@3.5.12(typescript@5.5.4))
+        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13)))(@vueuse/core@10.11.1(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))
       '@onekuma/vite':
         specifier: ^0.1.11
         version: 0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13))
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
-        version: 5.1.4(vite@5.4.9(@types/node@20.16.13))(vue@3.5.12(typescript@5.5.4))
+        version: 5.1.4(vite@5.4.9(@types/node@20.16.13))(vue@3.5.12(typescript@5.6.3))
       '@vueuse/core':
         specifier: ^10.11.1
-        version: 10.11.1(vue@3.5.12(typescript@5.5.4))
+        version: 10.11.1(vue@3.5.12(typescript@5.6.3))
       unocss:
         specifier: ^0.63.4
         version: 0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13))
@@ -2674,8 +2674,8 @@ packages:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
 
-  typescript@5.5.4:
-    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3529,12 +3529,12 @@ snapshots:
 
   '@onekuma/reset@0.1.11': {}
 
-  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13)))(@vueuse/core@10.11.1(vue@3.5.12(typescript@5.5.4)))(vue@3.5.12(typescript@5.5.4))':
+  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13)))(@vueuse/core@10.11.1(vue@3.5.12(typescript@5.6.3)))(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@onekuma/preset.css': 0.1.11
       '@onekuma/vite': 0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13))
-      '@vueuse/core': 10.11.1(vue@3.5.12(typescript@5.5.4))
-      vue: 3.5.12(typescript@5.5.4)
+      '@vueuse/core': 10.11.1(vue@3.5.12(typescript@5.6.3))
+      vue: 3.5.12(typescript@5.6.3)
 
   '@onekuma/vite@0.1.11(unocss@0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)))(vite@5.4.9(@types/node@20.16.13))':
     dependencies:
@@ -3876,10 +3876,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vitejs/plugin-vue@5.1.4(vite@5.4.9(@types/node@20.16.13))(vue@3.5.12(typescript@5.5.4))':
+  '@vitejs/plugin-vue@5.1.4(vite@5.4.9(@types/node@20.16.13))(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       vite: 5.4.9(@types/node@20.16.13)
-      vue: 3.5.12(typescript@5.5.4)
+      vue: 3.5.12(typescript@5.6.3)
 
   '@vitest/expect@2.1.3':
     dependencies:
@@ -3967,29 +3967,29 @@ snapshots:
       '@vue/shared': 3.5.12
       csstype: 3.1.3
 
-  '@vue/server-renderer@3.5.12(vue@3.5.12(typescript@5.5.4))':
+  '@vue/server-renderer@3.5.12(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@vue/compiler-ssr': 3.5.12
       '@vue/shared': 3.5.12
-      vue: 3.5.12(typescript@5.5.4)
+      vue: 3.5.12(typescript@5.6.3)
 
   '@vue/shared@3.5.12': {}
 
-  '@vueuse/core@10.11.1(vue@3.5.12(typescript@5.5.4))':
+  '@vueuse/core@10.11.1(vue@3.5.12(typescript@5.6.3))':
     dependencies:
       '@types/web-bluetooth': 0.0.20
       '@vueuse/metadata': 10.11.1
-      '@vueuse/shared': 10.11.1(vue@3.5.12(typescript@5.5.4))
-      vue-demi: 0.14.8(vue@3.5.12(typescript@5.5.4))
+      '@vueuse/shared': 10.11.1(vue@3.5.12(typescript@5.6.3))
+      vue-demi: 0.14.8(vue@3.5.12(typescript@5.6.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
 
   '@vueuse/metadata@10.11.1': {}
 
-  '@vueuse/shared@10.11.1(vue@3.5.12(typescript@5.5.4))':
+  '@vueuse/shared@10.11.1(vue@3.5.12(typescript@5.6.3))':
     dependencies:
-      vue-demi: 0.14.8(vue@3.5.12(typescript@5.5.4))
+      vue-demi: 0.14.8(vue@3.5.12(typescript@5.6.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -4785,7 +4785,7 @@ snapshots:
 
   mkdirp@1.0.4: {}
 
-  mkdist@1.5.3(typescript@5.5.4):
+  mkdist@1.5.3(typescript@5.6.3):
     dependencies:
       autoprefixer: 10.4.19(postcss@8.4.47)
       citty: 0.1.6
@@ -4803,7 +4803,7 @@ snapshots:
       postcss-nested: 6.0.1(postcss@8.4.47)
       semver: 7.6.2
     optionalDependencies:
-      typescript: 5.5.4
+      typescript: 5.6.3
 
   mlly@1.7.2:
     dependencies:
@@ -5140,11 +5140,11 @@ snapshots:
 
   reusify@1.0.4: {}
 
-  rollup-plugin-dts@6.1.1(rollup@3.29.4)(typescript@5.5.4):
+  rollup-plugin-dts@6.1.1(rollup@3.29.4)(typescript@5.6.3):
     dependencies:
       magic-string: 0.30.10
       rollup: 3.29.4
-      typescript: 5.5.4
+      typescript: 5.6.3
     optionalDependencies:
       '@babel/code-frame': 7.24.7
 
@@ -5376,13 +5376,13 @@ snapshots:
 
   type-detect@4.0.8: {}
 
-  typescript@5.5.4: {}
+  typescript@5.6.3: {}
 
   ufo@0.8.6: {}
 
   ufo@1.5.4: {}
 
-  unbuild@2.0.0(typescript@5.5.4):
+  unbuild@2.0.0(typescript@5.6.3):
     dependencies:
       '@rollup/plugin-alias': 5.1.0(rollup@3.29.4)
       '@rollup/plugin-commonjs': 25.0.8(rollup@3.29.4)
@@ -5399,17 +5399,17 @@ snapshots:
       hookable: 5.5.3
       jiti: 1.21.6
       magic-string: 0.30.10
-      mkdist: 1.5.3(typescript@5.5.4)
+      mkdist: 1.5.3(typescript@5.6.3)
       mlly: 1.7.2
       pathe: 1.1.2
       pkg-types: 1.1.3
       pretty-bytes: 6.1.1
       rollup: 3.29.4
-      rollup-plugin-dts: 6.1.1(rollup@3.29.4)(typescript@5.5.4)
+      rollup-plugin-dts: 6.1.1(rollup@3.29.4)(typescript@5.6.3)
       scule: 1.3.0
       untyped: 1.4.2
     optionalDependencies:
-      typescript: 5.5.4
+      typescript: 5.6.3
     transitivePeerDependencies:
       - sass
       - supports-color
@@ -5592,19 +5592,19 @@ snapshots:
       - supports-color
       - terser
 
-  vue-demi@0.14.8(vue@3.5.12(typescript@5.5.4)):
+  vue-demi@0.14.8(vue@3.5.12(typescript@5.6.3)):
     dependencies:
-      vue: 3.5.12(typescript@5.5.4)
+      vue: 3.5.12(typescript@5.6.3)
 
-  vue@3.5.12(typescript@5.5.4):
+  vue@3.5.12(typescript@5.6.3):
     dependencies:
       '@vue/compiler-dom': 3.5.12
       '@vue/compiler-sfc': 3.5.12
       '@vue/runtime-dom': 3.5.12
-      '@vue/server-renderer': 3.5.12(vue@3.5.12(typescript@5.5.4))
+      '@vue/server-renderer': 3.5.12(vue@3.5.12(typescript@5.6.3))
       '@vue/shared': 3.5.12
     optionalDependencies:
-      typescript: 5.5.4
+      typescript: 5.6.3
 
   webpack-sources@3.2.3:
     optional: true
