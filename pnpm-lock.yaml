@@ -110,8 +110,8 @@ importers:
         specifier: ^0.63.4
         version: 0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13))
       unplugin-info:
-        specifier: ^1.1.0
-        version: 1.1.0(esbuild@0.23.0)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13))
+        specifier: ^1.2.1
+        version: 1.2.1(esbuild@0.23.0)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13))(webpack-sources@3.2.3)
       vite-plugin-cloudflare-functions:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
@@ -1791,8 +1791,8 @@ packages:
   git-up@7.0.0:
     resolution: {integrity: sha512-ONdIrbBCFusq1Oy0sC71F5azx8bVkvtZtMJAsv+a6lz5YAmbNnLD6HAB4gptHZVLPR8S2/kVN6Gab7lryq5+lQ==}
 
-  git-url-parse@14.0.0:
-    resolution: {integrity: sha512-NnLweV+2A4nCvn4U/m2AoYu0pPKlsmhK9cknG7IMwsjFY1S2jxM+mAhsDxyxfCIGfGaD+dozsyX4b6vkYc83yQ==}
+  git-url-parse@15.0.0:
+    resolution: {integrity: sha512-5reeBufLi+i4QD3ZFftcJs9jC26aULFLBU23FeKM/b1rI0K6ofIeAblmDVO7Ht22zTDE9+CkJ3ZVb0CgJmz3UQ==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -2500,8 +2500,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-git@3.25.0:
-    resolution: {integrity: sha512-KIY5sBnzc4yEcJXW7Tdv4viEz8KyG+nU0hay+DWZasvdFOYKeUZ6Xc25LUHHjw0tinPT7O1eY6pzX7pRT1K8rw==}
+  simple-git@3.27.0:
+    resolution: {integrity: sha512-ivHoFS9Yi9GY49ogc6/YAi3Fl9ROnF4VyubNylgCkA+RVqLaKWnDSzXOVzya8csELIaWaYNutsEuAhZrtOjozA==}
 
   sirv@2.0.4:
     resolution: {integrity: sha512-94Bdh3cC2PKrbgSOUqTiGPWVZeSiXfKOVZNJniWoqrWrRkB1CJzBU3NEbiTsPcYy1lDsANA/THzS+9WBiy5nfQ==}
@@ -2715,8 +2715,8 @@ packages:
       vite:
         optional: true
 
-  unplugin-info@1.1.0:
-    resolution: {integrity: sha512-sJfczOBdpY+6tpJswBrQej0qvyAPLODe7cimnu1PCRgWHOuMnSAwaWUps1BUlBKhnWEXe7nzLjfw9fWOUM/P9Q==}
+  unplugin-info@1.2.1:
+    resolution: {integrity: sha512-NwssEGmXCBYnGE3i9UhhK1nva1GF8EU21mBGmGZQVOYZwmNHOs+wcwgGnHsmc1nX4PkVQTLiawaLQBeP6HJKkA==}
     peerDependencies:
       '@nuxt/kit': ^3
       '@nuxt/schema': ^3
@@ -2738,9 +2738,14 @@ packages:
       webpack:
         optional: true
 
-  unplugin@1.11.0:
-    resolution: {integrity: sha512-3r7VWZ/webh0SGgJScpWl2/MRCZK5d3ZYFcNaeci/GQ7Teop7zf0Nl2pUuz7G21BwPd9pcUPOC5KmJ2L3WgC5g==}
+  unplugin@1.14.1:
+    resolution: {integrity: sha512-lBlHbfSFPToDYp9pjXlUEFVxYLaue9f9T1HC+4OHlmj+HnMDdz9oZY+erXfoCe/5V/7gKUSY2jpXPb9S7f0f/w==}
     engines: {node: '>=14.0.0'}
+    peerDependencies:
+      webpack-sources: ^3
+    peerDependenciesMeta:
+      webpack-sources:
+        optional: true
 
   untyped@1.4.2:
     resolution: {integrity: sha512-nC5q0DnPEPVURPhfPQLahhSTnemVtPzdx7ofiRxXpOB2SYnb3MfdU3DVGyJdS8Lx+tBWeAePO8BfU/3EgksM7Q==}
@@ -4522,7 +4527,7 @@ snapshots:
       is-ssh: 1.4.0
       parse-url: 8.1.0
 
-  git-url-parse@14.0.0:
+  git-url-parse@15.0.0:
     dependencies:
       git-up: 7.0.0
 
@@ -5215,7 +5220,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-git@3.25.0:
+  simple-git@3.27.0:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
@@ -5442,25 +5447,26 @@ snapshots:
       - rollup
       - supports-color
 
-  unplugin-info@1.1.0(esbuild@0.23.0)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13)):
+  unplugin-info@1.2.1(esbuild@0.23.0)(rollup@4.24.0)(vite@5.4.9(@types/node@20.16.13))(webpack-sources@3.2.3):
     dependencies:
       ci-info: 4.0.0
-      git-url-parse: 14.0.0
-      simple-git: 3.25.0
-      unplugin: 1.11.0
+      git-url-parse: 15.0.0
+      simple-git: 3.27.0
+      unplugin: 1.14.1(webpack-sources@3.2.3)
     optionalDependencies:
       esbuild: 0.23.0
       rollup: 4.24.0
       vite: 5.4.9(@types/node@20.16.13)
     transitivePeerDependencies:
       - supports-color
+      - webpack-sources
 
-  unplugin@1.11.0:
+  unplugin@1.14.1(webpack-sources@3.2.3):
     dependencies:
       acorn: 8.12.1
-      chokidar: 3.6.0
-      webpack-sources: 3.2.3
       webpack-virtual-modules: 0.6.2
+    optionalDependencies:
+      webpack-sources: 3.2.3
 
   untyped@1.4.2:
     dependencies:
@@ -5581,7 +5587,8 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.4
 
-  webpack-sources@3.2.3: {}
+  webpack-sources@3.2.3:
+    optional: true
 
   webpack-virtual-modules@0.6.2: {}
 
