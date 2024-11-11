@@ -58,7 +58,7 @@ importers:
         version: 1.2.2
       vite:
         specifier: ^3.1.8 || ^4.0.0 || ^5.0.0
-        version: 5.4.10(@types/node@22.9.0)
+        version: 5.4.11(@types/node@22.9.0)
     devDependencies:
       '@types/debug':
         specifier: ^4.1.12
@@ -2723,37 +2723,6 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite@5.4.10:
-    resolution: {integrity: sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || >=20.0.0
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      sass-embedded: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      sass-embedded:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-
   vite@5.4.11:
     resolution: {integrity: sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -5357,15 +5326,6 @@ snapshots:
     transitivePeerDependencies:
       - rollup
       - supports-color
-
-  vite@5.4.10(@types/node@22.9.0):
-    dependencies:
-      esbuild: 0.21.5
-      postcss: 8.4.48
-      rollup: 4.25.0
-    optionalDependencies:
-      '@types/node': 22.9.0
-      fsevents: 2.3.3
 
   vite@5.4.11(@types/node@22.9.0):
     dependencies:
