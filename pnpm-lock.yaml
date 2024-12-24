@@ -96,7 +96,7 @@ importers:
         version: 0.1.11
       '@onekuma/ui':
         specifier: ^0.1.11
-        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2)))(@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
+        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2)))(@vueuse/core@12.2.0(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))
       '@onekuma/vite':
         specifier: ^0.1.11
         version: 0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2))
@@ -104,8 +104,8 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core':
-        specifier: ^11.3.0
-        version: 11.3.0(vue@3.5.13(typescript@5.7.2))
+        specifier: ^12.2.0
+        version: 12.2.0(typescript@5.7.2)
       unocss:
         specifier: ^0.65.2
         version: 0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2))
@@ -1355,14 +1355,14 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
-  '@vueuse/core@11.3.0':
-    resolution: {integrity: sha512-7OC4Rl1f9G8IT6rUfi9JrKiXy4bfmHhZ5x2Ceojy0jnd3mHNEvV4JaRygH362ror6/NZ+Nl+n13LPzGiPN8cKA==}
+  '@vueuse/core@12.2.0':
+    resolution: {integrity: sha512-jksyNu+5EGwggNkRWd6xX+8qBkYbmrwdFQMgCABsz+wq8bKF6w3soPFLB8vocFp3wFIzn0OYkSPM9JP+AFKwsg==}
 
-  '@vueuse/metadata@11.3.0':
-    resolution: {integrity: sha512-pwDnDspTqtTo2HwfLw4Rp6yywuuBdYnPYDq+mO38ZYKGebCUQC/nVj/PXSiK9HX5otxLz8Fn7ECPbjiRz2CC3g==}
+  '@vueuse/metadata@12.2.0':
+    resolution: {integrity: sha512-x6zynZtTh1l52m0y8d/EgzpshnMjg8cNZ2KWoncJ62Z5qPSGoc4FUunmMVrrRM/I/5542rTEY89CGftngZvrkQ==}
 
-  '@vueuse/shared@11.3.0':
-    resolution: {integrity: sha512-P8gSSWQeucH5821ek2mn/ciCk+MS/zoRKqdQIM3bHq6p7GXDAJLmnRRKmF5F65sAVJIfzQlwR3aDzwCn10s8hA==}
+  '@vueuse/shared@12.2.0':
+    resolution: {integrity: sha512-SRr4AZwv/giS+EmyA1ZIzn3/iALjjnWAGaBNmoDTMEob9JwQaevAocuaMDnPAvU7Z35Y5g3CFRusCWgp1gVJ3Q==}
 
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
@@ -2792,17 +2792,6 @@ packages:
       jsdom:
         optional: true
 
-  vue-demi@0.14.10:
-    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
-    engines: {node: '>=12'}
-    hasBin: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-
   vue-flow-layout@0.1.1:
     resolution: {integrity: sha512-JdgRRUVrN0Y2GosA0M68DEbKlXMqJ7FQgsK8CjQD2vxvNSqAU6PZEpi4cfcTVtfM2GVOMjHo7GKKLbXxOBqDqA==}
     peerDependencies:
@@ -3436,11 +3425,11 @@ snapshots:
 
   '@onekuma/reset@0.1.11': {}
 
-  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2)))(@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))':
+  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2)))(@vueuse/core@12.2.0(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@onekuma/preset.css': 0.1.11
       '@onekuma/vite': 0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2))
-      '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
+      '@vueuse/core': 12.2.0(typescript@5.7.2)
       vue: 3.5.13(typescript@5.7.2)
 
   '@onekuma/vite@0.1.11(unocss@0.65.2(postcss@8.4.48)(rollup@4.25.0)(vite@5.4.11(@types/node@22.10.2))(vue@3.5.13(typescript@5.7.2)))(vite@5.4.11(@types/node@22.10.2))':
@@ -3830,24 +3819,22 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2))':
+  '@vueuse/core@12.2.0(typescript@5.7.2)':
     dependencies:
       '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 11.3.0
-      '@vueuse/shared': 11.3.0(vue@3.5.13(typescript@5.7.2))
-      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.2))
+      '@vueuse/metadata': 12.2.0
+      '@vueuse/shared': 12.2.0(typescript@5.7.2)
+      vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      - typescript
 
-  '@vueuse/metadata@11.3.0': {}
+  '@vueuse/metadata@12.2.0': {}
 
-  '@vueuse/shared@11.3.0(vue@3.5.13(typescript@5.7.2))':
+  '@vueuse/shared@12.2.0(typescript@5.7.2)':
     dependencies:
-      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.2))
+      vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      - typescript
 
   acorn-walk@8.3.4:
     dependencies:
@@ -5382,10 +5369,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-
-  vue-demi@0.14.10(vue@3.5.13(typescript@5.7.2)):
-    dependencies:
-      vue: 3.5.13(typescript@5.7.2)
 
   vue-flow-layout@0.1.1(vue@3.5.13(typescript@5.7.2)):
     dependencies:
