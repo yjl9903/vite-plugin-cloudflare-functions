@@ -122,6 +122,17 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       }
     }
 
+    const persistTo = [];
+    if (userConfig?.wrangler?.persistTo === undefined || userConfig?.wrangler?.persistTo === null) {
+      persistTo.push('--persist-to', path.join(functionsRoot, '.wrangler/state'));
+    } else {
+      if (typeof userConfig?.wrangler?.persistTo === 'boolean' && userConfig?.wrangler?.persistTo) {
+        persistTo.push('--persist-to', path.join(functionsRoot, '.wrangler/state'));
+      } else if (typeof userConfig?.wrangler?.persistTo === 'string') {
+        persistTo.push('--persist-to', userConfig?.wrangler?.persistTo);
+      }
+    }
+
     const command = [
       'wrangler',
       'pages',
@@ -133,8 +144,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
       String(wranglerPort),
       '--proxy',
       String(port),
-      '--persist-to',
-      path.join(functionsRoot, '.wrangler/state'),
+      ...persistTo,
       ...bindings
     ];
 
@@ -198,12 +208,7 @@ export function CloudflarePagesFunctions(userConfig: UserConfig = {}): Plugin {
     });
 
     if (userConfig.wrangler?.do) {
-      const command = [
-        'wrangler',
-        'dev',
-        '--persist-to',
-        path.join(functionsRoot, '.wrangler/state')
-      ];
+      const command = ['wrangler', 'dev', ...persistTo];
       if (compatibilityDate) {
         command.push(`--compatibility-date=${compatibilityDate}`);
       }

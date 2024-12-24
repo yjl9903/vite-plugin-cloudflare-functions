@@ -72,6 +72,13 @@ export interface UserConfig {
     ai?: string | string[];
 
     /**
+     * Specify directory to use for local persistence
+     *
+     * @default <fucntions_dir>/.wrangler/state
+     */
+    persistTo?: boolean | string;
+
+    /**
      * Determines which version of the Workers runtime is used.
      */
     compatibilityDate?: string;
