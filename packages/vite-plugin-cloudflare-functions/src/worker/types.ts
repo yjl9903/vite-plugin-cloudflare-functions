@@ -2,11 +2,8 @@
 
 export class CloudflareResponse<T = any> extends Response {}
 
-export type CloudflareResponseBody<T extends (...args: any[]) => any> = Awaited<
-  ReturnType<T>
-> extends CloudflareResponse<infer R>
-  ? R
-  : never;
+export type CloudflareResponseBody<T extends (...args: any[]) => any> =
+  Awaited<ReturnType<T>> extends CloudflareResponse<infer R> ? R : never;
 
 export type CloudflarePagesFunction<
   T = unknown,

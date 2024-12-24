@@ -5,18 +5,22 @@ import 'vite-plugin-cloudflare-functions/client';
 declare module 'vite-plugin-cloudflare-functions/client' {
   interface PagesResponseBody {
     '/api/:msg': {
-      GET: CloudflareResponseBody<typeof import('../functions/api/[msg]')['onRequestGet']>;
-      POST: CloudflareResponseBody<typeof import('../functions/api/[msg]')['onRequestPost']>;
+      GET: CloudflareResponseBody<(typeof import('../functions/api/[msg]'))['onRequestGet']>;
+      POST: CloudflareResponseBody<(typeof import('../functions/api/[msg]'))['onRequestPost']>;
     };
     '/api/**': {
-      ALL: CloudflareResponseBody<typeof import('../functions/api/_middleware')['onRequest']>;
+      ALL: CloudflareResponseBody<(typeof import('../functions/api/_middleware'))['onRequest']>;
     };
     '/api/counter/': {
-      GET: CloudflareResponseBody<typeof import('../functions/api/counter/index')['onRequestGet']>;
+      GET: CloudflareResponseBody<
+        (typeof import('../functions/api/counter/index'))['onRequestGet']
+      >;
     };
     '/api/state/:key': {
-      GET: CloudflareResponseBody<typeof import('../functions/api/state/[key]')['onRequestGet']>;
-      POST: CloudflareResponseBody<typeof import('../functions/api/state/[key]')['onRequestPost']>;
+      GET: CloudflareResponseBody<(typeof import('../functions/api/state/[key]'))['onRequestGet']>;
+      POST: CloudflareResponseBody<
+        (typeof import('../functions/api/state/[key]'))['onRequestPost']
+      >;
     };
   }
 }
