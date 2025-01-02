@@ -96,7 +96,7 @@ importers:
         version: 0.1.11
       '@onekuma/ui':
         specifier: ^0.1.11
-        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2)))(@vueuse/core@12.2.0(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))
+        version: 0.1.11(@onekuma/vite@0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2)))(@vueuse/core@12.3.0(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))
       '@onekuma/vite':
         specifier: ^0.1.11
         version: 0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))
@@ -104,8 +104,8 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core':
-        specifier: ^12.2.0
-        version: 12.2.0(typescript@5.7.2)
+        specifier: ^12.3.0
+        version: 12.3.0(typescript@5.7.2)
       unocss:
         specifier: ^0.65.3
         version: 0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2))
@@ -1219,14 +1219,14 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
-  '@vueuse/core@12.2.0':
-    resolution: {integrity: sha512-jksyNu+5EGwggNkRWd6xX+8qBkYbmrwdFQMgCABsz+wq8bKF6w3soPFLB8vocFp3wFIzn0OYkSPM9JP+AFKwsg==}
+  '@vueuse/core@12.3.0':
+    resolution: {integrity: sha512-cnV8QDKZrsyKC7tWjPbeEUz2cD9sa9faxF2YkR8QqNwfofgbOhmfIgvSYmkp+ttSvfOw4E6hLcQx15mRPr0yBA==}
 
-  '@vueuse/metadata@12.2.0':
-    resolution: {integrity: sha512-x6zynZtTh1l52m0y8d/EgzpshnMjg8cNZ2KWoncJ62Z5qPSGoc4FUunmMVrrRM/I/5542rTEY89CGftngZvrkQ==}
+  '@vueuse/metadata@12.3.0':
+    resolution: {integrity: sha512-M/iQHHjMffOv2npsw2ihlUx1CTiBwPEgb7DzByLq7zpg1+Ke8r7s9p5ybUWc5OIeGewtpY4Xy0R2cKqFqM8hFg==}
 
-  '@vueuse/shared@12.2.0':
-    resolution: {integrity: sha512-SRr4AZwv/giS+EmyA1ZIzn3/iALjjnWAGaBNmoDTMEob9JwQaevAocuaMDnPAvU7Z35Y5g3CFRusCWgp1gVJ3Q==}
+  '@vueuse/shared@12.3.0':
+    resolution: {integrity: sha512-X3YD35GUeW0d5Gajcwv9jdLAJTV2Jdb/Ll6Ii2JIYcKLYZqv5wxyLeKtiQkqWmHg3v0J0ZWjDUMVOw2E7RCXfA==}
 
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
@@ -3184,11 +3184,11 @@ snapshots:
 
   '@onekuma/reset@0.1.11': {}
 
-  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2)))(@vueuse/core@12.2.0(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))':
+  '@onekuma/ui@0.1.11(@onekuma/vite@0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2)))(@vueuse/core@12.3.0(typescript@5.7.2))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@onekuma/preset.css': 0.1.11
       '@onekuma/vite': 0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))
-      '@vueuse/core': 12.2.0(typescript@5.7.2)
+      '@vueuse/core': 12.3.0(typescript@5.7.2)
       vue: 3.5.13(typescript@5.7.2)
 
   '@onekuma/vite@0.1.11(unocss@0.65.3(postcss@8.4.49)(rollup@4.29.1)(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))(vue@3.5.13(typescript@5.7.2)))(vite@6.0.6(@types/node@22.10.3)(jiti@2.4.2)(tsx@4.19.2))':
@@ -3574,18 +3574,18 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vueuse/core@12.2.0(typescript@5.7.2)':
+  '@vueuse/core@12.3.0(typescript@5.7.2)':
     dependencies:
       '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 12.2.0
-      '@vueuse/shared': 12.2.0(typescript@5.7.2)
+      '@vueuse/metadata': 12.3.0
+      '@vueuse/shared': 12.3.0(typescript@5.7.2)
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
       - typescript
 
-  '@vueuse/metadata@12.2.0': {}
+  '@vueuse/metadata@12.3.0': {}
 
-  '@vueuse/shared@12.2.0(typescript@5.7.2)':
+  '@vueuse/shared@12.3.0(typescript@5.7.2)':
     dependencies:
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
