@@ -20,7 +20,7 @@
     "unocss": "^0.65.4",
     "unplugin-info": "^1.2.1",
     "vite-plugin-cloudflare-functions": "workspace:*",
-    "vite-plugin-inspect": "^0.10.6",
+    "vite-plugin-inspect": "^10.0.6",
     "wrangler": "^3.100.0"
   }
 }
