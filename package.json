@@ -1,6 +1,6 @@
 {
   "name": "@vite-plugin-cloudflare-functions/monorepo",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -10,7 +10,8 @@
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "test": "turbo run test:ci",
     "typecheck": "turbo run typecheck",
-    "preversion": "pnpm build && pnpm test"
+    "preversion": "pnpm build && pnpm test",
+    "postversion": "pnpm build"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
