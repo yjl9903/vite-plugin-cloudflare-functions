@@ -13,7 +13,7 @@ importers:
         version: 22.10.5
       bumpp:
         specifier: latest
-        version: 9.9.3
+        version: 9.10.0
       prettier:
         specifier: latest
         version: 3.4.2
@@ -116,8 +116,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-inspect:
-        specifier: ^0.10.6
-        version: 0.10.6(rollup@4.29.2)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(tsx@4.19.2))
+        specifier: ^10.0.6
+        version: 10.0.6(rollup@4.29.2)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(tsx@4.19.2))
       wrangler:
         specifier: ^3.100.0
         version: 3.100.0(@cloudflare/workers-types@4.20250109.0)
@@ -139,6 +139,9 @@ packages:
 
   '@antfu/utils@0.7.10':
     resolution: {integrity: sha512-+562v9k4aI80m1+VuMHehNJWLOFjBnXn3tdOitzD0il5b7smkSBal4+a3oKiQTbrwMmN/TBUMDvbdoWDehgOww==}
+
+  '@antfu/utils@8.0.0':
+    resolution: {integrity: sha512-3NfBIlWj8ffBHdNiedaiea1xIy0NIZZaqQwTbmwXa4sGekD5UarRU3NfXScpuC5aw99KCvErew3PHxGJeHqeAg==}
 
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
@@ -1283,8 +1286,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
-  bumpp@9.9.3:
-    resolution: {integrity: sha512-fEX4zIuFuDLCFaQtBFaiNtlUgYbDjd9fUbJqlDfER7Wz+KUOkEXeDs5qScsHX+jKYvTgD5xdOA4ZYYMAo5rC9A==}
+  bumpp@9.10.0:
+    resolution: {integrity: sha512-gNY3tYEGKyqW8+qtpeLQ2UfQW7G81d/vhCWNGrMlvy0Toq1LZPRs8wk9woAw8o9Tzv7pvjaF/Gno+UN3qiqNxA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -1511,8 +1514,8 @@ packages:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
 
-  error-stack-parser-es@0.1.5:
-    resolution: {integrity: sha512-xHku1X40RO+fO8yJ8Wh2f2rZWVjqyhb1zgq1yZ8aZRQkv6OOKhKWRUaht3eSCUbAOBaKIgM+ykwFLE+QUxgGeg==}
+  error-stack-parser-es@1.0.5:
+    resolution: {integrity: sha512-5qucVt2XcuGMcEGgWI7i+yZpmpByQ8J1lHhcL7PwqCwu9FPP3VUXzT4ltHe5i2z9dePwEHcDVOAfSnHsOlCXRA==}
 
   es-module-lexer@1.6.0:
     resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
@@ -2514,8 +2517,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-inspect@0.10.6:
-    resolution: {integrity: sha512-R3pwljjBbjFM2sZvy6Zvynnm51oaEwLYyYPk9Wp2lF97w/YMBq+KtTJXpCA17IO2pImX0bWA6WB05kuqRnkuyQ==}
+  vite-plugin-inspect@10.0.6:
+    resolution: {integrity: sha512-24iFdPyYY+zMPFRzyIz74h/K27PVf7NFKdebPHbohAAF1gzM60jsWxhxlmpmaa7V7XxHGp8U0+2Kd0L21DGn3Q==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
@@ -2701,6 +2704,8 @@ snapshots:
       tinyexec: 0.3.2
 
   '@antfu/utils@0.7.10': {}
+
+  '@antfu/utils@8.0.0': {}
 
   '@babel/code-frame@7.26.2':
     dependencies:
@@ -3648,13 +3653,14 @@ snapshots:
       node-releases: 2.0.19
       update-browserslist-db: 1.1.1(browserslist@4.24.3)
 
-  bumpp@9.9.3:
+  bumpp@9.10.0:
     dependencies:
       c12: 2.0.1
       cac: 6.7.14
       escalade: 3.2.0
       js-yaml: 4.1.0
       jsonc-parser: 3.3.1
+      package-manager-detector: 0.2.8
       prompts: 2.4.2
       semver: 7.6.3
       tinyexec: 0.3.2
@@ -3900,7 +3906,7 @@ snapshots:
 
   entities@4.5.0: {}
 
-  error-stack-parser-es@0.1.5: {}
+  error-stack-parser-es@1.0.5: {}
 
   es-module-lexer@1.6.0: {}
 
@@ -4985,12 +4991,12 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-inspect@0.10.6(rollup@4.29.2)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(tsx@4.19.2)):
+  vite-plugin-inspect@10.0.6(rollup@4.29.2)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(tsx@4.19.2)):
     dependencies:
-      '@antfu/utils': 0.7.10
+      '@antfu/utils': 8.0.0
       '@rollup/pluginutils': 5.1.4(rollup@4.29.2)
       debug: 4.4.0
-      error-stack-parser-es: 0.1.5
+      error-stack-parser-es: 1.0.5
       fs-extra: 11.2.0
       open: 10.1.0
       perfect-debounce: 1.0.0
