@@ -21,6 +21,6 @@
     "unplugin-info": "^1.2.1",
     "vite-plugin-cloudflare-functions": "workspace:*",
     "vite-plugin-inspect": "^10.0.6",
-    "wrangler": "^3.101.0"
+    "wrangler": "^3.102.0"
   }
 }
