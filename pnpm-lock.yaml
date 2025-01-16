@@ -76,8 +76,8 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
       wrangler:
-        specifier: ^3.102.0
-        version: 3.102.0(@cloudflare/workers-types@4.20250109.0)
+        specifier: ^3.103.0
+        version: 3.103.0(@cloudflare/workers-types@4.20250109.0)
 
   playground/app:
     dependencies:
@@ -119,8 +119,8 @@ importers:
         specifier: ^10.0.6
         version: 10.0.6(rollup@4.30.1)(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(tsx@4.19.2))
       wrangler:
-        specifier: ^3.102.0
-        version: 3.102.0(@cloudflare/workers-types@4.20250109.0)
+        specifier: ^3.103.0
+        version: 3.103.0(@cloudflare/workers-types@4.20250109.0)
 
   playground/functions:
     devDependencies:
@@ -216,6 +216,15 @@ packages:
   '@cloudflare/kv-asset-handler@0.3.4':
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
     engines: {node: '>=16.13'}
+
+  '@cloudflare/unenv-preset@1.0.0':
+    resolution: {integrity: sha512-rnihjY4xUsBmlqp0eM2tQXm+40aj3C7WhdH4eGHkLaoBKr3+LwuENByYm5mf65WEeA5NE6BolTnjkiJUts3RuA==}
+    peerDependencies:
+      unenv: npm:unenv-nightly@*
+      workerd: ^1.20241230.0
+    peerDependenciesMeta:
+      workerd:
+        optional: true
 
   '@cloudflare/workerd-darwin-64@1.20241230.0':
     resolution: {integrity: sha512-BZHLg4bbhNQoaY1Uan81O3FV/zcmWueC55juhnaI7NAobiQth9RppadPNpxNAmS9fK2mR5z8xrwMQSQrHmztyQ==}
@@ -2443,8 +2452,8 @@ packages:
     resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
 
-  unenv-nightly@2.0.0-20241218-183400-5d6aec3:
-    resolution: {integrity: sha512-7Xpi29CJRbOV1/IrC03DawMJ0hloklDLq/cigSe+J2jkcC+iDres2Cy0r4ltj5f0x7DqsaGaB4/dLuCPPFZnZA==}
+  unenv-nightly@2.0.0-20250109-100802-88ad671:
+    resolution: {integrity: sha512-Uij6gODNNNNsNBoDlnaMvZI99I6YlVJLRfYH8AOLMlbFrW7k2w872v9VLuIdch2vF8QBeSC4EftIh5sG4ibzdA==}
 
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
@@ -2644,8 +2653,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.102.0:
-    resolution: {integrity: sha512-Za4DstbS3+/hu+///K/4dFFeV6XbPBAGp7NCnVajchxRTwEPTdbO5eezH0HLJPMHK6G/0yIzyhlEMnyg4YzHAA==}
+  wrangler@3.103.0:
+    resolution: {integrity: sha512-DK1wLHwiELI5jmHolf7ZCWji+CkSgSZdD/ccrCtDWr5r9vJSb6gpPG9Dc7E68Z/yMFub9+r2XuwKLHEABMLZWw==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -2799,6 +2808,12 @@ snapshots:
   '@cloudflare/kv-asset-handler@0.3.4':
     dependencies:
       mime: 3.0.0
+
+  '@cloudflare/unenv-preset@1.0.0(unenv-nightly@2.0.0-20250109-100802-88ad671)(workerd@1.20241230.0)':
+    dependencies:
+      unenv: unenv-nightly@2.0.0-20250109-100802-88ad671
+    optionalDependencies:
+      workerd: 1.20241230.0
 
   '@cloudflare/workerd-darwin-64@1.20241230.0':
     optional: true
@@ -4872,7 +4887,7 @@ snapshots:
     dependencies:
       '@fastify/busboy': 2.1.1
 
-  unenv-nightly@2.0.0-20241218-183400-5d6aec3:
+  unenv-nightly@2.0.0-20250109-100802-88ad671:
     dependencies:
       defu: 6.1.4
       mlly: 1.7.4
@@ -5070,16 +5085,17 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20241230.0
       '@cloudflare/workerd-windows-64': 1.20241230.0
 
-  wrangler@3.102.0(@cloudflare/workers-types@4.20250109.0):
+  wrangler@3.103.0(@cloudflare/workers-types@4.20250109.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
+      '@cloudflare/unenv-preset': 1.0.0(unenv-nightly@2.0.0-20250109-100802-88ad671)(workerd@1.20241230.0)
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
       esbuild: 0.17.19
       miniflare: 3.20241230.2
       path-to-regexp: 6.3.0
-      unenv: unenv-nightly@2.0.0-20241218-183400-5d6aec3
+      unenv: unenv-nightly@2.0.0-20250109-100802-88ad671
       workerd: 1.20241230.0
     optionalDependencies:
       '@cloudflare/workers-types': 4.20250109.0
