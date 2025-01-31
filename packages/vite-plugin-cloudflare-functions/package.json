@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@breadc/death": "^0.9.7",
-    "@cloudflare/workers-types": "^4.20250109.0",
+    "@cloudflare/workers-types": "^4.20250129.0",
     "debug": "^4.4.0",
     "fast-glob": "^3.3.3",
     "mlly": "^1.7.4",
@@ -86,7 +86,7 @@
     "ofetch": "^1.4.1",
     "ohmyfetch": "^0.4.21",
     "typescript": "^5.7.3",
-    "wrangler": "^3.103.0"
+    "wrangler": "^3.107.2"
   },
   "peerDependencies": {
     "axios": "^1.5.0",
