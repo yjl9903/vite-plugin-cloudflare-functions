@@ -64,8 +64,8 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       axios:
-        specifier: ^1.7.9
-        version: 1.7.9(debug@4.4.0)
+        specifier: ^1.8.1
+        version: 1.8.1(debug@4.4.0)
       ofetch:
         specifier: ^1.4.1
         version: 1.4.1
@@ -82,8 +82,8 @@ importers:
   playground/app:
     dependencies:
       axios:
-        specifier: ^1.7.9
-        version: 1.7.9(debug@4.4.0)
+        specifier: ^1.8.1
+        version: 1.8.1(debug@4.4.0)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
@@ -1244,8 +1244,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  axios@1.7.9:
-    resolution: {integrity: sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==}
+  axios@1.8.1:
+    resolution: {integrity: sha512-NN+fvwH/kV01dYUQ3PTOZns4LWtWhOFCAhQ/pHb88WQ1hNe5V/dvFwc4VJcDL11LT9xSX0QtsR8sWUuyOuOq7g==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -3592,7 +3592,7 @@ snapshots:
       postcss: 8.5.3
       postcss-value-parser: 4.2.0
 
-  axios@1.7.9(debug@4.4.0):
+  axios@1.8.1(debug@4.4.0):
     dependencies:
       follow-redirects: 1.15.9(debug@4.4.0)
       form-data: 4.0.2
