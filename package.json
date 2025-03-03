@@ -14,7 +14,7 @@
     "postversion": "pnpm build"
   },
   "devDependencies": {
-    "@types/node": "^22.13.8",
+    "@types/node": "^22.13.9",
     "bumpp": "latest",
     "prettier": "latest",
     "turbo": "^2.4.4",
