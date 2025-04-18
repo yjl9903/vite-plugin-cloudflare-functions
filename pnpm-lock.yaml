@@ -110,8 +110,8 @@ importers:
         specifier: ^66.0.0
         version: 66.0.0(postcss@8.5.3)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       unplugin-info:
-        specifier: ^1.2.1
-        version: 1.2.1(esbuild@0.25.2)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1))
+        specifier: ^1.2.2
+        version: 1.2.2(esbuild@0.25.2)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1))
       vite-plugin-cloudflare-functions:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
@@ -717,6 +717,9 @@ packages:
   '@types/node@22.14.1':
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
+  '@types/parse-path@7.0.3':
+    resolution: {integrity: sha512-LriObC2+KYZD3FzCrgWGv/qufdUy4eXrxcLgQMfYXgPbLIecKIsVBaQgUPmxSSLcjmYbDTQbMgr6qr6l/eb7Bg==}
+
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
 
@@ -1294,11 +1297,11 @@ packages:
     resolution: {integrity: sha512-L5bGsVkxJbJgdnwyuheIunkGatUF/zssUoxxjACCseZYAVbaqdh9Tsmmlkl8vYan09H7sbvKt4pS8GqKLBrEzA==}
     hasBin: true
 
-  git-up@7.0.0:
-    resolution: {integrity: sha512-ONdIrbBCFusq1Oy0sC71F5azx8bVkvtZtMJAsv+a6lz5YAmbNnLD6HAB4gptHZVLPR8S2/kVN6Gab7lryq5+lQ==}
+  git-up@8.1.1:
+    resolution: {integrity: sha512-FDenSF3fVqBYSaJoYy1KSc2wosx0gCvKP+c+PRBht7cAaiCeQlBtfBDX9vgnNOHmdePlSFITVcn4pFfcgNvx3g==}
 
-  git-url-parse@15.0.0:
-    resolution: {integrity: sha512-5reeBufLi+i4QD3ZFftcJs9jC26aULFLBU23FeKM/b1rI0K6ofIeAblmDVO7Ht22zTDE9+CkJ3ZVb0CgJmz3UQ==}
+  git-url-parse@16.1.0:
+    resolution: {integrity: sha512-cPLz4HuK86wClEW7iDdeAKcCVlWXmrLpb2L+G9goW0Z1dtpNS6BXXSOckUTlJT/LDQViE1QZKstNORzHsLnobw==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -1547,8 +1550,9 @@ packages:
   parse-path@7.0.2:
     resolution: {integrity: sha512-env5u88RpqhTX1OGbWCkZuueRhmK8qFXwyGyTWuC/Vz4a+eUIHM/CCq5L1YtmdQeKBVh+CtZdH0WiY4axuySfg==}
 
-  parse-url@8.1.0:
-    resolution: {integrity: sha512-xDvOoLU5XRrcOZvnI6b8zA6n9O9ejNk/GExuz1yBuWUGn9KA97GI6HTs6u02wKara1CeVmZhH+0TZFdWScR89w==}
+  parse-url@9.2.0:
+    resolution: {integrity: sha512-bCgsFI+GeGWPAvAiUv63ZorMeif3/U0zaXABGJbOWt5OH2KCaPHF6S+0ok4aqM9RuIPGyZdx9tR9l13PsW4AYQ==}
+    engines: {node: '>=14.13.0'}
 
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
@@ -2006,8 +2010,8 @@ packages:
       vite:
         optional: true
 
-  unplugin-info@1.2.1:
-    resolution: {integrity: sha512-NwssEGmXCBYnGE3i9UhhK1nva1GF8EU21mBGmGZQVOYZwmNHOs+wcwgGnHsmc1nX4PkVQTLiawaLQBeP6HJKkA==}
+  unplugin-info@1.2.2:
+    resolution: {integrity: sha512-GiDA/pC+qRerudmIZ9TM7eEwdg4GA0DMdNHfRDP00QWV6XEQeiKckhibubehrqJkrOZlyALBVCF7DqQvaYgC4w==}
     peerDependencies:
       '@nuxt/kit': ^3
       '@nuxt/schema': ^3
@@ -2033,9 +2037,9 @@ packages:
     resolution: {integrity: sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA==}
     engines: {node: '>=18.12.0'}
 
-  unplugin@1.16.1:
-    resolution: {integrity: sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w==}
-    engines: {node: '>=14.0.0'}
+  unplugin@2.3.2:
+    resolution: {integrity: sha512-3n7YA46rROb3zSj8fFxtxC/PqoyvYQ0llwz9wtUPUutr9ig09C8gGo5CWCwHrUzlqC1LLR43kxp5vEIyH1ac1w==}
+    engines: {node: '>=18.12.0'}
 
   untyped@2.0.0:
     resolution: {integrity: sha512-nwNCjxJTjNuLCgFr42fEak5OcLuB3ecca+9ksPFNvtfYSLpjf+iJqSIaSnIile6ZPbKYxI5k2AfXqeopGudK/g==}
@@ -2661,6 +2665,8 @@ snapshots:
   '@types/node@22.14.1':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/parse-path@7.0.3': {}
 
   '@types/resolve@1.20.2': {}
 
@@ -3386,14 +3392,14 @@ snapshots:
       nypm: 0.6.0
       pathe: 2.0.3
 
-  git-up@7.0.0:
+  git-up@8.1.1:
     dependencies:
       is-ssh: 1.4.1
-      parse-url: 8.1.0
+      parse-url: 9.2.0
 
-  git-url-parse@15.0.0:
+  git-url-parse@16.1.0:
     dependencies:
-      git-up: 7.0.0
+      git-up: 8.1.1
 
   glob-parent@5.1.2:
     dependencies:
@@ -3619,8 +3625,9 @@ snapshots:
     dependencies:
       protocols: 2.0.2
 
-  parse-url@8.1.0:
+  parse-url@9.2.0:
     dependencies:
+      '@types/parse-path': 7.0.3
       parse-path: 7.0.2
 
   path-parse@1.0.7: {}
@@ -4121,12 +4128,12 @@ snapshots:
       - supports-color
       - vue
 
-  unplugin-info@1.2.1(esbuild@0.25.2)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1)):
+  unplugin-info@1.2.2(esbuild@0.25.2)(rollup@4.40.0)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1)):
     dependencies:
       ci-info: 4.2.0
-      git-url-parse: 15.0.0
+      git-url-parse: 16.1.0
       simple-git: 3.27.0
-      unplugin: 1.16.1
+      unplugin: 2.3.2
     optionalDependencies:
       esbuild: 0.25.2
       rollup: 4.40.0
@@ -4139,9 +4146,10 @@ snapshots:
       pathe: 2.0.3
       picomatch: 4.0.2
 
-  unplugin@1.16.1:
+  unplugin@2.3.2:
     dependencies:
       acorn: 8.14.1
+      picomatch: 4.0.2
       webpack-virtual-modules: 0.6.2
 
   untyped@2.0.0:
