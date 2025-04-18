@@ -116,8 +116,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/vite-plugin-cloudflare-functions
       vite-plugin-inspect:
-        specifier: ^11.0.0
-        version: 11.0.0(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1))
+        specifier: ^11.0.1
+        version: 11.0.1(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1))
       wrangler:
         specifier: ^4.11.1
         version: 4.11.1(@cloudflare/workers-types@4.20250416.0)
@@ -2069,8 +2069,8 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite-plugin-inspect@11.0.0:
-    resolution: {integrity: sha512-Q0RDNcMs1mbI2yGRwOzSapnnA6NFO0j88+Vb8pJX0iYMw34WczwKJi3JgheItDhbWRq/CLUR0cs+ajZpcUaIFQ==}
+  vite-plugin-inspect@11.0.1:
+    resolution: {integrity: sha512-aABw7eGTr9Cmbn9RAs76e0BztVUFDl6a2R+/IJXpoUZxjx5YHB0P+Em3ZTWzpIPZzuRj28tAMblvcUyhgJc4aQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': '*'
@@ -4199,7 +4199,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-inspect@11.0.0(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1)):
+  vite-plugin-inspect@11.0.1(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(yaml@2.7.1)):
     dependencies:
       ansis: 3.17.0
       debug: 4.4.0
