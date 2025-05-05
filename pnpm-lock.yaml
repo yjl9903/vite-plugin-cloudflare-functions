@@ -64,7 +64,7 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
       axios:
-        specifier: ^1.7.9
+        specifier: ^1.9.0
         version: 1.9.0(debug@4.4.0)
       ofetch:
         specifier: ^1.4.1
@@ -82,7 +82,7 @@ importers:
   playground/app:
     dependencies:
       axios:
-        specifier: ^1.7.9
+        specifier: ^1.9.0
         version: 1.9.0(debug@4.4.0)
       vue:
         specifier: ^3.5.13
