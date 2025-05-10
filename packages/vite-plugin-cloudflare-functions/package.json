@@ -82,7 +82,7 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.12",
-    "axios": "^1.7.9",
+    "axios": "^1.9.0",
     "ofetch": "^1.4.1",
     "ohmyfetch": "^0.4.21",
     "typescript": "^5.8.3",
