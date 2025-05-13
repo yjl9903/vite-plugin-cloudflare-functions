@@ -74,7 +74,7 @@
   "dependencies": {
     "@breadc/death": "^0.9.7",
     "@cloudflare/workers-types": "^4.20250416.0",
-    "debug": "^4.4.0",
+    "debug": "^4.4.1",
     "fast-glob": "^3.3.3",
     "mlly": "^1.7.4",
     "picocolors": "^1.1.1",
